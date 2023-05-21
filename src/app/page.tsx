@@ -1,3 +1,5 @@
+import { faGamepad } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,9 +10,9 @@ export default function Home() {
       </h1>
       <Link
         href="create-teams"
-        className="text-light-orange bg-jet rounded-xl p-5 mt-5 text-xl"
+        className="text-light-orange bg-jet rounded-xl p-5 mt-5 text-xl flex items-center"
       >
-        Jouer
+        Jouer <FontAwesomeIcon icon={faGamepad} className="text-3xl ml-2" />
       </Link>
     </main>
   );
