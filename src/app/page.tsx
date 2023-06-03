@@ -10,7 +10,7 @@ export default function Home() {
       </h1>
       <Link
         href="create-teams"
-        className="text-light-orange bg-jet rounded-xl p-5 mt-5 text-xl flex items-center"
+        className="text-light-orange bg-jet rounded-xl p-5 mt-5 text-xl flex items-center hover:bg-light-orange hover:text-jet border-4 border-jet font-bold"
       >
         Jouer <FontAwesomeIcon icon={faGamepad} className="text-3xl ml-2" />
       </Link>
