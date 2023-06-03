@@ -13,7 +13,7 @@ export default function Home() {
   }
 
   return (
-    <main className="pt-5 flex flex-col items-center">
+    <main className="pt-5 flex flex-col items-center h-full">
       <h1 className="text-jet text-center text-6xl font-extrabold">
         Time 2 Guess
       </h1>
@@ -23,7 +23,9 @@ export default function Home() {
       >
         Jouer <FontAwesomeIcon icon={faGamepad} className="text-3xl ml-2" />
       </Link>
-      <NavigationBar currentPage={currentPage} changePage={changePage} />
+      <div className="mt-auto mb-5">
+        <NavigationBar currentPage={currentPage} changePage={changePage} />
+      </div>
     </main>
   );
 }
