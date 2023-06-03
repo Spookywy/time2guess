@@ -1,3 +1,4 @@
+import NavigationBar from "@/components/navigationBar";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
@@ -10,10 +11,11 @@ export default function Home() {
       </h1>
       <Link
         href="create-teams"
-        className="text-light-orange bg-jet rounded-xl p-5 mt-5 text-xl flex items-center hover:bg-light-orange hover:text-jet border-4 border-jet font-bold"
+        className="text-light-orange bg-jet rounded-xl p-5 m-5 text-xl flex items-center hover:bg-light-orange hover:text-jet border-4 border-jet font-bold"
       >
         Jouer <FontAwesomeIcon icon={faGamepad} className="text-3xl ml-2" />
       </Link>
+      <NavigationBar />
     </main>
   );
 }
