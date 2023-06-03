@@ -3,23 +3,40 @@ import {
   faCircleInfo,
   faHouse,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import NavigationBarButton from "./navigationBarButton";
 
-export default function NavigationBar() {
+export type Pages = "home" | "rules" | "about";
+
+type NavigationBarProps = {
+  currentPage: Pages;
+  changePage: (page: Pages) => void;
+};
+
+export default function NavigationBar({
+  currentPage,
+  changePage,
+}: NavigationBarProps) {
   return (
-    <div className="flex bg-slate-500 rounded-full">
-      <div className="flex flex-col rounded-full bg-white w-48 py-1 text-jet items-center">
-        <FontAwesomeIcon icon={faBook} className="text-2xl" />
-        <p>Règles</p>
-      </div>
-      <div className="flex flex-col w-48 py-1 text-jet items-center">
-        <FontAwesomeIcon icon={faHouse} className="text-2xl" />
-        <p>Acceuil</p>
-      </div>
-      <div className="flex flex-col w-48 py-1 text-jet items-center">
-        <FontAwesomeIcon icon={faCircleInfo} className="text-2xl" />
-        <p>À propos</p>
-      </div>
+    <div className="flex bg-jet rounded-full">
+      <NavigationBarButton
+        icon={faBook}
+        label="Règles"
+        isSelected={currentPage === "rules"}
+        onClick={() => changePage("rules")}
+      />
+      <NavigationBarButton
+        icon={faHouse}
+        label="Accueil"
+        isSelected={currentPage === "home"}
+        onClick={() => changePage("home")}
+      />
+
+      <NavigationBarButton
+        icon={faCircleInfo}
+        label="À propos"
+        isSelected={currentPage === "about"}
+        onClick={() => changePage("about")}
+      />
     </div>
   );
 }
