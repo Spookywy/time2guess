@@ -13,23 +13,23 @@ export default function Home() {
   }
 
   return (
-    <main className="pt-5 flex flex-col items-center h-full">
-      <h1 className="text-jet text-center text-6xl font-extrabold">
+    <main className="flex h-full flex-col items-center pt-5">
+      <h1 className="text-center text-6xl font-extrabold text-jet">
         Time 2 Guess
       </h1>
       <div className="flex flex-grow flex-col items-center justify-center">
         <FontAwesomeIcon
           icon={faStopwatch}
-          className="text-dark-orange text-9xl animate-stretch-shake"
+          className="animate-stretch-shake text-9xl text-dark-orange"
         />
         <Link
           href="create-teams"
-          className="text-light-orange bg-jet rounded-xl p-5 mt-16 text-xl flex items-center hover:bg-light-orange hover:text-jet border-4 border-jet font-bold"
+          className="mt-16 flex items-center rounded-xl border-4 border-jet bg-jet p-5 text-xl font-bold text-light-orange hover:bg-light-orange hover:text-jet"
         >
-          Jouer <FontAwesomeIcon icon={faGamepad} className="text-3xl ml-2" />
+          Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
         </Link>
       </div>
-      <div className="mt-auto mb-5">
+      <div className="mb-5 mt-auto">
         <NavigationBar currentPage={currentPage} changePage={changePage} />
       </div>
     </main>

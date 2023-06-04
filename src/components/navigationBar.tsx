@@ -17,7 +17,7 @@ export default function NavigationBar({
   changePage,
 }: NavigationBarProps) {
   return (
-    <div className="flex bg-jet rounded-full">
+    <div className="flex rounded-full bg-jet">
       <NavigationBarButton
         icon={faBook}
         label="Règles"

@@ -16,13 +16,13 @@ export default function NavigationBarButton({
 }: NavigationBarButtonProps) {
   return (
     <button
-      className={`flex flex-col rounded-full items-center text-dark-orange w-32 sm:w-48 py-2 ${
+      className={`flex w-28 scale-110 flex-col items-center rounded-full py-2 text-dark-orange sm:w-48 ${
         isSelected ? "bg-white" : ""
       }`}
       onClick={onClick}
     >
       <FontAwesomeIcon icon={icon} className="text-2xl" />
-      <p className="font-semibold">{label}</p>
+      <p className="font-medium">{label}</p>
     </button>
   );
 }
