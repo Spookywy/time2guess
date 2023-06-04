@@ -1,7 +1,7 @@
 export default function Rules() {
   return (
-    <div>
-      <h1>Règles</h1>
-    </div>
+    <>
+      <h1 className="text-center text-6xl font-extrabold text-jet">Règles</h1>
+    </>
   );
 }
