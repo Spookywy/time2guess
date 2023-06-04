@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.animate-stretch-shake {
+    animation-name: stretch-shake;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes stretch-shake {
+    25% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    40% {
+        transform: scale(1.05) rotate(10deg);
+    }
+
+    50% {
+        transform: scale(1.5) rotate(-20deg);
+    }
+
+    60% {
+        transform: scale(1) rotate(0deg);
+    }
+}

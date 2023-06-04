@@ -17,14 +17,14 @@ export default function Home() {
       <h1 className="text-jet text-center text-6xl font-extrabold">
         Time 2 Guess
       </h1>
-      <div className="flex flex-grow flex-col items-center justify-end mb-12 md:mb-0 md:justify-center">
+      <div className="flex flex-grow flex-col items-center justify-center">
         <FontAwesomeIcon
           icon={faStopwatch}
-          className="text-dark-orange text-7xl"
+          className="text-dark-orange text-9xl animate-stretch-shake"
         />
         <Link
           href="create-teams"
-          className="text-light-orange bg-jet rounded-xl p-5 mt-5 text-xl flex items-center hover:bg-light-orange hover:text-jet border-4 border-jet font-bold"
+          className="text-light-orange bg-jet rounded-xl p-5 mt-16 text-xl flex items-center hover:bg-light-orange hover:text-jet border-4 border-jet font-bold"
         >
           Jouer <FontAwesomeIcon icon={faGamepad} className="text-3xl ml-2" />
         </Link>
