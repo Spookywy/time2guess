@@ -16,7 +16,7 @@ export default function NavigationBarButton({
 }: NavigationBarButtonProps) {
   return (
     <button
-      className={`flex w-28 scale-110 flex-col items-center rounded-full py-2 text-dark-orange sm:w-48 ${
+      className={`flex w-28 scale-110 flex-col items-center rounded-full py-4 text-dark-orange sm:w-48 ${
         isSelected ? "bg-white" : ""
       }`}
       onClick={onClick}

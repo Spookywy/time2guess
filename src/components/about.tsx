@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
-    <div className="text-center text-3xl text-jet">
+    <div className="text-center text-jet">
       <h1 className="text-center text-6xl font-extrabold">À propos</h1>
-      <div className="mt-16">
+      <div className="mt-16 text-2xl">
         <p className="mb-10">
           Made with
           <FontAwesomeIcon
