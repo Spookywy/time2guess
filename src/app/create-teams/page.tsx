@@ -15,27 +15,26 @@ export default function CreateTeams() {
         <p className="font-semibold">
           Besoin d&apos;aide pour former les équipes ?
         </p>
-        <p className="mt-2">
+        <p className="mt-8">
           Utilisez notre générateur d&apos;équipe aléatoire{" "}
           <a
-            className="font-semibold text-dark-orange"
+            className="whitespace-nowrap font-semibold text-dark-orange"
             href="https://random-plouf.vercel.app/fr?lang=fr"
             target="_blank"
           >
-            RandomPlouf 
-            <FontAwesomeIcon icon={faSquareArrowUpRight} />
+            RandomPlouf <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </a>
           .
         </p>
         <div className="mb-5 mt-auto flex flex-col sm:flex-row">
           <button
-            className="mb-5 h-20 w-64 rounded-full border-4 border-dark-orange bg-jet font-semibold text-light-orange hover:border-jet sm:mb-0 sm:mr-5"
+            className="mb-5 h-16 w-64 rounded-full border-4 border-dark-orange bg-jet font-semibold text-light-orange hover:border-jet sm:mb-0 sm:mr-5"
             onClick={() => router.push("/")}
           >
             Retour
           </button>
           <button
-            className="h-20 w-64 rounded-full border-4 border-dark-orange bg-dark-orange font-semibold text-light-orange hover:border-jet hover:text-jet"
+            className="h-16 w-64 rounded-full border-4 border-dark-orange bg-dark-orange font-semibold text-light-orange hover:border-jet hover:text-jet"
             onClick={() => router.push("/game")}
           >
             Lancer la partie
