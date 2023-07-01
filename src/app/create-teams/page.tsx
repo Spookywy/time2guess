@@ -3,7 +3,7 @@ import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
 
-export default function CreateTeams() {
+export default function Page() {
   const router = useRouter();
 
   return (
