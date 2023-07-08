@@ -6,7 +6,7 @@ export default function CreateTeamsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <section className="h-full">
       <TopBar />
       {children}
     </section>

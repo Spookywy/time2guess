@@ -36,7 +36,7 @@ export default function RoundRules({ round }: RoundRulesProps) {
   ]);
 
   return (
-    <div className="m-4 flex flex-col text-center text-2xl text-jet md:mx-48">
+    <div className="m-4 flex h-[calc(100vh-60px)] flex-col text-center text-2xl text-jet md:mx-48">
       <h1 className="text-6xl font-extrabold text-dark-orange">
         Manche {round}
       </h1>
@@ -56,7 +56,7 @@ export default function RoundRules({ round }: RoundRulesProps) {
         className="mb-2 text-6xl text-dark-orange"
       />
       <div dangerouslySetInnerHTML={{ __html: teamRules.get(round)! }} />
-      <div className="horizontallyCentered bottom-5">
+      <div className="mb-5 mt-auto">
         <p className="mb-2 text-jet">
           <span className="font-bold text-dark-orange">L&apos;équipe 1</span>{" "}
           commence
