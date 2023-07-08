@@ -1,6 +1,7 @@
 import { RoundNumber } from "@/types/common";
 import { faPeopleGroup, faPerson } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PrimaryButton from "../buttons/primaryButton";
 
 type RoundRulesProps = {
   round: RoundNumber;
@@ -35,11 +36,11 @@ export default function RoundRules({ round }: RoundRulesProps) {
   ]);
 
   return (
-    <div className="m-4 text-center text-2xl text-jet">
+    <div className="m-4 flex flex-col text-center text-2xl text-jet md:mx-48">
       <h1 className="text-6xl font-extrabold text-dark-orange">
         Manche {round}
       </h1>
-      <h2 className="mb-8 mt-16 text-4xl font-extrabold">
+      <h2 className="mb-8 mt-8 text-4xl font-extrabold">
         {subTitles.get(round)}
       </h2>
       <FontAwesomeIcon
@@ -55,6 +56,13 @@ export default function RoundRules({ round }: RoundRulesProps) {
         className="mb-2 text-6xl text-dark-orange"
       />
       <div dangerouslySetInnerHTML={{ __html: teamRules.get(round)! }} />
+      <div className="horizontallyCentered bottom-5">
+        <p className="mb-2 text-jet">
+          <span className="font-bold text-dark-orange">L&apos;équipe 1</span>{" "}
+          commence
+        </p>
+        <PrimaryButton label="Commencer" onClick={() => {}} />
+      </div>
     </div>
   );
 }

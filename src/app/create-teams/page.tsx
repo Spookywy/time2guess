@@ -1,4 +1,5 @@
 "use client";
+import PrimaryButton from "@/components/buttons/primaryButton";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
@@ -33,12 +34,10 @@ export default function Page() {
           >
             Retour
           </button>
-          <button
-            className="h-16 w-64 rounded-full border-4 border-dark-orange bg-dark-orange font-semibold text-light-orange hover:border-jet hover:text-jet"
+          <PrimaryButton
+            label="Lancer la partie"
             onClick={() => router.push("/game")}
-          >
-            Lancer la partie
-          </button>
+          />
         </div>
       </div>
     </main>
