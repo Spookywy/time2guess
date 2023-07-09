@@ -36,27 +36,27 @@ export default function RoundRules({ round }: RoundRulesProps) {
   ]);
 
   return (
-    <div className="m-4 flex h-[calc(100vh-60px)] flex-col text-center text-2xl text-jet md:mx-48">
+    <div className="text-md m-4 flex h-[calc(100%-var(--header-height))] flex-col text-center text-jet md:mx-48 md:text-2xl">
       <h1 className="text-6xl font-extrabold text-dark-orange">
         Manche {round}
       </h1>
-      <h2 className="mb-8 mt-8 text-4xl font-extrabold">
+      <h2 className="mb-8 mt-6 text-2xl font-extrabold md:text-4xl">
         {subTitles.get(round)}
       </h2>
       <FontAwesomeIcon
         icon={faPerson}
-        className="mb-2 text-6xl text-dark-orange"
+        className="mb-2 text-4xl text-dark-orange md:text-6xl"
       />
       <div
-        className="mb-8"
+        className="mb-4 md:mb-8"
         dangerouslySetInnerHTML={{ __html: playerRules.get(round)! }}
       />
       <FontAwesomeIcon
         icon={faPeopleGroup}
-        className="mb-2 text-6xl text-dark-orange"
+        className="mb-2 text-4xl text-dark-orange md:text-6xl"
       />
       <div dangerouslySetInnerHTML={{ __html: teamRules.get(round)! }} />
-      <div className="mb-5 mt-auto">
+      <div className="mt-auto py-4 text-2xl md:py-8">
         <p className="mb-2 text-jet">
           <span className="font-bold text-dark-orange">L&apos;équipe 1</span>{" "}
           commence
