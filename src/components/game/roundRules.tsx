@@ -1,13 +1,19 @@
-import { RoundNumber } from "@/types/common";
+import { RoundNumber, RoundState } from "@/types/common";
 import { faPeopleGroup, faPerson } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PrimaryButton from "../buttons/primaryButton";
 
 type RoundRulesProps = {
   round: RoundNumber;
+  teamPlaying: 1 | 2;
+  setRoundState: (roundState: RoundState) => void;
 };
 
-export default function RoundRules({ round }: RoundRulesProps) {
+export default function RoundRules({
+  round,
+  teamPlaying,
+  setRoundState,
+}: RoundRulesProps) {
   const subTitles = new Map<number, string>([
     [1, "Decrivez avec des mots"],
     [2, "Decrivez avec un seul mot"],
@@ -35,6 +41,10 @@ export default function RoundRules({ round }: RoundRulesProps) {
     [3, "Votre équipe n'est <b>pas limitée</b> en nombre de propositions."],
   ]);
 
+  function startRound() {
+    setRoundState(RoundState.playing);
+  }
+
   return (
     <div className="text-md m-4 flex h-[calc(100%-var(--header-height))] flex-col text-center text-jet md:mx-48 md:text-2xl">
       <h1 className="text-6xl font-extrabold text-dark-orange">
@@ -58,10 +68,12 @@ export default function RoundRules({ round }: RoundRulesProps) {
       <div dangerouslySetInnerHTML={{ __html: teamRules.get(round)! }} />
       <div className="mt-auto py-4 text-2xl md:py-8">
         <p className="mb-2 text-jet">
-          <span className="font-bold text-dark-orange">L&apos;équipe 1</span>{" "}
+          <span className="font-bold text-dark-orange">
+            L&apos;équipe {teamPlaying}
+          </span>{" "}
           commence
         </p>
-        <PrimaryButton label="Commencer" onClick={() => {}} />
+        <PrimaryButton label="Commencer" onClick={startRound} />
       </div>
     </div>
   );

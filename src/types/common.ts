@@ -1,6 +1,7 @@
 export enum RoundState {
   "rules",
   "playing",
+  "break",
   "results",
 }
 
