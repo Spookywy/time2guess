@@ -21,6 +21,7 @@ export default function RoundPlaying({
   teamPlaying,
 }: RoundPlayingProps) {
   const [timeLeft, setTimeLeft] = useState(30);
+  const [timeIsAnimated, setTimeIsAnimated] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -42,12 +43,18 @@ export default function RoundPlaying({
 
   function handleWordNotGuessed() {
     setCurrentWordIndex((prevIndex) => prevIndex - 1);
+    setTimeIsAnimated(true);
     setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
+    setTimeout(() => setTimeIsAnimated(false), 100);
   }
 
   return (
     <div className="flex h-[calc(100%-var(--header-height))] flex-col items-center">
-      <h1 className="mt-12 text-8xl font-extrabold text-dark-orange">
+      <h1
+        className={`mt-12 text-8xl font-extrabold text-dark-orange ${
+          timeIsAnimated && "animate-ping text-jet"
+        }`}
+      >
         {timeLeft}
       </h1>
       <h2 className="mt-10 text-center text-5xl font-bold text-jet">
