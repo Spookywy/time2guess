@@ -1,22 +1,23 @@
-import { RoundState } from "@/types/common";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SetStateAction, useEffect, useState } from "react";
 
 type RoundPlayingProps = {
   wordsToGuess: string[];
+  setWordsToGuess: (words: SetStateAction<string[]>) => void;
   currentWordIndex: number;
   setCurrentWordIndex: (index: SetStateAction<number>) => void;
-  setRoundState: (roundState: RoundState) => void;
+  changeTeamPlaying: () => void;
   addGuessedWordToTeam: (word: string, team: 1 | 2) => void;
   teamPlaying: 1 | 2;
 };
 
 export default function RoundPlaying({
   wordsToGuess,
+  setWordsToGuess,
   currentWordIndex,
   setCurrentWordIndex,
-  setRoundState,
+  changeTeamPlaying,
   addGuessedWordToTeam,
   teamPlaying,
 }: RoundPlayingProps) {
@@ -30,22 +31,27 @@ export default function RoundPlaying({
 
     if (timeLeft <= 0) {
       clearInterval(timer);
-      setRoundState(RoundState.break);
+      changeTeamPlaying();
     }
 
     return () => clearInterval(timer);
-  }, [setRoundState, timeLeft]);
+  }, [changeTeamPlaying, timeLeft]);
 
   function handleWordGuessed() {
     addGuessedWordToTeam(wordsToGuess[currentWordIndex], teamPlaying);
+    setWordsToGuess((prevWords) =>
+      prevWords
+        .splice(0, currentWordIndex)
+        .concat(prevWords.splice(currentWordIndex + 1))
+    );
     setCurrentWordIndex((prevIndex) => prevIndex - 1);
   }
 
   function handleWordNotGuessed() {
     setCurrentWordIndex((prevIndex) => prevIndex - 1);
     setTimeIsAnimated(true);
-    setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
     setTimeout(() => setTimeIsAnimated(false), 100);
+    setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
   }
 
   return (

@@ -17,15 +17,14 @@ export default function Page() {
           Besoin d&apos;aide pour former les équipes ?
         </p>
         <p className="mt-8">
-          Utilisez notre générateur d&apos;équipe aléatoire{" "}
+          Utilisez notre super générateur d&apos;équipe aléatoire{" "}
           <a
             className="whitespace-nowrap font-semibold text-dark-orange"
             href="https://random-plouf.vercel.app/fr?lang=fr"
             target="_blank"
           >
-            RandomPlouf <FontAwesomeIcon icon={faSquareArrowUpRight} />
+            Random Plouf <FontAwesomeIcon icon={faSquareArrowUpRight} />
           </a>
-          .
         </p>
         <div className="mb-5 mt-auto flex flex-col sm:flex-row">
           <button

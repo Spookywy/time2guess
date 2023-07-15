@@ -32,6 +32,11 @@ export function Game({ words }: GameProps) {
     }
   }
 
+  function changeTeamPlaying() {
+    setRoundState(RoundState.break);
+    setTeamPlaying((prevTeam) => (prevTeam === 1 ? 2 : 1));
+  }
+
   function getComponentToDisplay() {
     switch (roundState) {
       case RoundState.rules:
@@ -46,15 +51,22 @@ export function Game({ words }: GameProps) {
         return (
           <RoundPlaying
             wordsToGuess={wordsToGuess}
+            setWordsToGuess={setWordsToGuess}
             currentWordIndex={currentWordIndex}
             setCurrentWordIndex={setCurrentWordIndex}
-            setRoundState={setRoundState}
+            changeTeamPlaying={changeTeamPlaying}
             addGuessedWordToTeam={addGuessedWordToTeam}
             teamPlaying={teamPlaying}
           />
         );
       case RoundState.break:
-        return <RoundBreak />;
+        return (
+          <RoundBreak
+            round={roundNumber}
+            teamPlaying={teamPlaying}
+            wordsToGuess={wordsToGuess}
+          />
+        );
       case RoundState.results:
         return <RoundResults round={roundNumber} />;
     }
