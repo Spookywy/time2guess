@@ -1,21 +1,27 @@
 "use client";
 import { RoundNumber, RoundState } from "@/types/common";
+import shuffleArray from "@/utils/utils";
 import { useState } from "react";
 import RoundBreak from "./roundBreak";
 import RoundPlaying from "./roundPlaying";
 import RoundResults from "./roundResults";
 import RoundRules from "./roundRules";
 
+const NUMBER_OF_WORDS_TO_PICK = 40;
+
 type GameProps = {
   words: string[];
 };
 
 export function Game({ words }: GameProps) {
+  const shuffledWords = shuffleArray(words);
+  const randomWords = shuffledWords.slice(0, NUMBER_OF_WORDS_TO_PICK);
+
   const [roundNumber, setRoundNumber] = useState<RoundNumber>(1);
   const [roundState, setRoundState] = useState<RoundState>(RoundState.rules);
   const [teamPlaying, setTeamPlaying] = useState<1 | 2>(1);
 
-  const [wordsToGuess, setWordsToGuess] = useState<string[]>(words);
+  const [wordsToGuess, setWordsToGuess] = useState<string[]>(randomWords);
 
   const [currentWordIndex, setCurrentWordIndex] = useState(
     wordsToGuess.length - 1

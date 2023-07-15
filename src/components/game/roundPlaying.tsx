@@ -39,11 +39,11 @@ export default function RoundPlaying({
 
   function handleWordGuessed() {
     addGuessedWordToTeam(wordsToGuess[currentWordIndex], teamPlaying);
-    setWordsToGuess((prevWords) =>
-      prevWords
-        .splice(0, currentWordIndex)
-        .concat(prevWords.splice(currentWordIndex + 1))
-    );
+    setWordsToGuess((prevWords) => {
+      const newWords = [...prevWords];
+      newWords.splice(currentWordIndex, 1);
+      return newWords;
+    });
     setCurrentWordIndex((prevIndex) => prevIndex - 1);
   }
 
@@ -68,13 +68,13 @@ export default function RoundPlaying({
       </h2>
       <div className="mt-auto flex flex-col items-center">
         <button
-          className="mt-auto h-36 w-36 rounded-full bg-dark-orange text-8xl text-light-orange"
+          className="mt-auto h-36 w-36 rounded-full bg-dark-orange text-8xl text-light-orange active:text-jet"
           onClick={handleWordGuessed}
         >
           <FontAwesomeIcon icon={faCheck} />
         </button>
         <button
-          className="mt-5 h-20 w-20 rounded-full bg-jet text-5xl text-light-orange"
+          className="mt-5 h-20 w-20 rounded-full bg-jet text-5xl text-light-orange active:text-dark-orange"
           onClick={handleWordNotGuessed}
         >
           <FontAwesomeIcon icon={faXmark} />
