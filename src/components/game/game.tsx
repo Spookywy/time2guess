@@ -1,7 +1,7 @@
 "use client";
 import { RoundNumber, RoundState } from "@/types/common";
 import shuffleArray from "@/utils/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RoundBreak from "./roundBreak";
 import RoundPlaying from "./roundPlaying";
 import RoundResults from "./roundResults";
@@ -43,6 +43,12 @@ export function Game({ words }: GameProps) {
     setTeamPlaying((prevTeam) => (prevTeam === 1 ? 2 : 1));
   }
 
+  useEffect(() => {
+    if (wordsToGuess.length === 0) {
+      setRoundState(RoundState.results);
+    }
+  }, [wordsToGuess.length]);
+
   function getComponentToDisplay() {
     switch (roundState) {
       case RoundState.rules:
@@ -71,10 +77,17 @@ export function Game({ words }: GameProps) {
             round={roundNumber}
             teamPlaying={teamPlaying}
             wordsToGuess={wordsToGuess}
+            setRoundState={setRoundState}
           />
         );
       case RoundState.results:
-        return <RoundResults round={roundNumber} />;
+        return (
+          <RoundResults
+            round={roundNumber}
+            wordsGuessedByTeam1={wordsGuessedByTeam1}
+            wordsGuessedByTeam2={wordsGuessedByTeam2}
+          />
+        );
     }
   }
 

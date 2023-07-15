@@ -23,32 +23,51 @@ export default function RoundPlaying({
 }: RoundPlayingProps) {
   const [timeLeft, setTimeLeft] = useState(30);
   const [timeIsAnimated, setTimeIsAnimated] = useState(false);
+  const [initialWordIndex] = useState(currentWordIndex);
+  const [hasAlreadyPlayed, setHasAlreadyPlayed] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTimeLeft) => prevTimeLeft - 1);
     }, 1000);
 
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
     if (timeLeft <= 0) {
-      clearInterval(timer);
       changeTeamPlaying();
     }
+  }, [timeLeft, changeTeamPlaying]);
 
-    return () => clearInterval(timer);
-  }, [changeTeamPlaying, timeLeft]);
+  useEffect(() => {
+    if (hasAlreadyPlayed && currentWordIndex === initialWordIndex) {
+      changeTeamPlaying();
+    }
+  }, [changeTeamPlaying, currentWordIndex, hasAlreadyPlayed, initialWordIndex]);
+
+  function updateCurrentWordIndex(wordsToGuessLength: number) {
+    if (currentWordIndex <= 0) {
+      setCurrentWordIndex(wordsToGuessLength - 1);
+    } else {
+      setCurrentWordIndex((prevIndex) => prevIndex - 1);
+    }
+  }
 
   function handleWordGuessed() {
+    setHasAlreadyPlayed(true);
     addGuessedWordToTeam(wordsToGuess[currentWordIndex], teamPlaying);
     setWordsToGuess((prevWords) => {
       const newWords = [...prevWords];
       newWords.splice(currentWordIndex, 1);
+      updateCurrentWordIndex(newWords.length);
       return newWords;
     });
-    setCurrentWordIndex((prevIndex) => prevIndex - 1);
   }
 
   function handleWordNotGuessed() {
-    setCurrentWordIndex((prevIndex) => prevIndex - 1);
+    setHasAlreadyPlayed(true);
+    updateCurrentWordIndex(wordsToGuess.length);
     setTimeIsAnimated(true);
     setTimeout(() => setTimeIsAnimated(false), 100);
     setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
