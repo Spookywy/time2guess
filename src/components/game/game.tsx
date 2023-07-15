@@ -24,6 +24,14 @@ export function Game({ words }: GameProps) {
   const [wordsGuessedByTeam1, setWordsGuessedByTeam1] = useState<string[]>([]);
   const [wordsGuessedByTeam2, setWordsGuessedByTeam2] = useState<string[]>([]);
 
+  function addGuessedWordToTeam(word: string, team: 1 | 2) {
+    if (team === 1) {
+      setWordsGuessedByTeam1((prevWords) => [...prevWords, word]);
+    } else {
+      setWordsGuessedByTeam2((prevWords) => [...prevWords, word]);
+    }
+  }
+
   function getComponentToDisplay() {
     switch (roundState) {
       case RoundState.rules:
@@ -39,7 +47,10 @@ export function Game({ words }: GameProps) {
           <RoundPlaying
             wordsToGuess={wordsToGuess}
             currentWordIndex={currentWordIndex}
+            setCurrentWordIndex={setCurrentWordIndex}
             setRoundState={setRoundState}
+            addGuessedWordToTeam={addGuessedWordToTeam}
+            teamPlaying={teamPlaying}
           />
         );
       case RoundState.break:
