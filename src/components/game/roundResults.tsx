@@ -31,10 +31,19 @@ export default function RoundResults({
       <h1 className="text-6xl font-extrabold text-dark-orange">
         Fin de la Manche {round}
       </h1>
-      <FontAwesomeIcon
-        icon={faRankingStar}
-        className="mt-8 text-8xl sm:mt-16"
-      />
+      {round !== 3 ? (
+        <FontAwesomeIcon
+          icon={faRankingStar}
+          className="mt-8 text-8xl sm:mt-16"
+        />
+      ) : (
+        <div className="mt-8 text-3xl sm:mt-16">
+          <FontAwesomeIcon icon={faTrophy} className="text-6xl" />
+          <p className="mt-2 font-extrabold">
+            L&apos;équipe {winningTeam} gagne !
+          </p>
+        </div>
+      )}
       <div className="mt-8 flex text-3xl sm:mt-16">
         <div className="mr-8 flex flex-col gap-3">
           <h2 className="font-extrabold text-dark-orange">Équipe 1</h2>
@@ -51,12 +60,6 @@ export default function RoundResults({
           <p className="font-bold">{team2TotalScore}</p>
         </div>
       </div>
-      {round === 3 && (
-        <div className="mt-10 text-3xl text-dark-orange">
-          <FontAwesomeIcon icon={faTrophy} className="text-4xl" />
-          <p className="font-extrabold">L&apos;équipe {winningTeam} gagne !</p>
-        </div>
-      )}
       <div className="mt-auto py-4 md:py-8">
         {round !== 3 ? (
           <SecondaryButton label="Manche suivante" onClick={changeRound} />
