@@ -1,5 +1,5 @@
 "use client";
-import { RoundNumber, RoundState } from "@/types/common";
+import { RoundNumber, RoundState, TeamResult } from "@/types/common";
 import shuffleArray from "@/utils/utils";
 import { useEffect, useState } from "react";
 import RoundBreak from "./roundBreak";
@@ -27,6 +27,17 @@ export function Game({ words }: GameProps) {
     wordsToGuess.length - 1
   );
 
+  const [team1Score, setTeam1Score] = useState<TeamResult>({
+    round1: 0,
+    round2: 0,
+    round3: 0,
+  });
+  const [team2Score, setTeam2Score] = useState<TeamResult>({
+    round1: 0,
+    round2: 0,
+    round3: 0,
+  });
+
   const [wordsGuessedByTeam1, setWordsGuessedByTeam1] = useState<string[]>([]);
   const [wordsGuessedByTeam2, setWordsGuessedByTeam2] = useState<string[]>([]);
 
@@ -43,11 +54,47 @@ export function Game({ words }: GameProps) {
     setTeamPlaying((prevTeam) => (prevTeam === 1 ? 2 : 1));
   }
 
+  function changeRound() {
+    setRoundNumber((prevRound) => {
+      const nextRound = prevRound + 1;
+      if (nextRound === 1 || nextRound === 2 || nextRound === 3) {
+        return nextRound;
+      }
+      throw new Error("Round number can only be 1, 2 or 3");
+    });
+
+    setRoundState(RoundState.rules);
+
+    // We shuffle words at the beginning of each round
+    setWordsToGuess(shuffleArray(randomWords));
+    setCurrentWordIndex(randomWords.length - 1);
+
+    setWordsGuessedByTeam1([]);
+    setWordsGuessedByTeam2([]);
+  }
+
   useEffect(() => {
     if (wordsToGuess.length === 0) {
       setRoundState(RoundState.results);
+
+      setTeam1Score((prevScore) => {
+        const newScore = { ...prevScore };
+        newScore[`round${roundNumber}`] = wordsGuessedByTeam1.length;
+        return newScore;
+      });
+
+      setTeam2Score((prevScore) => {
+        const newScore = { ...prevScore };
+        newScore[`round${roundNumber}`] = wordsGuessedByTeam2.length;
+        return newScore;
+      });
     }
-  }, [wordsToGuess.length]);
+  }, [
+    roundNumber,
+    wordsGuessedByTeam1.length,
+    wordsGuessedByTeam2.length,
+    wordsToGuess.length,
+  ]);
 
   function getComponentToDisplay() {
     switch (roundState) {
@@ -84,8 +131,9 @@ export function Game({ words }: GameProps) {
         return (
           <RoundResults
             round={roundNumber}
-            wordsGuessedByTeam1={wordsGuessedByTeam1}
-            wordsGuessedByTeam2={wordsGuessedByTeam2}
+            team1Score={team1Score}
+            team2Score={team2Score}
+            changeRound={changeRound}
           />
         );
     }
