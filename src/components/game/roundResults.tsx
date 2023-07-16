@@ -25,6 +25,7 @@ export default function RoundResults({
     team2Score.round1 + team2Score.round2 + team2Score.round3;
 
   const winningTeam = team1TotalScore > team2TotalScore ? 1 : 2;
+  const equalScore = team1TotalScore === team2TotalScore;
 
   return (
     <div className="m-4 flex h-[calc(100%-var(--header-height))] flex-col items-center text-center text-2xl text-jet">
@@ -39,9 +40,13 @@ export default function RoundResults({
       ) : (
         <div className="mt-8 text-3xl sm:mt-16">
           <FontAwesomeIcon icon={faTrophy} className="text-6xl" />
-          <p className="mt-2 font-extrabold">
-            L&apos;équipe {winningTeam} gagne !
-          </p>
+          {!equalScore ? (
+            <p className="mt-2 font-extrabold">
+              L&apos;équipe {winningTeam} gagne !
+            </p>
+          ) : (
+            <p className="mt-2 font-extrabold">Égalité !</p>
+          )}
         </div>
       )}
       <div className="mt-8 flex text-3xl sm:mt-16">
