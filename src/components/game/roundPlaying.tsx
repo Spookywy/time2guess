@@ -23,8 +23,8 @@ export default function RoundPlaying({
 }: RoundPlayingProps) {
   const [timeLeft, setTimeLeft] = useState(30);
   const [timeIsAnimated, setTimeIsAnimated] = useState(false);
-  const [initialWordIndex] = useState(currentWordIndex);
-  const [hasAlreadyPlayed, setHasAlreadyPlayed] = useState(false);
+  const [initalNumberOfWordsToGuess] = useState(wordsToGuess.length);
+  const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -40,12 +40,6 @@ export default function RoundPlaying({
     }
   }, [timeLeft, changeTeamPlaying]);
 
-  useEffect(() => {
-    if (hasAlreadyPlayed && currentWordIndex === initialWordIndex) {
-      changeTeamPlaying();
-    }
-  }, [changeTeamPlaying, currentWordIndex, hasAlreadyPlayed, initialWordIndex]);
-
   function updateCurrentWordIndex(wordsToGuessLength: number) {
     if (currentWordIndex <= 0) {
       setCurrentWordIndex(wordsToGuessLength - 1);
@@ -54,8 +48,14 @@ export default function RoundPlaying({
     }
   }
 
+  useEffect(() => {
+    if (numberOfWordsViewed === initalNumberOfWordsToGuess) {
+      changeTeamPlaying();
+    }
+  }, [numberOfWordsViewed, initalNumberOfWordsToGuess, changeTeamPlaying]);
+
   function handleWordGuessed() {
-    setHasAlreadyPlayed(true);
+    setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     addGuessedWordToTeam(wordsToGuess[currentWordIndex], teamPlaying);
     setWordsToGuess((prevWords) => {
       const newWords = [...prevWords];
@@ -66,7 +66,7 @@ export default function RoundPlaying({
   }
 
   function handleWordNotGuessed() {
-    setHasAlreadyPlayed(true);
+    setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     updateCurrentWordIndex(wordsToGuess.length);
     setTimeIsAnimated(true);
     setTimeout(() => setTimeIsAnimated(false), 100);

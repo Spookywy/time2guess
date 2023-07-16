@@ -1,6 +1,7 @@
 import { RoundState } from "@/types/common";
 import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect, useState } from "react";
 import PrimaryButton from "../buttons/primaryButton";
 
 type RoundBreakProps = {
@@ -16,6 +17,19 @@ export default function RoundBreak({
   wordsToGuess,
   setRoundState,
 }: RoundBreakProps) {
+  // Disable the play button for 1 second to prevent the user from clicking it accidentally
+  const [playButtonIsDisabled, setPlayButtonIsDisabled] = useState(true);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setPlayButtonIsDisabled(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   function handlePlay() {
     setRoundState(RoundState.playing);
   }
@@ -38,7 +52,11 @@ export default function RoundBreak({
             l&apos;équipe {teamPlaying}
           </span>
         </p>
-        <PrimaryButton label="Jouer" onClick={handlePlay} />
+        <PrimaryButton
+          label="Jouer"
+          onClick={handlePlay}
+          disabled={playButtonIsDisabled}
+        />
       </div>
     </div>
   );
