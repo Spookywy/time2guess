@@ -1,5 +1,6 @@
 "use client";
 import PrimaryButton from "@/components/buttons/primaryButton";
+import SecondaryButton from "@/components/buttons/secondaryButton";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
@@ -27,12 +28,9 @@ export default function Page() {
           </a>
         </p>
         <div className="mb-5 mt-auto flex flex-col sm:flex-row">
-          <button
-            className="mb-5 h-16 w-64 rounded-full border-4 border-dark-orange bg-jet font-semibold text-light-orange hover:border-jet sm:mb-0 sm:mr-5"
-            onClick={() => router.push("/")}
-          >
-            Retour
-          </button>
+          <div className="mb-5 sm:mb-0 sm:mr-5">
+            <SecondaryButton label="Retour" onClick={() => router.push("/")} />
+          </div>
           <PrimaryButton
             label="Lancer la partie"
             onClick={() => router.push("/game")}
