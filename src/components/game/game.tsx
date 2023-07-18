@@ -15,7 +15,9 @@ type GameProps = {
 
 export function Game({ words }: GameProps) {
   const shuffledWords = shuffleArray(words);
-  const randomWords = shuffledWords.slice(0, NUMBER_OF_WORDS_TO_PICK);
+  const randomSelectedWords = shuffledWords.slice(0, NUMBER_OF_WORDS_TO_PICK);
+
+  const [randomWords] = useState<string[]>(randomSelectedWords);
 
   const [roundNumber, setRoundNumber] = useState<RoundNumber>(1);
   const [roundState, setRoundState] = useState<RoundState>(RoundState.rules);
@@ -65,9 +67,12 @@ export function Game({ words }: GameProps) {
 
     setRoundState(RoundState.rules);
 
-    // We shuffle words at the beginning of each round
-    setWordsToGuess(shuffleArray(randomWords));
-    setCurrentWordIndex(randomWords.length - 1);
+    setWordsToGuess((_) => {
+      // We shuffle words at the beginning of each round
+      const newRandomWords = shuffleArray(randomWords);
+      setCurrentWordIndex(newRandomWords.length - 1);
+      return newRandomWords;
+    });
 
     setWordsGuessedByTeam1([]);
     setWordsGuessedByTeam2([]);
