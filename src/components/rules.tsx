@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Rules() {
   return (
-    <div className="mx-4 text-center text-2xl text-jet">
+    <div className="text-md mx-4 text-center  text-jet md:text-2xl">
       <h1 className="text-center text-6xl font-extrabold">Règles</h1>
-      <p className="mt-16">
+      <p className="mt-8 md:mt-16">
         Le but du jeu est de faire deviner des{" "}
         <b className="text-dark-orange">
           mots, personnalités ou objets dans un temps limité.
@@ -20,11 +20,11 @@ export default function Rules() {
       >
         <FontAwesomeIcon icon={faCheck} />
       </button>
-      <p className="my-5 font-extrabold text-dark-orange">
+      <p className="mt-5 font-extrabold text-dark-orange">
         Valider un mot deviné par votre équipe
       </p>
       <button
-        className="mt-5 h-20 w-20 rounded-full bg-jet text-5xl text-light-orange"
+        className="mt-7 h-20 w-20 rounded-full bg-jet text-5xl text-light-orange"
         disabled
       >
         <FontAwesomeIcon icon={faXmark} />
