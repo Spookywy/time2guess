@@ -1,43 +1,71 @@
+Abricot
 Accoucher
+Adele
 Aéroport
 Agneau
 Aiguille
+Aladdin
 Albert Einstein
 Alcool
+Allumette
 Amélie Poulain
+Ampoule
 Ancre
+Ange
+Appareil photo
+Apple
 Araignée
 Argent
+Arrosoir
 Astérix
 Astronaute
+Atome
 Autruche
 Avion
 Babouin
 Baiser
 Balançoire
 Baleine
+Bambi
 Banque
+Bar
 Barack Obama
 Barbecue
 Bateau
+Batman
 Bernard l'hermite
+Bibliothèque
 Bière
 Blaireau
+Blanche-Neige
 Bois
 Bouée
+Bougie
 Boule et Bill
 Bouteille
 Brad Pitt
+Breaking Bad
+Briquet
+Bronzer
 Brosse à dent
 Buzz l'Éclair
+Calimero
+Caméo
 Caméra
 Canapé
 Canard
 Capitaine
+Captain America
+Carotte
 Carte
+Celine Dion
+Cendrier
+Cendrillon
 Cercle
+Cerveau
 Champs-Élysées
 Charles de Gaulle
+Charlie Chaplin
 Chat
 Che Guevara
 Cheval
@@ -45,50 +73,79 @@ Chewbacca
 Chewing-gum
 Christophe Colomb
 Chucky
+Cible
 Cigarette
 Citron
+Citrouille
 Clown
 Cochon
 Coffre
 Columbo
 Comédie
+Comète
+Coquillage
 Corto Maltese
 Cougar
+Courgette
+Courir
+Couverture
 Cravate
 Culotte
 Cyclisme
 Daenerys Targaryen
 Daft Punk
-Danse
+Danser
+Dany Boon
 Dark Vador
 Dauphin
+David Guetta
 Dent
+Dessiner
 Dionysos
+Disney
+DJ
 Dora l’exploratrice
 Dory
+Drogue
+Dumbo
 DVD
 Écureuil
+Égout
 Elephant
 Elon Musk
 Elton John
+Elvis Presley
 Embrasser
 Eminem
 Emmanuel Macron
+Enceinte
 Enfant
 Enveloppe
 Épée
+Épervier
+Épouvantail
 Eragon
 Escalade
+Escalier
 Escargot
 Espionner
+Essence
+Festival
 Flash McQueen
 Fleur
 Fleuve
+Florence Foresti
+Foie
 Forrest Gump
+Fouet
+Gad Elmaleh
+Game of Thrones
 Gandalf
 George Clooney
 Gérard Depardieu
 Girafe
+Gladiateur
+Grille-pain
 Groot
 Guitare
 Harry Potter
@@ -100,58 +157,89 @@ Hulk
 Indiana Jones
 Iron Man
 Isaac Newton
+Japon
 John Cena
+John F. Kennedy
+Johnny depp
 Joker
 Jon Snow
 Jules César
 Jules Ferry
 Justin Timberlake
 Kev Adams
+Klaxon
+Koh-Lanta
 L'Arc de Triomphe
+La boxe
 La Grande Muraille de Chine
 La Joconde
 La Lettre à Élise
+La planète Terre
 La Roue de la fortune
 La tour Eiffel
+Lady Gaga
+Lantherne
 Las Vegas
 Le Dictateur
 Le Moulin-Rouge
+Le père Noël
+Le Roi Lion
+Le ski
 Leonardo DiCaprio
+Les 101 Dalmatiens
 Les Gardiens de la Galaxie
 Les Grosses Têtes
+Les Lapins crétins
 Les Minions
 Les Quatre Saisons
 Les Simpson
 Les Trois Mousquetaires
+Libellule
 Lion
 Lionel Messi
 Lit
 Livre
+Londres
 Lorenzo
 Louane
 Louis de Funès
 Louis Vuitton
+Loupe
 Loutre
+Luge
 Luigi
 Lumière
 Lune
+Lunettes
+Lutin
+Madonna
 Maître Gims
 Mannequin
+Manteau
 Marathon
+Mariage
 Marie Curie
 Marilyn Monroe
 Mario
 Marion Cotillard
+Mars
 Martin Luther King
 Mary Poppins
+Médecin
 Méduse
+Michael Jackson
 Michel Drucker
+Micro
+Miel
+Milou
+Molécule
 Monkey D. Luffy
 Montagne
 Montgolfière
 Montre
 Mourir
 Mouton
+Musée
 Nagui
 Naître
 Napoléon Bonaparte
@@ -160,29 +248,41 @@ Nemo
 Netflix
 Nirvana
 Obélix
+Omar Sy
 Ordinateur
 Oui Oui
 Ours
 Pablo Picasso
 Panda
 Papillon
+Paris
 Peintre
 Perroquet
 Phoque
+Pikachu
 Ping-pong
 Pingouin
+Pinocchio
 Piscine
 Plage
+Pleurer
 Pompier
 Popeye
 Post-It
 Poubelle
 Puzzle
+Pyramide
 Queen Elizabeth II
 Rafael Nadal
 Rambo
 Rat
+Rihanna
+Robert Oppenheimer
+Robin des Bois
 Robinson Crusoé
+Ronflex
+Rosa Parks
+Sabre
 Scooby-Doo
 Secrétaire
 Shrek
@@ -194,20 +294,33 @@ Stéthoscope
 Steve Jobs
 Surf
 Table
+Taylor Swift
+Télévision
+Tetris
 Thor
+Timbre
+Tintin
 Titanic
 Toad
 Tom Hanks
+Tom Sawyer
+Tomorrowland
 Train
+Traîneau
+Tribunal
+Tricot
 Trombone
 Trou noir
 U2
 Ulysse
+Un juge
+Usine
+Vacances
 Vague
 Valise
 Vélo
-Verre
 Ver de terre
+Verre
 Vin
 Voiture
 Voyage
@@ -215,6 +328,7 @@ Wagon
 WALL-E
 Wapiti
 William Shakespeare
+Winnie l'ourson
 Winston Churchill
 Xylophone
 Yacht
