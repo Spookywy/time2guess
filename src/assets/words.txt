@@ -1,13 +1,17 @@
 Abricot
+Abysse
 Accoucher
 Adele
 Aéroport
 Agneau
 Aiguille
+Ail
+AirPods
 Aladdin
 Albert Einstein
 Alcool
 Allumette
+Amazonie
 Amélie Poulain
 Ampoule
 Ancre
@@ -16,6 +20,7 @@ Appareil photo
 Apple
 Araignée
 Argent
+Ariana Grande
 Arrosoir
 Astérix
 Astronaute
@@ -23,26 +28,33 @@ Atome
 Autruche
 Avion
 Babouin
+Baguette
 Baiser
 Balançoire
 Baleine
 Bambi
 Banque
+Banquise
 Bar
 Barack Obama
 Barbecue
 Bateau
 Batman
+Berlin
 Bernard l'hermite
 Bibliothèque
 Bière
+Big Bang
+Bitcoin
 Blaireau
 Blanche-Neige
 Bois
 Bouée
 Bougie
 Boule et Bill
+Boussole
 Bouteille
+Bowling
 Brad Pitt
 Breaking Bad
 Briquet
@@ -54,7 +66,9 @@ Caméo
 Caméra
 Canapé
 Canard
+Cannabis
 Capitaine
+Capsule
 Captain America
 Carotte
 Carte
@@ -63,11 +77,16 @@ Cendrier
 Cendrillon
 Cercle
 Cerveau
+Chalet
+Champagne
 Champs-Élysées
 Charles de Gaulle
 Charlie Chaplin
 Chat
+Château
+Chaussettes
 Che Guevara
+Cheminée
 Cheval
 Chewbacca
 Chewing-gum
@@ -77,21 +96,30 @@ Cible
 Cigarette
 Citron
 Citrouille
+Clara Morgane
 Clown
+Coca-Cola
+Cocaïne
 Cochon
 Coffre
 Columbo
 Comédie
 Comète
+Commonwealth
 Coquillage
 Corto Maltese
 Cougar
 Courgette
 Courir
+Coussinet
 Couverture
+Cow-boy
 Cravate
+Croissant
+Cube
 Culotte
 Cyclisme
+Cyprien
 Daenerys Targaryen
 Daft Punk
 Danser
@@ -100,26 +128,34 @@ Dark Vador
 Dauphin
 David Guetta
 Dent
+Désinfectant
 Dessiner
 Dionysos
 Disney
 DJ
+Donald Trump
 Dora l’exploratrice
 Dory
 Drogue
+Dua Lipa
 Dumbo
 DVD
 Écureuil
 Égout
 Elephant
+Elfe
 Elon Musk
 Elton John
 Elvis Presley
 Embrasser
+Émile Zola
+Emily Dickinson
 Eminem
 Emmanuel Macron
+Empire State Building
 Enceinte
 Enfant
+Enfer
 Enveloppe
 Épée
 Épervier
@@ -130,14 +166,19 @@ Escalier
 Escargot
 Espionner
 Essence
+Falaise
+Famille
+Far-West
 Festival
 Flash McQueen
 Fleur
 Fleuve
 Florence Foresti
 Foie
+Fontaine
 Forrest Gump
 Fouet
+Fromage
 Gad Elmaleh
 Game of Thrones
 Gandalf
@@ -145,32 +186,45 @@ George Clooney
 Gérard Depardieu
 Girafe
 Gladiateur
+Gland
+Gordon Ramsay
+Gourde
+Gras
 Grille-pain
 Groot
 Guitare
 Harry Potter
+Harvard
 Hélicoptère
 Hercule
+Hercule Poirot
+Heure
 Hibou
 Homer
 Hulk
 Indiana Jones
+Instagram
 Iron Man
 Isaac Newton
 Japon
+Jean Moulin
+Jean Valjean
 John Cena
 John F. Kennedy
 Johnny depp
 Joker
 Jon Snow
+Jonathan Cohen
 Jules César
 Jules Ferry
 Justin Timberlake
+Ketchup
 Kev Adams
 Klaxon
 Koh-Lanta
 L'Arc de Triomphe
 La boxe
+La casa de papel
 La Grande Muraille de Chine
 La Joconde
 La Lettre à Élise
@@ -178,6 +232,8 @@ La planète Terre
 La Roue de la fortune
 La tour Eiffel
 Lady Gaga
+Lancer du javelot
+Langue
 Lantherne
 Las Vegas
 Le Dictateur
@@ -190,6 +246,7 @@ Les 101 Dalmatiens
 Les Gardiens de la Galaxie
 Les Grosses Têtes
 Les Lapins crétins
+Les Minimoys
 Les Minions
 Les Quatre Saisons
 Les Simpson
@@ -204,15 +261,20 @@ Lorenzo
 Louane
 Louis de Funès
 Louis Vuitton
+Loup-garou
 Loupe
 Loutre
+Lucky Luke
+Lucy
 Luge
 Luigi
 Lumière
 Lune
 Lunettes
 Lutin
+Macadam
 Madonna
+Main
 Maître Gims
 Mannequin
 Manteau
@@ -226,77 +288,123 @@ Mars
 Martin Luther King
 Mary Poppins
 Médecin
+Médicament
 Méduse
 Michael Jackson
 Michel Drucker
 Micro
 Miel
 Milou
+Minecraft
 Molécule
 Monkey D. Luffy
 Montagne
 Montgolfière
 Montre
 Mourir
+Moustache
+Moutarde
 Mouton
+Muet
 Musée
+Mutation
+Nager
 Nagui
 Naître
+Nanomètre
 Napoléon Bonaparte
+NASA
+Neige
+Neil Armstrong
 Nelson Mandela
 Nemo
+Nénuphar
 Netflix
 Nirvana
+Noisette
+Nuage
 Obélix
+Odeur
+Oignon
 Omar Sy
+Opium
+Oracle
+Orang-outan
 Ordinateur
 Oui Oui
 Ours
+Ovni
+Pablo Escobar
 Pablo Picasso
 Panda
 Papillon
+Parc d'attraction
 Paris
+Parpaing
 Peintre
 Perroquet
 Phoque
+Pieuvre
 Pikachu
 Ping-pong
 Pingouin
+Pink Floyd
 Pinocchio
 Piscine
+Pizza
 Plage
 Pleurer
 Pompier
 Popeye
 Post-It
+Potion
 Poubelle
+Préservatif
+Prêtre
 Puzzle
 Pyramide
 Queen Elizabeth II
 Rafael Nadal
 Rambo
 Rat
+Résistance
 Rihanna
+Riz
 Robert Oppenheimer
 Robin des Bois
 Robinson Crusoé
+Robot
+Roméo et Juliette
 Ronflex
 Rosa Parks
+Sable
 Sabre
 Scooby-Doo
 Secrétaire
 Shrek
+Snoop Dogg
+Snoopy
 Soldat
 Soleil
+Sorcière
+Sous-marin
 Spider-Man
+Squelette
 Star Wars
 Stéthoscope
 Steve Jobs
+Steven Spielberg
+Supermarché
 Surf
 Table
+Tableau
+Taïwan
 Taylor Swift
 Télévision
+Tequila
 Tetris
+Théâtre
+Thomas Pesquet
 Thor
 Timbre
 Tintin
@@ -311,30 +419,40 @@ Tribunal
 Tricot
 Trombone
 Trou noir
+Tuba
 U2
 Ulysse
+Un empire
 Un juge
 Usine
 Vacances
 Vague
 Valise
+Vampire
 Vélo
 Ver de terre
 Verre
+Vikings
 Vin
 Voiture
 Voyage
 Wagon
+Walkman
 WALL-E
 Wapiti
+WhatsApp
+Wikipedia
 William Shakespeare
 Winnie l'ourson
 Winston Churchill
+Wiz Khalifa
+Woody Woodpecker
 Xylophone
 Yacht
 Yannick Noah
 Yéti
 Yoga
+YouTube
 Zèbre
 Zinédine Zidane
 Zombie
