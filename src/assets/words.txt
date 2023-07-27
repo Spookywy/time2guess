@@ -97,6 +97,7 @@ Cigarette
 Citron
 Citrouille
 Clara Morgane
+Clé
 Clown
 Coca-Cola
 Cocaïne
@@ -142,6 +143,7 @@ Dumbo
 DVD
 Écureuil
 Égout
+Électricité
 Elephant
 Elfe
 Elon Musk
@@ -154,8 +156,10 @@ Eminem
 Emmanuel Macron
 Empire State Building
 Enceinte
+Encyclopédie
 Enfant
 Enfer
+Enquête
 Enveloppe
 Épée
 Épervier
@@ -179,9 +183,11 @@ Fontaine
 Forrest Gump
 Fouet
 Fromage
+Fusée
 Gad Elmaleh
 Game of Thrones
 Gandalf
+Garfield
 George Clooney
 Gérard Depardieu
 Girafe
@@ -236,6 +242,7 @@ Lancer du javelot
 Langue
 Lantherne
 Las Vegas
+Le code Morse
 Le Dictateur
 Le Moulin-Rouge
 Le père Noël
@@ -245,6 +252,7 @@ Leonardo DiCaprio
 Les 101 Dalmatiens
 Les Gardiens de la Galaxie
 Les Grosses Têtes
+Les Huns
 Les Lapins crétins
 Les Minimoys
 Les Minions
@@ -261,6 +269,7 @@ Lorenzo
 Louane
 Louis de Funès
 Louis Vuitton
+Louis XVI
 Loup-garou
 Loupe
 Loutre
@@ -301,6 +310,7 @@ Monkey D. Luffy
 Montagne
 Montgolfière
 Montre
+Morphine
 Mourir
 Moustache
 Moutarde
@@ -322,6 +332,7 @@ Nénuphar
 Netflix
 Nirvana
 Noisette
+Nostradamus
 Nuage
 Obélix
 Odeur
@@ -343,6 +354,7 @@ Paris
 Parpaing
 Peintre
 Perroquet
+Pharaon
 Phoque
 Pieuvre
 Pikachu
@@ -361,6 +373,7 @@ Potion
 Poubelle
 Préservatif
 Prêtre
+Prophète
 Puzzle
 Pyramide
 Queen Elizabeth II
@@ -381,6 +394,7 @@ Sable
 Sabre
 Scooby-Doo
 Secrétaire
+Sherlock Holmes
 Shrek
 Snoop Dogg
 Snoopy
@@ -394,6 +408,7 @@ Star Wars
 Stéthoscope
 Steve Jobs
 Steven Spielberg
+Sucette
 Supermarché
 Surf
 Table
