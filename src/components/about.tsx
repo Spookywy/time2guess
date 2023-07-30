@@ -2,6 +2,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const VERSION = "1.1.0";
+
 export default function About() {
   return (
     <div className="text-center text-jet">
@@ -15,6 +17,7 @@ export default function About() {
           />
           by <b>Valentin Menoret</b>
         </p>
+        <p className="mb-10">Version {VERSION}</p>
         <a href="https://github.com/Spookywy/time2guess">
           <FontAwesomeIcon className="mr-2" icon={faGithub} />
           Source code
