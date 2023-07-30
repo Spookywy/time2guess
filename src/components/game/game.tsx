@@ -25,6 +25,11 @@ export function Game({ words }: GameProps) {
 
   const [wordsToGuess, setWordsToGuess] = useState<string[]>(randomWords);
 
+  const [
+    numberOfWordsToGuessAtTheBeginningOfTheRound,
+    setNumberOfWordsToGuessAtTheBeginningOfTheRound,
+  ] = useState<number>(wordsToGuess.length);
+
   const [currentWordIndex, setCurrentWordIndex] = useState(
     wordsToGuess.length - 1
   );
@@ -52,8 +57,8 @@ export function Game({ words }: GameProps) {
   }
 
   function changeTeamPlaying() {
-    setRoundState(RoundState.break);
     setTeamPlaying((prevTeam) => (prevTeam === 1 ? 2 : 1));
+    setRoundState(RoundState.break);
   }
 
   function changeRound() {
@@ -71,6 +76,7 @@ export function Game({ words }: GameProps) {
       // We shuffle words at the beginning of each round
       const newRandomWords = shuffleArray(randomWords);
       setCurrentWordIndex(newRandomWords.length - 1);
+      setNumberOfWordsToGuessAtTheBeginningOfTheRound(newRandomWords.length);
       return newRandomWords;
     });
 
@@ -130,6 +136,12 @@ export function Game({ words }: GameProps) {
             teamPlaying={teamPlaying}
             wordsToGuess={wordsToGuess}
             setRoundState={setRoundState}
+            setNumberOfWordsToGuessAtTheBeginningOfTheRound={
+              setNumberOfWordsToGuessAtTheBeginningOfTheRound
+            }
+            numberOfWordsToGuessAtTheBeginningOfTheRound={
+              numberOfWordsToGuessAtTheBeginningOfTheRound
+            }
           />
         );
       case RoundState.results:

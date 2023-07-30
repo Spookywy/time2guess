@@ -28,10 +28,19 @@ export default function RoundPlaying({
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft((prevTimeLeft) => prevTimeLeft - 1);
+      setTimeLeft((prevTimeLeft) => {
+        const nextTimeLeft = prevTimeLeft - 1;
+        if ("vibrate" in navigator && nextTimeLeft <= 5 && nextTimeLeft > 0) {
+          navigator.vibrate(100);
+        }
+        return nextTimeLeft;
+      });
     }, 1000);
 
-    return () => clearInterval(timer);
+    return () => {
+      navigator.vibrate([1000]);
+      clearInterval(timer);
+    };
   }, []);
 
   useEffect(() => {
