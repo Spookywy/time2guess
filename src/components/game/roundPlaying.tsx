@@ -38,7 +38,7 @@ export default function RoundPlaying({
     }, 1000);
 
     return () => {
-      navigator.vibrate([1000]);
+      if ("vibrate" in navigator) navigator.vibrate([1000]);
       clearInterval(timer);
     };
   }, []);
