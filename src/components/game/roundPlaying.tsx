@@ -45,9 +45,11 @@ export default function RoundPlaying({
 
   useEffect(() => {
     if (timeLeft <= 0) {
+      updateCurrentWordIndex(wordsToGuess.length);
       changeTeamPlaying();
     }
-  }, [timeLeft, changeTeamPlaying]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeLeft]);
 
   function updateCurrentWordIndex(wordsToGuessLength: number) {
     if (currentWordIndex <= 0) {
@@ -59,9 +61,11 @@ export default function RoundPlaying({
 
   useEffect(() => {
     if (numberOfWordsViewed === initalNumberOfWordsToGuess) {
+      updateCurrentWordIndex(wordsToGuess.length);
       changeTeamPlaying();
     }
-  }, [numberOfWordsViewed, initalNumberOfWordsToGuess, changeTeamPlaying]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [numberOfWordsViewed]);
 
   function handleWordGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
