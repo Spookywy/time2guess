@@ -7,12 +7,14 @@ type RoundRulesProps = {
   round: RoundNumber;
   teamPlaying: 1 | 2;
   setRoundState: (roundState: RoundState) => void;
+  roundDuration: number;
 };
 
 export default function RoundRules({
   round,
   teamPlaying,
   setRoundState,
+  roundDuration,
 }: RoundRulesProps) {
   const subTitles = new Map<number, string>([
     [1, "Decrivez avec des mots"],
@@ -23,15 +25,15 @@ export default function RoundRules({
   const playerRules = new Map<number, string>([
     [
       1,
-      "Vous disposez de <b>30 secondes</b> pour faire deviner le plus de mots possibles à votre équipe en utilisant <b>autant de mots que vous le souhaitez.</b>",
+      `Vous disposez de <b>${roundDuration} secondes</b> pour faire deviner le plus de mots possibles à votre équipe en utilisant <b>autant de mots que vous le souhaitez.</b>`,
     ],
     [
       2,
-      "Vous disposez de <b>30 secondes</b> pour faire deviner le plus de mots possibles à votre équipe en utilisant <b>un seul mot.</b>",
+      `Vous disposez de <b>${roundDuration} secondes</b> pour faire deviner le plus de mots possibles à votre équipe en utilisant <b>un seul mot.</b>`,
     ],
     [
       3,
-      "Vous disposez de <b>30 secondes</b> pour faire deviner le plus de mots possibles à votre équipe en <b>mimant.</b>",
+      `Vous disposez de <b>${roundDuration} secondes</b> pour faire deviner le plus de mots possibles à votre équipe en <b>mimant.</b>`,
     ],
   ]);
 

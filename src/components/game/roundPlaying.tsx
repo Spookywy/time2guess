@@ -10,6 +10,7 @@ type RoundPlayingProps = {
   changeTeamPlaying: () => void;
   addGuessedWordToTeam: (word: string, team: 1 | 2) => void;
   teamPlaying: 1 | 2;
+  roundDuration: number;
 };
 
 export default function RoundPlaying({
@@ -20,8 +21,9 @@ export default function RoundPlaying({
   changeTeamPlaying,
   addGuessedWordToTeam,
   teamPlaying,
+  roundDuration,
 }: RoundPlayingProps) {
-  const [timeLeft, setTimeLeft] = useState(30);
+  const [timeLeft, setTimeLeft] = useState(roundDuration);
   const [timeIsAnimated, setTimeIsAnimated] = useState(false);
   const [initalNumberOfWordsToGuess] = useState(wordsToGuess.length);
   const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);

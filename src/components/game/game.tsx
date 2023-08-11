@@ -8,6 +8,7 @@ import RoundResults from "./roundResults";
 import RoundRules from "./roundRules";
 
 const NUMBER_OF_WORDS_TO_PICK = 40;
+const ROUND_DURATION = 45;
 
 type GameProps = {
   words: string[];
@@ -47,6 +48,8 @@ export function Game({ words }: GameProps) {
 
   const [wordsGuessedByTeam1, setWordsGuessedByTeam1] = useState<string[]>([]);
   const [wordsGuessedByTeam2, setWordsGuessedByTeam2] = useState<string[]>([]);
+
+  const roundDuration = ROUND_DURATION;
 
   function addGuessedWordToTeam(word: string, team: 1 | 2) {
     if (team === 1) {
@@ -115,6 +118,7 @@ export function Game({ words }: GameProps) {
             round={roundNumber}
             teamPlaying={teamPlaying}
             setRoundState={setRoundState}
+            roundDuration={roundDuration}
           />
         );
       case RoundState.playing:
@@ -127,6 +131,7 @@ export function Game({ words }: GameProps) {
             changeTeamPlaying={changeTeamPlaying}
             addGuessedWordToTeam={addGuessedWordToTeam}
             teamPlaying={teamPlaying}
+            roundDuration={roundDuration}
           />
         );
       case RoundState.break:
