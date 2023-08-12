@@ -1,13 +1,20 @@
-import { faGamepad, faStopwatch } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGamepad,
+  faGear,
+  faStopwatch,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function HomePage() {
   return (
     <>
-      <h1 className="text-center text-6xl font-extrabold text-jet">
+      <h1 className="relative mt-11 text-center text-6xl font-extrabold text-jet">
         Time 2 Guess
       </h1>
+      <button className="absolute right-5 text-5xl text-jet">
+        <FontAwesomeIcon icon={faGear} />
+      </button>
       <div className="flex flex-grow flex-col items-center justify-center">
         <FontAwesomeIcon
           icon={faStopwatch}

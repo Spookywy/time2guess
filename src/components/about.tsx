@@ -7,7 +7,7 @@ const VERSION = "1.2.1";
 export default function About() {
   return (
     <div className="text-center text-jet">
-      <h1 className="text-center text-6xl font-extrabold">À propos</h1>
+      <h1 className="text-center text-5xl font-extrabold">À propos</h1>
       <div className="mt-16 text-2xl">
         <p className="mb-10">
           Made with
