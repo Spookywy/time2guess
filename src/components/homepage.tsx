@@ -5,14 +5,29 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { useState } from "react";
+import SettingsModal from "./modals/settingsModal";
 
 export default function HomePage() {
+  const [showSettingsModal, setShowSettingsModal] = useState(false);
+
+  function handleCancelExitGame() {
+    setShowSettingsModal(false);
+  }
+
+  function handleSettingsButtonClick() {
+    setShowSettingsModal(true);
+  }
+
   return (
     <>
       <h1 className="relative mt-11 text-center text-6xl font-extrabold text-jet">
         Time 2 Guess
       </h1>
-      <button className="absolute right-5 text-5xl text-jet">
+      <button
+        className="absolute right-5 text-5xl text-jet"
+        onClick={handleSettingsButtonClick}
+      >
         <FontAwesomeIcon icon={faGear} />
       </button>
       <div className="flex flex-grow flex-col items-center justify-center">
@@ -27,6 +42,7 @@ export default function HomePage() {
           Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
         </Link>
       </div>
+      {showSettingsModal && <SettingsModal onCancel={handleCancelExitGame} />}
     </>
   );
 }
