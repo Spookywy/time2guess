@@ -4,7 +4,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import ExitGameModal from "./exitGameModal";
+import ExitGameModal from "./modals/exitGameModal";
 
 export default function TopBar() {
   const router = useRouter();
