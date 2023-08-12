@@ -11,7 +11,7 @@ import SettingsModal from "./modals/settingsModal";
 export default function HomePage() {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
 
-  function handleCancelExitGame() {
+  function handleCloseSettingsModal() {
     setShowSettingsModal(false);
   }
 
@@ -25,7 +25,7 @@ export default function HomePage() {
         Time 2 Guess
       </h1>
       <button
-        className="absolute right-5 text-5xl text-jet"
+        className="absolute right-5 text-4xl text-jet md:text-5xl"
         onClick={handleSettingsButtonClick}
       >
         <FontAwesomeIcon icon={faGear} />
@@ -42,7 +42,9 @@ export default function HomePage() {
           Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
         </Link>
       </div>
-      {showSettingsModal && <SettingsModal onCancel={handleCancelExitGame} />}
+      {showSettingsModal && (
+        <SettingsModal onClose={handleCloseSettingsModal} />
+      )}
     </>
   );
 }
