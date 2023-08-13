@@ -17,6 +17,12 @@ export function shuffleArray(array: string[]) {
 }
 
 export function useGetSettingsThroughLocalStorage() {
+  if (typeof window === "undefined") {
+    return {
+      nbWords: DEFAULT_NUMBER_OF_WORDS_TO_PICK,
+      roundDuration: DEFAULT_ROUND_DURATION,
+    };
+  }
   const nbWordsStored = localStorage.getItem("nbWords");
   const nbWords = nbWordsStored
     ? parseInt(nbWordsStored)

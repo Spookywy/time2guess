@@ -1,4 +1,3 @@
-import { useGetSettingsThroughLocalStorage } from "@/utils/utils";
 import {
   faGamepad,
   faGear,
@@ -6,31 +5,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SettingsModal from "./modals/settingsModal";
 
 export default function HomePage() {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
-
-  const { nbWords: nbWordsStored, roundDuration: roundDurationStored } =
-    useGetSettingsThroughLocalStorage();
-  const [nbWords, setNbWords] = useState(nbWordsStored);
-  const [roundDuration, setRoundDuration] = useState(roundDurationStored);
-
-  useEffect(() => {
-    localStorage.setItem("nbWords", nbWords.toString());
-    localStorage.setItem("roundDuration", roundDuration.toString());
-  }, [nbWords, roundDuration]);
-
-  function handleNbWordsChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setNbWords(parseInt(event.target.value));
-  }
-
-  function handleRoundDurationChange(
-    event: React.ChangeEvent<HTMLInputElement>
-  ) {
-    setRoundDuration(parseInt(event.target.value));
-  }
 
   function handleCloseSettingsModal() {
     setShowSettingsModal(false);
@@ -64,13 +43,7 @@ export default function HomePage() {
         </Link>
       </div>
       {showSettingsModal && (
-        <SettingsModal
-          onClose={handleCloseSettingsModal}
-          nbWords={nbWords}
-          roundDuration={roundDuration}
-          handleNbWordsChange={handleNbWordsChange}
-          handleRoundDurationChange={handleRoundDurationChange}
-        />
+        <SettingsModal onClose={handleCloseSettingsModal} />
       )}
     </>
   );
