@@ -42,13 +42,16 @@ Bateau
 Batman
 Berlin
 Bernard l'hermite
+Beyoncé
 Bibliothèque
 Bière
 Big Bang
+Bill Gates
 Bitcoin
 Blaireau
 Blanche-Neige
 Bois
+Bouddha
 Bouée
 Bougie
 Boule et Bill
@@ -116,6 +119,7 @@ Coussinet
 Couverture
 Cow-boy
 Cravate
+Croisière
 Croissant
 Cube
 Culotte
@@ -128,6 +132,7 @@ Dany Boon
 Dark Vador
 Dauphin
 David Guetta
+Décathlon
 Dent
 Désinfectant
 Dessiner
@@ -142,6 +147,7 @@ Dua Lipa
 Dumbo
 DVD
 Écureuil
+Effrayant
 Égout
 Électricité
 Elephant
@@ -170,10 +176,12 @@ Escalier
 Escargot
 Espionner
 Essence
+Étoile
 Falaise
 Famille
 Far-West
 Festival
+Flamand rose
 Flash McQueen
 Fleur
 Fleuve
@@ -182,9 +190,11 @@ Foie
 Fontaine
 Forrest Gump
 Fouet
+Friends (Série TV)
 Fromage
 Fusée
 Gad Elmaleh
+Galaxie
 Game of Thrones
 Gandalf
 Garfield
@@ -215,6 +225,7 @@ Isaac Newton
 Japon
 Jean Moulin
 Jean Valjean
+Jesus Christ
 John Cena
 John F. Kennedy
 Johnny depp
@@ -246,6 +257,7 @@ Le code Morse
 Le Dictateur
 Le Moulin-Rouge
 Le père Noël
+Le Puy du Fou
 Le Roi Lion
 Le ski
 Leonardo DiCaprio
@@ -253,6 +265,7 @@ Les 101 Dalmatiens
 Les Gardiens de la Galaxie
 Les Grosses Têtes
 Les Huns
+Les Jeux Olympiques
 Les Lapins crétins
 Les Minimoys
 Les Minions
@@ -264,6 +277,7 @@ Lion
 Lionel Messi
 Lit
 Livre
+Lobby
 Londres
 Lorenzo
 Louane
@@ -285,6 +299,7 @@ Macadam
 Madonna
 Main
 Maître Gims
+Maître Yoda
 Mannequin
 Manteau
 Marathon
@@ -293,6 +308,7 @@ Marie Curie
 Marilyn Monroe
 Mario
 Marion Cotillard
+Marionnette
 Mars
 Martin Luther King
 Mary Poppins
@@ -305,6 +321,7 @@ Micro
 Miel
 Milou
 Minecraft
+Miss France
 Molécule
 Monkey D. Luffy
 Montagne
@@ -329,10 +346,12 @@ Neil Armstrong
 Nelson Mandela
 Nemo
 Nénuphar
+Nespresso
 Netflix
 Nirvana
 Noisette
 Nostradamus
+Noyau
 Nuage
 Obélix
 Odeur
@@ -345,9 +364,12 @@ Ordinateur
 Oui Oui
 Ours
 Ovni
+Ovule
 Pablo Escobar
 Pablo Picasso
+Pain au chocolat
 Panda
+Panthéon
 Papillon
 Parc d'attraction
 Paris
@@ -402,7 +424,9 @@ Soldat
 Soleil
 Sorcière
 Sous-marin
+Spermatozoïde
 Spider-Man
+Spotify
 Squelette
 Star Wars
 Stéthoscope
@@ -450,6 +474,7 @@ Verre
 Vikings
 Vin
 Voiture
+Vomit
 Voyage
 Wagon
 Walkman
