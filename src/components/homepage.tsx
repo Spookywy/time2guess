@@ -1,4 +1,8 @@
 import {
+  DEFAULT_NUMBER_OF_WORDS_TO_PICK,
+  DEFAULT_ROUND_DURATION,
+} from "@/utils/constants";
+import {
   faGamepad,
   faGear,
   faStopwatch,
@@ -10,6 +14,18 @@ import SettingsModal from "./modals/settingsModal";
 
 export default function HomePage() {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [nbWords, setNbWords] = useState(DEFAULT_NUMBER_OF_WORDS_TO_PICK);
+  const [roundDuration, setRoundDuration] = useState(DEFAULT_ROUND_DURATION);
+
+  function handleNbWordsChange(event: React.ChangeEvent<HTMLInputElement>) {
+    setNbWords(parseInt(event.target.value));
+  }
+
+  function handleRoundDurationChange(
+    event: React.ChangeEvent<HTMLInputElement>
+  ) {
+    setRoundDuration(parseInt(event.target.value));
+  }
 
   function handleCloseSettingsModal() {
     setShowSettingsModal(false);
@@ -36,14 +52,20 @@ export default function HomePage() {
           className="animate-stretch-shake text-9xl text-dark-orange"
         />
         <Link
-          href="create-teams"
+          href={`create-teams?nbWords=${nbWords}&roundDuration=${roundDuration}`}
           className="mt-16 flex items-center rounded-xl border-4 border-jet bg-jet p-5 text-xl font-bold text-light-orange hover:bg-light-orange hover:text-jet"
         >
           Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
         </Link>
       </div>
       {showSettingsModal && (
-        <SettingsModal onClose={handleCloseSettingsModal} />
+        <SettingsModal
+          onClose={handleCloseSettingsModal}
+          nbWords={nbWords}
+          roundDuration={roundDuration}
+          handleNbWordsChange={handleNbWordsChange}
+          handleRoundDurationChange={handleRoundDurationChange}
+        />
       )}
     </>
   );

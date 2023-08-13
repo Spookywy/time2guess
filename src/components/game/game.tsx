@@ -1,22 +1,36 @@
 "use client";
 import { RoundNumber, RoundState, TeamResult } from "@/types/common";
+import {
+  DEFAULT_NUMBER_OF_WORDS_TO_PICK,
+  DEFAULT_ROUND_DURATION,
+} from "@/utils/constants";
 import shuffleArray from "@/utils/utils";
+import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import RoundBreak from "./roundBreak";
 import RoundPlaying from "./roundPlaying";
 import RoundResults from "./roundResults";
 import RoundRules from "./roundRules";
 
-const NUMBER_OF_WORDS_TO_PICK = 40;
-const ROUND_DURATION = 45;
-
 type GameProps = {
   words: string[];
 };
 
 export function Game({ words }: GameProps) {
+  const searchParams = useSearchParams();
+
+  const nbWordsParams = searchParams.get("nbWords");
+  const nbWords = nbWordsParams
+    ? parseInt(nbWordsParams)
+    : DEFAULT_NUMBER_OF_WORDS_TO_PICK;
+
+  const roundDurationParams = searchParams.get("roundDuration");
+  const roundDuration = roundDurationParams
+    ? parseInt(roundDurationParams)
+    : DEFAULT_ROUND_DURATION;
+
   const shuffledWords = shuffleArray(words);
-  const randomSelectedWords = shuffledWords.slice(0, NUMBER_OF_WORDS_TO_PICK);
+  const randomSelectedWords = shuffledWords.slice(0, nbWords);
 
   const [randomWords] = useState<string[]>(randomSelectedWords);
 
@@ -48,8 +62,6 @@ export function Game({ words }: GameProps) {
 
   const [wordsGuessedByTeam1, setWordsGuessedByTeam1] = useState<string[]>([]);
   const [wordsGuessedByTeam2, setWordsGuessedByTeam2] = useState<string[]>([]);
-
-  const roundDuration = ROUND_DURATION;
 
   function addGuessedWordToTeam(word: string, team: 1 | 2) {
     if (team === 1) {

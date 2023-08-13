@@ -1,8 +1,13 @@
-import { useState } from "react";
 import Modal from "./modal";
 
 type SettingsModalProps = {
   onClose: () => void;
+  nbWords: number;
+  roundDuration: number;
+  handleNbWordsChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  handleRoundDurationChange: (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => void;
 };
 
 const MINIMUM_NB_WORDS = 20;
@@ -11,20 +16,13 @@ const MAXIMUM_NB_WORDS = 50;
 const MINIMUM_ROUND_DURATION = 20;
 const MAXIMUM_ROUND_DURATION = 120;
 
-export default function SettingsModal({ onClose }: SettingsModalProps) {
-  const [nbWords, setNbWords] = useState(20);
-  const [roundDuration, setRoundDuration] = useState(20);
-
-  function handleNbWordsChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setNbWords(parseInt(event.target.value));
-  }
-
-  function handleRoundDurationChange(
-    event: React.ChangeEvent<HTMLInputElement>
-  ) {
-    setRoundDuration(parseInt(event.target.value));
-  }
-
+export default function SettingsModal({
+  onClose,
+  nbWords,
+  roundDuration,
+  handleNbWordsChange,
+  handleRoundDurationChange,
+}: SettingsModalProps) {
   return (
     <Modal className="w-80">
       <h1 className="mb-4 text-center text-3xl font-bold text-dark-orange">
