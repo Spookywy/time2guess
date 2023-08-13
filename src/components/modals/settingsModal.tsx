@@ -56,7 +56,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
         <p>{nbWords} mots</p>
       </div>
       <div>
-        <h2 className="text-2xl font-bold">Temps par round</h2>
+        <h2 className="text-2xl font-bold">Temps par manche</h2>
         <input
           className="w-full"
           type="range"
