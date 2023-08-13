@@ -20,13 +20,13 @@ export default function RoundResults({
 }: RoundResultsProps) {
   const router = useRouter();
 
-  // Disable the play button for 1 second to prevent the user from clicking it accidentally
+  // Disable the play button for 3 seconds to prevent the user from clicking it accidentally
   const [playButtonIsDisabled, setPlayButtonIsDisabled] = useState(true);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setPlayButtonIsDisabled(false);
-    }, 1000);
+    }, 3000);
 
     return () => {
       clearTimeout(timeoutId);

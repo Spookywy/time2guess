@@ -1,11 +1,6 @@
 "use client";
 import { RoundNumber, RoundState, TeamResult } from "@/types/common";
-import {
-  DEFAULT_NUMBER_OF_WORDS_TO_PICK,
-  DEFAULT_ROUND_DURATION,
-} from "@/utils/constants";
-import shuffleArray from "@/utils/utils";
-import { useSearchParams } from "next/navigation";
+import { shuffleArray, useGetSettingsThroughLocalStorage } from "@/utils/utils";
 import { useEffect, useState } from "react";
 import RoundBreak from "./roundBreak";
 import RoundPlaying from "./roundPlaying";
@@ -17,17 +12,7 @@ type GameProps = {
 };
 
 export function Game({ words }: GameProps) {
-  const searchParams = useSearchParams();
-
-  const nbWordsParams = searchParams.get("nbWords");
-  const nbWords = nbWordsParams
-    ? parseInt(nbWordsParams)
-    : DEFAULT_NUMBER_OF_WORDS_TO_PICK;
-
-  const roundDurationParams = searchParams.get("roundDuration");
-  const roundDuration = roundDurationParams
-    ? parseInt(roundDurationParams)
-    : DEFAULT_ROUND_DURATION;
+  const { nbWords, roundDuration } = useGetSettingsThroughLocalStorage();
 
   const shuffledWords = shuffleArray(words);
   const randomSelectedWords = shuffledWords.slice(0, nbWords);

@@ -1,5 +1,10 @@
+import {
+  DEFAULT_NUMBER_OF_WORDS_TO_PICK,
+  DEFAULT_ROUND_DURATION,
+} from "./constants";
+
 // Fisher–Yates shuffle
-export default function shuffleArray(array: string[]) {
+export function shuffleArray(array: string[]) {
   const shuffledArray = [...array];
 
   for (let i = array.length - 1; i > 0; i--) {
@@ -9,4 +14,21 @@ export default function shuffleArray(array: string[]) {
   }
 
   return shuffledArray;
+}
+
+export function useGetSettingsThroughLocalStorage() {
+  const nbWordsStored = localStorage.getItem("nbWords");
+  const nbWords = nbWordsStored
+    ? parseInt(nbWordsStored)
+    : DEFAULT_NUMBER_OF_WORDS_TO_PICK;
+
+  const roundDurationStored = localStorage.getItem("roundDuration");
+  const roundDuration = roundDurationStored
+    ? parseInt(roundDurationStored)
+    : DEFAULT_ROUND_DURATION;
+
+  return {
+    nbWords,
+    roundDuration,
+  };
 }
