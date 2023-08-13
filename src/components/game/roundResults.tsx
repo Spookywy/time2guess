@@ -2,6 +2,7 @@ import { RoundNumber, TeamResult } from "@/types/common";
 import { faRankingStar, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import SecondaryButton from "../buttons/secondaryButton";
 
 type RoundResultsProps = {
@@ -18,6 +19,19 @@ export default function RoundResults({
   changeRound,
 }: RoundResultsProps) {
   const router = useRouter();
+
+  // Disable the play button for 1 second to prevent the user from clicking it accidentally
+  const [playButtonIsDisabled, setPlayButtonIsDisabled] = useState(true);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setPlayButtonIsDisabled(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   const team1TotalScore =
     team1Score.round1 + team1Score.round2 + team1Score.round3;
@@ -67,11 +81,16 @@ export default function RoundResults({
       </div>
       <div className="mt-auto py-4 md:py-8">
         {round !== 3 ? (
-          <SecondaryButton label="Manche suivante" onClick={changeRound} />
+          <SecondaryButton
+            label="Manche suivante"
+            onClick={changeRound}
+            disabled={playButtonIsDisabled}
+          />
         ) : (
           <SecondaryButton
             label="Nouvelle partie"
             onClick={() => router.push("/")}
+            disabled={playButtonIsDisabled}
           />
         )}
       </div>
