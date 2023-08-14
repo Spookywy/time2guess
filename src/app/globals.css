@@ -35,4 +35,11 @@
 
 :root {
     --header-height: 65px;
+    --color-light-orange: #F8D7B0;
+    --color-dark-orange: #DE541E;
+    --color-jet: #2D2D2A;
+}
+
+input[type="range"] {
+    accent-color: var(--color-dark-orange);
 }

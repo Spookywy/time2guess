@@ -28,9 +28,14 @@ export default function RoundPlaying({
   const [initalNumberOfWordsToGuess] = useState(wordsToGuess.length);
   const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);
 
+  const timeIsOver = timeLeft === 0;
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTimeLeft) => {
+        // Prevent the timer from going below 0
+        if (timeIsOver) return prevTimeLeft;
+
         const nextTimeLeft = prevTimeLeft - 1;
         if ("vibrate" in navigator && nextTimeLeft <= 5 && nextTimeLeft > 0) {
           navigator.vibrate(100);
@@ -40,13 +45,13 @@ export default function RoundPlaying({
     }, 1000);
 
     return () => {
-      if ("vibrate" in navigator) navigator.vibrate([1000]);
+      if ("vibrate" in navigator && timeIsOver) navigator.vibrate([1000]);
       clearInterval(timer);
     };
-  }, []);
+  }, [timeIsOver]);
 
   useEffect(() => {
-    if (timeLeft <= 0) {
+    if (timeIsOver) {
       updateCurrentWordIndex(wordsToGuess.length);
       changeTeamPlaying();
     }
