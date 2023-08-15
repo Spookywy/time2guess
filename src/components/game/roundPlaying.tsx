@@ -28,18 +28,22 @@ export default function RoundPlaying({
   const [initalNumberOfWordsToGuess] = useState(wordsToGuess.length);
   const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);
 
-  const timeIsOver = timeLeft === 0;
+  const timeIsOver = timeLeft <= 0;
+
+  function endRound() {
+    updateCurrentWordIndex(wordsToGuess.length);
+    changeTeamPlaying();
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTimeLeft) => {
-        // Prevent the timer from going below 0
-        if (timeIsOver) return prevTimeLeft;
-
         const nextTimeLeft = prevTimeLeft - 1;
+
         if ("vibrate" in navigator && nextTimeLeft <= 5 && nextTimeLeft > 0) {
           navigator.vibrate(100);
         }
+
         return nextTimeLeft;
       });
     }, 1000);
@@ -52,8 +56,7 @@ export default function RoundPlaying({
 
   useEffect(() => {
     if (timeIsOver) {
-      updateCurrentWordIndex(wordsToGuess.length);
-      changeTeamPlaying();
+      endRound();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft]);
