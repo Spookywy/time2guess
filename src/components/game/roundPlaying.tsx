@@ -93,7 +93,15 @@ export default function RoundPlaying({
     updateCurrentWordIndex(wordsToGuess.length);
     setTimeIsAnimated(true);
     setTimeout(() => setTimeIsAnimated(false), 100);
-    setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
+    setTimeLeft((prevTimeLeft) => {
+      const nextTimeLeft = prevTimeLeft - 5;
+
+      if (nextTimeLeft <= 0) {
+        endRound();
+        return prevTimeLeft;
+      }
+      return nextTimeLeft;
+    });
   }
 
   return (
