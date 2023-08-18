@@ -4,6 +4,7 @@ import {
   faStopwatch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import SettingsModal from "./modals/settingsModal";
@@ -24,12 +25,31 @@ export default function HomePage() {
       <h1 className="relative mt-11 text-center text-6xl font-extrabold text-jet">
         Time 2 Guess
       </h1>
-      <button
-        className="absolute right-5 text-4xl text-jet md:text-5xl"
-        onClick={handleSettingsButtonClick}
-      >
-        <FontAwesomeIcon icon={faGear} />
-      </button>
+      <div className="absolute right-5 flex content-start items-start">
+        <div className="invisible flex flex-col items-end lg:visible">
+          <Image
+            src="/dark-orange-arrow.png"
+            alt="an arrow"
+            width="180"
+            height="180"
+            className="rotate-[-20deg]"
+          />
+          <p className="font-fantasy rotate-[20deg] text-center text-xl text-paynes-grey">
+            Tu veux changer le nombre de
+            <br />
+            mots ou le temps par manche ?
+            <br />
+            <br />
+            Pas de problème, c&apos;est toi le chef !
+          </p>
+        </div>
+        <button
+          className="text-4xl text-jet md:text-5xl"
+          onClick={handleSettingsButtonClick}
+        >
+          <FontAwesomeIcon icon={faGear} />
+        </button>
+      </div>
       <div className="flex flex-grow flex-col items-center justify-center">
         <FontAwesomeIcon
           icon={faStopwatch}

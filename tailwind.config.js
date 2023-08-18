@@ -16,6 +16,7 @@ module.exports = {
         'light-orange': 'var(--color-light-orange)',
         'dark-orange': 'var(--color-dark-orange)',
         'jet': 'var(--color-jet)',
+        'paynes-grey': 'var(--color-paynes-grey)'
       },
     },
   },

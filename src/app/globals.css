@@ -33,11 +33,16 @@
     transform: translate(-50%);
 }
 
+.font-fantasy {
+    font-family: fantasy;
+}
+
 :root {
     --header-height: 65px;
     --color-light-orange: #F8D7B0;
     --color-dark-orange: #DE541E;
     --color-jet: #2D2D2A;
+    --color-paynes-grey: #59656F;
 }
 
 input[type="range"] {
