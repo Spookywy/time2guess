@@ -10,18 +10,24 @@ AirPods
 Aladdin
 Albert Einstein
 Alcool
+Alien
 Allumette
+Alvin et les Chipmunks
 Amazonie
 Amélie Poulain
 Ampoule
 Ancre
 Ange
+Anthropologiste
 Appareil photo
 Apple
 Araignée
+Arbre
+Arc-en-ciel
 Argent
 Ariana Grande
 Arrosoir
+Art
 Astérix
 Astronaute
 Atome
@@ -47,9 +53,12 @@ Bibliothèque
 Bière
 Big Bang
 Bill Gates
+Bisounours
 Bitcoin
 Blaireau
 Blanche-Neige
+Bob l'éponge
+Bob Marley
 Bois
 Bouddha
 Bouée
@@ -63,6 +72,7 @@ Breaking Bad
 Briquet
 Bronzer
 Brosse à dent
+Bugs Bunny
 Buzz l'Éclair
 Calimero
 Caméo
@@ -81,8 +91,10 @@ Cendrillon
 Cercle
 Cerveau
 Chalet
+Chaleur
 Champagne
 Champs-Élysées
+Charles Darwin
 Charles de Gaulle
 Charlie Chaplin
 Chat
@@ -93,23 +105,30 @@ Cheminée
 Cheval
 Chewbacca
 Chewing-gum
+Chien
 Christophe Colomb
 Chucky
+Chute
 Cible
+Ciel
 Cigarette
+Cinéma
 Citron
 Citrouille
 Clara Morgane
 Clé
+Cléopâtre
 Clown
 Coca-Cola
 Cocaïne
 Cochon
+Coco Chanel
 Coffre
 Columbo
 Comédie
 Comète
 Commonwealth
+Copilote
 Coquillage
 Corto Maltese
 Cougar
@@ -131,6 +150,7 @@ Danser
 Dany Boon
 Dark Vador
 Dauphin
+David Bowie
 David Guetta
 Décathlon
 Dent
@@ -139,6 +159,7 @@ Dessiner
 Dionysos
 Disney
 DJ
+Donald Duck
 Donald Trump
 Dora l’exploratrice
 Dory
@@ -146,7 +167,9 @@ Drogue
 Dua Lipa
 Dumbo
 DVD
+Échec
 Écureuil
+Ed Sheeran
 Effrayant
 Égout
 Électricité
@@ -169,6 +192,7 @@ Enquête
 Enveloppe
 Épée
 Épervier
+Épice
 Épouvantail
 Eragon
 Escalade
@@ -179,8 +203,11 @@ Essence
 Étoile
 Falaise
 Famille
+Fantôme
 Far-West
+Fée
 Festival
+Fitness
 Flamand rose
 Flash McQueen
 Fleur
@@ -188,17 +215,22 @@ Fleuve
 Florence Foresti
 Foie
 Fontaine
+Forêt
 Forrest Gump
 Fouet
+Freddie Mercury
 Friends (Série TV)
+Frites
 Fromage
 Fusée
 Gad Elmaleh
 Galaxie
 Game of Thrones
 Gandalf
+Gandhi
 Garfield
 George Clooney
+George Washington
 Gérard Depardieu
 Girafe
 Gladiateur
@@ -209,6 +241,7 @@ Gras
 Grille-pain
 Groot
 Guitare
+Hamburger
 Harry Potter
 Harvard
 Hélicoptère
@@ -217,14 +250,19 @@ Hercule Poirot
 Heure
 Hibou
 Homer
+Hôtel
 Hulk
+Île
 Indiana Jones
 Instagram
+Internet
 Iron Man
 Isaac Newton
+J.K. Rowling
 Japon
 Jean Moulin
 Jean Valjean
+Jeanne d'Arc
 Jesus Christ
 John Cena
 John F. Kennedy
@@ -234,11 +272,13 @@ Jon Snow
 Jonathan Cohen
 Jules César
 Jules Ferry
+Jumelles
 Justin Timberlake
 Ketchup
 Kev Adams
 Klaxon
 Koh-Lanta
+Kurt Cobain
 L'Arc de Triomphe
 La boxe
 La casa de papel
@@ -248,6 +288,7 @@ La Lettre à Élise
 La planète Terre
 La Roue de la fortune
 La tour Eiffel
+Lac
 Lady Gaga
 Lancer du javelot
 Langue
@@ -260,6 +301,7 @@ Le père Noël
 Le Puy du Fou
 Le Roi Lion
 Le ski
+Léonard de Vinci
 Leonardo DiCaprio
 Les 101 Dalmatiens
 Les Gardiens de la Galaxie
@@ -267,10 +309,13 @@ Les Grosses Têtes
 Les Huns
 Les Jeux Olympiques
 Les Lapins crétins
+Les Looney Tunes
 Les Minimoys
 Les Minions
 Les Quatre Saisons
+Les Schtroumpfs
 Les Simpson
+Les Tortues Ninja
 Les Trois Mousquetaires
 Libellule
 Lion
@@ -278,6 +323,7 @@ Lionel Messi
 Lit
 Livre
 Lobby
+Loir
 Londres
 Lorenzo
 Louane
@@ -297,7 +343,9 @@ Lunettes
 Lutin
 Macadam
 Madonna
+Magazine
 Main
+Maison
 Maître Gims
 Maître Yoda
 Mannequin
@@ -317,6 +365,7 @@ Médicament
 Méduse
 Michael Jackson
 Michel Drucker
+Mickey Mouse
 Micro
 Miel
 Milou
@@ -332,9 +381,12 @@ Mourir
 Moustache
 Moutarde
 Mouton
+Mozart
 Muet
 Musée
+Musique
 Mutation
+Mystère
 Nager
 Nagui
 Naître
@@ -348,6 +400,7 @@ Nemo
 Nénuphar
 Nespresso
 Netflix
+Nikola Tesla
 Nirvana
 Noisette
 Nostradamus
@@ -377,6 +430,7 @@ Parpaing
 Peintre
 Perroquet
 Pharaon
+Philosophie
 Phoque
 Pieuvre
 Pikachu
@@ -384,51 +438,71 @@ Ping-pong
 Pingouin
 Pink Floyd
 Pinocchio
+Pique-nique
 Piscine
 Pizza
 Plage
 Pleurer
+Poison
+Poivre
 Pompier
+Pont
 Popeye
 Post-It
 Potion
+Potiron
 Poubelle
+Power Rangers
 Préservatif
 Prêtre
 Prophète
+Psychologie
 Puzzle
 Pyramide
 Queen Elizabeth II
 Rafael Nadal
 Rambo
+Randonnée
 Rat
 Résistance
 Rihanna
+Rivière
 Riz
 Robert Oppenheimer
 Robin des Bois
 Robinson Crusoé
 Robot
+Romance
 Roméo et Juliette
 Ronflex
 Rosa Parks
+Roue
+Rougir
 Sable
 Sabre
+Salaire
+Satellite
 Scooby-Doo
+Sculpture
 Secrétaire
+Sel
 Sherlock Holmes
 Shrek
+Sigmund Freud
 Snoop Dogg
 Snoopy
 Soldat
 Soleil
+Sommet
 Sorcière
 Sous-marin
+South Park
 Spermatozoïde
 Spider-Man
 Spotify
 Squelette
 Star Wars
+Stephen King
 Stéthoscope
 Steve Jobs
 Steven Spielberg
@@ -442,18 +516,26 @@ Taylor Swift
 Télévision
 Tequila
 Tetris
+The Beatles
 Théâtre
 Thomas Pesquet
 Thor
 Timbre
 Tintin
 Titanic
+Titi et Grosminet
 Toad
+Tolkien
+Tom et Jerry
 Tom Hanks
 Tom Sawyer
 Tomorrowland
+Totally Spies!
+Tour
 Train
 Traîneau
+Transformers
+Trésor
 Tribunal
 Tricot
 Trombone
@@ -465,6 +547,7 @@ Un empire
 Un juge
 Usine
 Vacances
+Vaccin
 Vague
 Valise
 Vampire
@@ -472,8 +555,10 @@ Vélo
 Ver de terre
 Verre
 Vikings
+Vilain
 Vin
 Voiture
+Volcan
 Vomit
 Voyage
 Wagon
@@ -487,6 +572,7 @@ Winnie l'ourson
 Winston Churchill
 Wiz Khalifa
 Woody Woodpecker
+X-Men
 Xylophone
 Yacht
 Yannick Noah
