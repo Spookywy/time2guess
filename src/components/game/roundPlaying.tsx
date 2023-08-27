@@ -113,7 +113,7 @@ export default function RoundPlaying({
       >
         {timeLeft}
       </h1>
-      <h2 className="mt-10 text-center text-5xl font-bold text-jet">
+      <h2 className="mt-3 text-center text-5xl font-bold text-jet md:mt-7">
         {wordsToGuess[currentWordIndex]}
       </h2>
       <div className="mt-auto flex flex-col items-center">
@@ -124,7 +124,7 @@ export default function RoundPlaying({
           <FontAwesomeIcon icon={faCheck} />
         </button>
         <button
-          className="mt-5 h-20 w-20 rounded-full bg-jet text-5xl text-light-orange active:text-dark-orange"
+          className="mt-10 h-20 w-20 rounded-full bg-jet text-5xl text-light-orange active:text-dark-orange"
           onClick={handleWordNotGuessed}
         >
           <FontAwesomeIcon icon={faXmark} />
