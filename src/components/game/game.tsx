@@ -2,6 +2,7 @@
 import { RoundNumber, RoundState, TeamResult } from "@/types/common";
 import { shuffleArray, useGetSettingsThroughLocalStorage } from "@/utils/utils";
 import { useEffect, useState } from "react";
+import ExitGameModal from "../modals/exitGameModal";
 import RoundBreak from "./roundBreak";
 import RoundPlaying from "./roundPlaying";
 import RoundResults from "./roundResults";
@@ -107,6 +108,22 @@ export function Game({ words }: GameProps) {
     wordsToGuess.length,
   ]);
 
+  const [showExitModal, setShowExitModal] = useState(false);
+
+  function handleCancelExitGame() {
+    setShowExitModal(false);
+  }
+
+  // Prevent the user from leaving the game by clicking on the back button
+  useEffect(() => {
+    window.history.pushState(null, "", window.location.href);
+
+    window.onpopstate = function () {
+      setShowExitModal(true);
+      window.history.pushState(null, "", window.location.href);
+    };
+  }, []);
+
   function getComponentToDisplay() {
     switch (roundState) {
       case RoundState.rules:
@@ -158,5 +175,10 @@ export function Game({ words }: GameProps) {
     }
   }
 
-  return getComponentToDisplay();
+  return (
+    <>
+      {getComponentToDisplay()}
+      {showExitModal && <ExitGameModal onCancel={handleCancelExitGame} />}
+    </>
+  );
 }
