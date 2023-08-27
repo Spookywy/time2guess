@@ -124,6 +124,20 @@ export function Game({ words }: GameProps) {
     };
   }, []);
 
+  useEffect(() => {
+    // Warn the user when he tries to refresh the page
+    window.onbeforeunload = (event) => {
+      // The two following lines do the same thing
+      // needed to support all browsers
+      event.preventDefault();
+      return (event.returnValue = "");
+    };
+
+    return () => {
+      window.onbeforeunload = null;
+    };
+  }, []);
+
   function getComponentToDisplay() {
     switch (roundState) {
       case RoundState.rules:
