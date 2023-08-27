@@ -9,7 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Time2Guess",
-  description: "A party game where players have to guess words",
+  description:
+    "Le super jeu de société dans lequel les joueurs doivent deviner et faire deviner des mots.",
 };
 
 export default function RootLayout({
