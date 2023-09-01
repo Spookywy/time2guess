@@ -1,17 +1,21 @@
+Abeille
 Abricot
 Abysse
 Accoucher
+Addiction
 Adele
 Aéroport
 Agneau
 Aiguille
 Ail
+Air
 AirPods
 Aladdin
 Albert Einstein
 Alcool
 Alien
 Allumette
+Alphabet
 Alvin et les Chipmunks
 Amazonie
 Amélie Poulain
@@ -24,6 +28,7 @@ Apple
 Araignée
 Arbre
 Arc-en-ciel
+Archimède
 Argent
 Ariana Grande
 Arrosoir
@@ -32,6 +37,8 @@ Astérix
 Astronaute
 Atome
 Autruche
+Avatar
+Avengers
 Avion
 Babouin
 Baguette
@@ -46,6 +53,7 @@ Barack Obama
 Barbecue
 Bateau
 Batman
+BBC
 Berlin
 Bernard l'hermite
 Beyoncé
@@ -55,6 +63,7 @@ Big Bang
 Bill Gates
 Bisounours
 Bitcoin
+Blade Runner
 Blaireau
 Blanche-Neige
 Bob l'éponge
@@ -66,6 +75,7 @@ Bougie
 Boule et Bill
 Boussole
 Bouteille
+Boutton
 Bowling
 Brad Pitt
 Breaking Bad
@@ -73,6 +83,7 @@ Briquet
 Bronzer
 Brosse à dent
 Bugs Bunny
+Burn out
 Buzz l'Éclair
 Calimero
 Caméo
@@ -99,6 +110,7 @@ Charles de Gaulle
 Charlie Chaplin
 Chat
 Château
+ChatGPT
 Chaussettes
 Che Guevara
 Cheminée
@@ -121,6 +133,7 @@ Cléopâtre
 Clown
 Coca-Cola
 Cocaïne
+Coccinelle
 Cochon
 Coco Chanel
 Coffre
@@ -128,6 +141,7 @@ Columbo
 Comédie
 Comète
 Commonwealth
+Constant
 Copilote
 Coquillage
 Corto Maltese
@@ -138,6 +152,7 @@ Coussinet
 Couverture
 Cow-boy
 Cravate
+Crocodile
 Croisière
 Croissant
 Cube
@@ -152,28 +167,34 @@ Dark Vador
 Dauphin
 David Bowie
 David Guetta
+Décapsuleur
 Décathlon
 Dent
 Désinfectant
 Dessiner
+Diamètre
+Dinosaure
 Dionysos
 Disney
 DJ
 Donald Duck
 Donald Trump
+Dopamine
 Dora l’exploratrice
 Dory
+Dragon
 Drogue
 Dua Lipa
 Dumbo
 DVD
+E.T. l'extra-terrestre
 Échec
 Écureuil
 Ed Sheeran
 Effrayant
 Égout
 Électricité
-Elephant
+Éléphant
 Elfe
 Elon Musk
 Elton John
@@ -205,8 +226,11 @@ Falaise
 Famille
 Fantôme
 Far-West
+Fatiguer
 Fée
 Festival
+Feu
+Fight Club
 Fitness
 Flamand rose
 Flash McQueen
@@ -229,6 +253,7 @@ Game of Thrones
 Gandalf
 Gandhi
 Garfield
+Géométrie
 George Clooney
 George Washington
 Gérard Depardieu
@@ -238,6 +263,7 @@ Gland
 Gordon Ramsay
 Gourde
 Gras
+Grenouille
 Grille-pain
 Groot
 Guitare
@@ -249,16 +275,21 @@ Hercule
 Hercule Poirot
 Heure
 Hibou
+Hippopotame
 Homer
 Hôtel
 Hulk
 Île
+Inception
 Indiana Jones
+Insomnie
 Instagram
 Internet
+Interstellar
 Iron Man
 Isaac Newton
 J.K. Rowling
+Jambon
 Japon
 Jean Moulin
 Jean Valjean
@@ -270,13 +301,18 @@ Johnny depp
 Joker
 Jon Snow
 Jonathan Cohen
+Jongler
+Jouissance
 Jules César
 Jules Ferry
 Jumelles
+Jurassic Park
 Justin Timberlake
+Kangourou
 Ketchup
 Kev Adams
 Klaxon
+Koala
 Koh-Lanta
 Kurt Cobain
 L'Arc de Triomphe
@@ -284,7 +320,9 @@ La boxe
 La casa de papel
 La Grande Muraille de Chine
 La Joconde
+La La Land
 La Lettre à Élise
+La Ligne Verte
 La planète Terre
 La Roue de la fortune
 La tour Eiffel
@@ -293,17 +331,24 @@ Lady Gaga
 Lancer du javelot
 Langue
 Lantherne
+Lapin
 Las Vegas
 Le code Morse
 Le Dictateur
+Le Loup de Wall Street
 Le Moulin-Rouge
+Le Parrain
 Le père Noël
 Le Puy du Fou
 Le Roi Lion
+Le Seigneur des Anneaux
 Le ski
+Le Voyage de Chihiro
 Léonard de Vinci
 Leonardo DiCaprio
+Léopard
 Les 101 Dalmatiens
+Les Dents de la Mer
 Les Gardiens de la Galaxie
 Les Grosses Têtes
 Les Huns
@@ -315,9 +360,11 @@ Les Minions
 Les Quatre Saisons
 Les Schtroumpfs
 Les Simpson
+Les Temps Modernes
 Les Tortues Ninja
 Les Trois Mousquetaires
 Libellule
+Licorne
 Lion
 Lionel Messi
 Lit
@@ -360,6 +407,8 @@ Marionnette
 Mars
 Martin Luther King
 Mary Poppins
+Matrix
+Mauvais
 Médecin
 Médicament
 Méduse
@@ -410,6 +459,7 @@ Obélix
 Odeur
 Oignon
 Omar Sy
+Onde
 Opium
 Oracle
 Orang-outan
@@ -425,6 +475,7 @@ Panda
 Panthéon
 Papillon
 Parc d'attraction
+Paresseux
 Paris
 Parpaing
 Peintre
@@ -432,6 +483,7 @@ Perroquet
 Pharaon
 Philosophie
 Phoque
+Pi (le nombre)
 Pieuvre
 Pikachu
 Ping-pong
@@ -452,6 +504,8 @@ Post-It
 Potion
 Potiron
 Poubelle
+Poupée
+Poutre
 Power Rangers
 Préservatif
 Prêtre
@@ -464,7 +518,9 @@ Rafael Nadal
 Rambo
 Randonnée
 Rat
+Renard
 Résistance
+Retour vers le Futur
 Rihanna
 Rivière
 Riz
@@ -489,6 +545,7 @@ Sel
 Sherlock Holmes
 Shrek
 Sigmund Freud
+Sirène
 Snoop Dogg
 Snoopy
 Soldat
@@ -506,7 +563,9 @@ Stephen King
 Stéthoscope
 Steve Jobs
 Steven Spielberg
+Stress
 Sucette
+Super-héros
 Supermarché
 Surf
 Table
@@ -518,8 +577,10 @@ Tequila
 Tetris
 The Beatles
 Théâtre
+Théorie
 Thomas Pesquet
 Thor
+Tigre
 Timbre
 Tintin
 Titanic
