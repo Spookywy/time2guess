@@ -35,12 +35,14 @@ Arrosoir
 Art
 Astérix
 Astronaute
+Athlétisme
 Atome
 Autruche
 Avatar
 Avengers
 Avion
 Babouin
+Badminton
 Baguette
 Baiser
 Balançoire
@@ -51,6 +53,8 @@ Banquise
 Bar
 Barack Obama
 Barbecue
+Baseball
+Basketball
 Bateau
 Batman
 BBC
@@ -73,18 +77,22 @@ Bouddha
 Bouée
 Bougie
 Boule et Bill
+Bourdon
 Boussole
 Bouteille
 Boutton
 Bowling
+Boxe
 Brad Pitt
 Breaking Bad
+Brioche
 Briquet
 Bronzer
 Brosse à dent
 Bugs Bunny
 Burn out
 Buzz l'Éclair
+Cachalot
 Calimero
 Caméo
 Caméra
@@ -96,6 +104,7 @@ Capsule
 Captain America
 Carotte
 Carte
+Cassoulet
 Celine Dion
 Cendrier
 Cendrillon
@@ -114,6 +123,7 @@ ChatGPT
 Chaussettes
 Che Guevara
 Cheminée
+Chenille
 Cheval
 Chewbacca
 Chewing-gum
@@ -130,12 +140,14 @@ Citrouille
 Clara Morgane
 Clé
 Cléopâtre
+Cloporte
 Clown
 Coca-Cola
 Cocaïne
 Coccinelle
 Cochon
 Coco Chanel
+Cœur
 Coffre
 Columbo
 Comédie
@@ -152,6 +164,8 @@ Coussinet
 Couverture
 Cow-boy
 Cravate
+Crêpe
+Criquet
 Crocodile
 Croisière
 Croissant
@@ -213,20 +227,24 @@ Enquête
 Enveloppe
 Épée
 Épervier
+Éphémère
 Épice
 Épouvantail
 Eragon
 Escalade
 Escalier
 Escargot
+Escrime
 Espionner
 Essence
+Estomac
 Étoile
 Falaise
 Famille
 Fantôme
 Far-West
 Fatiguer
+FBI
 Fée
 Festival
 Feu
@@ -239,9 +257,12 @@ Fleuve
 Florence Foresti
 Foie
 Fontaine
+Football
 Forêt
+Formule 1
 Forrest Gump
 Fouet
+Fourmi
 Freddie Mercury
 Friends (Série TV)
 Frites
@@ -252,7 +273,9 @@ Galaxie
 Game of Thrones
 Gandalf
 Gandhi
+Gant
 Garfield
+Gendarme
 Géométrie
 George Clooney
 George Washington
@@ -260,14 +283,18 @@ Gérard Depardieu
 Girafe
 Gladiateur
 Gland
+Golf
 Gordon Ramsay
 Gourde
 Gras
 Grenouille
 Grille-pain
+Grillon
 Groot
+Guêpe
 Guitare
 Hamburger
+Handball
 Harry Potter
 Harvard
 Hélicoptère
@@ -276,6 +303,7 @@ Hercule Poirot
 Heure
 Hibou
 Hippopotame
+Hockey sur glace
 Homer
 Hôtel
 Hulk
@@ -283,6 +311,7 @@ Hulk
 Inception
 Indiana Jones
 Insomnie
+Inspecteur Gadget
 Instagram
 Internet
 Interstellar
@@ -303,6 +332,7 @@ Jon Snow
 Jonathan Cohen
 Jongler
 Jouissance
+Judo
 Jules César
 Jules Ferry
 Jumelles
@@ -417,17 +447,22 @@ Michel Drucker
 Mickey Mouse
 Micro
 Miel
+Mille-pattes
 Milou
 Minecraft
 Miss France
+MMA
 Molécule
 Monkey D. Luffy
 Montagne
 Montgolfière
 Montre
 Morphine
+Mouche
 Mourir
+Mousse
 Moustache
+Moustique
 Moutarde
 Mouton
 Mozart
@@ -442,6 +477,7 @@ Naître
 Nanomètre
 Napoléon Bonaparte
 NASA
+Natation
 Neige
 Neil Armstrong
 Nelson Mandela
@@ -466,11 +502,13 @@ Orang-outan
 Ordinateur
 Oui Oui
 Ours
+Ovaire
 Ovni
 Ovule
 Pablo Escobar
 Pablo Picasso
 Pain au chocolat
+Pancake
 Panda
 Panthéon
 Papillon
@@ -481,6 +519,7 @@ Parpaing
 Peintre
 Perroquet
 Pharaon
+Phasme
 Philosophie
 Phoque
 Pi (le nombre)
@@ -503,14 +542,21 @@ Popeye
 Post-It
 Potion
 Potiron
+Pou
 Poubelle
+Poulet
+Poumon
 Poupée
 Poutre
 Power Rangers
 Préservatif
 Prêtre
+Prise électrique
 Prophète
 Psychologie
+Puce
+Puissance
+Punaise
 Puzzle
 Pyramide
 Queen Elizabeth II
@@ -518,6 +564,8 @@ Rafael Nadal
 Rambo
 Randonnée
 Rat
+Ratatouille
+Rein
 Renard
 Résistance
 Retour vers le Futur
@@ -534,10 +582,14 @@ Ronflex
 Rosa Parks
 Roue
 Rougir
+Rugby
 Sable
 Sabre
+Salade
 Salaire
 Satellite
+Sauterelle
+Scarabée
 Scooby-Doo
 Sculpture
 Secrétaire
@@ -568,11 +620,13 @@ Sucette
 Super-héros
 Supermarché
 Surf
+Système nerveux
 Table
 Tableau
 Taïwan
 Taylor Swift
 Télévision
+Tennis
 Tequila
 Tetris
 The Beatles
@@ -602,11 +656,13 @@ Tricot
 Trombone
 Trou noir
 Tuba
+Tuyau
 U2
 Ulysse
 Un empire
 Un juge
 Usine
+Utérus
 Vacances
 Vaccin
 Vague
@@ -618,8 +674,10 @@ Verre
 Vikings
 Vilain
 Vin
+Voile
 Voiture
 Volcan
+Volleyball
 Vomit
 Voyage
 Wagon
