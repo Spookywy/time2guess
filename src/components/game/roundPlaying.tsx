@@ -1,6 +1,6 @@
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SetStateAction, useEffect, useState } from "react";
+import { SetStateAction, useCallback, useEffect, useState } from "react";
 
 type RoundPlayingProps = {
   wordsToGuess: string[];
@@ -30,78 +30,81 @@ export default function RoundPlaying({
 
   const timeIsOver = timeLeft <= 0;
 
-  function endRound() {
-    updateCurrentWordIndex(wordsToGuess.length);
-    changeTeamPlaying();
-  }
-
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft((prevTimeLeft) => {
-        const nextTimeLeft = prevTimeLeft - 1;
-
-        if ("vibrate" in navigator && nextTimeLeft <= 5 && nextTimeLeft > 0) {
-          navigator.vibrate(100);
-        }
-
-        return nextTimeLeft;
-      });
+      setTimeLeft((prevTimeLeft) => prevTimeLeft - 1);
     }, 1000);
 
     return () => {
-      if ("vibrate" in navigator && timeIsOver) navigator.vibrate([1000]);
       clearInterval(timer);
     };
-  }, [timeIsOver]);
+  }, []);
 
   useEffect(() => {
-    if (timeIsOver) {
-      endRound();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [timeLeft]);
+    if (!("vibrate" in navigator)) return;
 
-  function updateCurrentWordIndex(wordsToGuessLength: number) {
-    if (currentWordIndex <= 0) {
-      setCurrentWordIndex(wordsToGuessLength - 1);
-    } else {
-      setCurrentWordIndex((prevIndex) => prevIndex - 1);
+    if (timeLeft <= 5 && timeLeft > 0) {
+      navigator.vibrate(100);
     }
-  }
+
+    if (timeIsOver) {
+      navigator.vibrate([1000]);
+    }
+  }, [timeLeft, timeIsOver]);
+
+  const updateCurrentWordIndex = useCallback(
+    (wordsToGuessLength: number) => {
+      if (currentWordIndex <= 0) {
+        setCurrentWordIndex(wordsToGuessLength - 1);
+      } else {
+        setCurrentWordIndex((prevIndex) => prevIndex - 1);
+      }
+    },
+    [currentWordIndex, setCurrentWordIndex]
+  );
 
   useEffect(() => {
     if (numberOfWordsViewed === initalNumberOfWordsToGuess) {
+      // No need to change the current word index
+      // the player saw all the words
+      // we went back to the first word
+      changeTeamPlaying();
+      return;
+    }
+    if (timeIsOver) {
       updateCurrentWordIndex(wordsToGuess.length);
       changeTeamPlaying();
+      return;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [numberOfWordsViewed]);
+  }, [
+    changeTeamPlaying,
+    initalNumberOfWordsToGuess,
+    numberOfWordsViewed,
+    timeIsOver,
+    timeLeft,
+    updateCurrentWordIndex,
+    wordsToGuess.length,
+  ]);
 
   function handleWordGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     addGuessedWordToTeam(wordsToGuess[currentWordIndex], teamPlaying);
-    setWordsToGuess((prevWords) => {
-      const newWords = [...prevWords];
-      newWords.splice(currentWordIndex, 1);
-      updateCurrentWordIndex(newWords.length);
-      return newWords;
-    });
+
+    const newWords = [...wordsToGuess];
+    newWords.splice(currentWordIndex, 1);
+    const newWordsLength = newWords.length - 1;
+
+    setWordsToGuess(newWords);
+    updateCurrentWordIndex(newWordsLength);
   }
 
   function handleWordNotGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     updateCurrentWordIndex(wordsToGuess.length);
+    setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
+
     setTimeIsAnimated(true);
     setTimeout(() => setTimeIsAnimated(false), 100);
-    setTimeLeft((prevTimeLeft) => {
-      const nextTimeLeft = prevTimeLeft - 5;
-
-      if (nextTimeLeft <= 0) {
-        endRound();
-        return prevTimeLeft;
-      }
-      return nextTimeLeft;
-    });
   }
 
   return (
