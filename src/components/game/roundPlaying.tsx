@@ -92,7 +92,7 @@ export default function RoundPlaying({
 
     const newWords = [...wordsToGuess];
     newWords.splice(currentWordIndex, 1);
-    const newWordsLength = newWords.length - 1;
+    const newWordsLength = newWords.length;
 
     setWordsToGuess(newWords);
     updateCurrentWordIndex(newWordsLength);
