@@ -1,5 +1,6 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} h-full bg-light-orange`}>
         {children}
         <Analytics />
+        <GoogleAnalytics gaId="G-MFWGFR4M69" />
       </body>
     </html>
   );
