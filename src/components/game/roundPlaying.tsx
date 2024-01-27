@@ -121,7 +121,7 @@ export default function RoundPlaying({
       </h2>
       <div className="mt-auto flex flex-col items-center">
         <button
-          className="mt-auto h-36 w-36 rounded-full bg-dark-orange text-8xl text-light-orange active:text-jet"
+          className="mt-auto h-36 w-36 rounded-full bg-pigment-green text-8xl text-light-orange active:text-jet"
           onClick={handleWordGuessed}
         >
           <FontAwesomeIcon icon={faCheck} />

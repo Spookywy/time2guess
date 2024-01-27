@@ -15,12 +15,12 @@ export default function Rules() {
         Les règles vous seront expliquées au début de chaque manche.
       </p>
       <button
-        className="mt-auto h-14 w-14 rounded-full bg-dark-orange text-3xl text-light-orange"
+        className="mt-auto h-14 w-14 rounded-full bg-pigment-green text-3xl text-light-orange"
         disabled
       >
         <FontAwesomeIcon icon={faCheck} />
       </button>
-      <p className="mt-3 font-extrabold text-dark-orange">
+      <p className="mt-3 font-extrabold text-pigment-green">
         Valider un mot deviné par votre équipe
       </p>
       <button
