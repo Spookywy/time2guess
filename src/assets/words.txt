@@ -1,3 +1,5 @@
+8.6 (bière)
+Abandonner
 Abeille
 Abricot
 Abysse
@@ -23,6 +25,7 @@ Ampoule
 Ancre
 Ange
 Anthropologiste
+Apocalypse
 Appareil photo
 Apple
 Araignée
@@ -41,6 +44,7 @@ Autruche
 Avatar
 Avengers
 Avion
+Avocat
 Babouin
 Badminton
 Baguette
@@ -89,7 +93,9 @@ Brioche
 Briquet
 Bronzer
 Brosse à dent
+Bruit
 Bugs Bunny
+Bureau
 Burn out
 Buzz l'Éclair
 Cachalot
@@ -117,7 +123,9 @@ Champs-Élysées
 Charles Darwin
 Charles de Gaulle
 Charlie Chaplin
+Charlie Hebdo
 Chat
+Chat de Schrödinger
 Château
 ChatGPT
 Chaussettes
@@ -156,7 +164,9 @@ Commonwealth
 Constant
 Copilote
 Coquillage
+Coronavirus
 Corto Maltese
+Coton-tige
 Cougar
 Courgette
 Courir
@@ -205,6 +215,7 @@ E.T. l'extra-terrestre
 Échec
 Écureuil
 Ed Sheeran
+Édith Piaf
 Effrayant
 Égout
 Électricité
@@ -229,6 +240,7 @@ Enveloppe
 Épervier
 Éphémère
 Épice
+Épidémie
 Épouvantail
 Eragon
 Escalade
@@ -267,6 +279,7 @@ Freddie Mercury
 Friends (Série TV)
 Frites
 Fromage
+Fuir
 Fusée
 Gad Elmaleh
 Galaxie
@@ -345,6 +358,7 @@ Klaxon
 Koala
 Koh-Lanta
 Kurt Cobain
+L'âne Trotro
 L'Arc de Triomphe
 La boxe
 La casa de papel
@@ -358,6 +372,7 @@ La Roue de la fortune
 La tour Eiffel
 Lac
 Lady Gaga
+Lampadère
 Lancer du javelot
 Langue
 Lantherne
@@ -403,6 +418,7 @@ Lobby
 Loir
 Londres
 Lorenzo
+Loto
 Louane
 Louis de Funès
 Louis Vuitton
@@ -430,6 +446,7 @@ Manteau
 Marathon
 Mariage
 Marie Curie
+Marier
 Marilyn Monroe
 Mario
 Marion Cotillard
@@ -442,6 +459,8 @@ Mauvais
 Médecin
 Médicament
 Méduse
+Mentir
+Meurtre
 Michael Jackson
 Michel Drucker
 Mickey Mouse
@@ -453,12 +472,14 @@ Minecraft
 Miss France
 MMA
 Molécule
+Molière
 Monkey D. Luffy
 Montagne
 Montgolfière
 Montre
 Morphine
 Mouche
+Mouchoir
 Mourir
 Mousse
 Moustache
@@ -485,6 +506,7 @@ Nemo
 Nénuphar
 Nespresso
 Netflix
+New York
 Nikola Tesla
 Nirvana
 Noisette
@@ -516,8 +538,10 @@ Parc d'attraction
 Paresseux
 Paris
 Parpaing
+Partager
 Peintre
 Perroquet
+Peter Pan
 Pharaon
 Phasme
 Philosophie
@@ -534,6 +558,8 @@ Piscine
 Pizza
 Plage
 Pleurer
+Podium
+Poil
 Poison
 Poivre
 Pompier
@@ -566,6 +592,7 @@ Randonnée
 Rat
 Ratatouille
 Rein
+Religion
 Renard
 Résistance
 Retour vers le Futur
@@ -587,6 +614,7 @@ Sable
 Sabre
 Salade
 Salaire
+Sang
 Satellite
 Sauterelle
 Scarabée
@@ -602,6 +630,7 @@ Snoop Dogg
 Snoopy
 Soldat
 Soleil
+Sommelier
 Sommet
 Sorcière
 Sous-marin
@@ -669,10 +698,12 @@ Vague
 Valise
 Vampire
 Vélo
+Ventilateur
 Ver de terre
 Verre
 Vikings
 Vilain
+Ville
 Vin
 Voile
 Voiture
