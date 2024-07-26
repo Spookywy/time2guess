@@ -8,6 +8,7 @@ Abysse
 Accoucher
 Addiction
 Adele
+ADN
 Aéroport
 Afrique
 Agneau
@@ -15,10 +16,13 @@ Aiguille
 Ail
 Aimer
 Air
+Airbag
 AirPods
 Aladdin
 Albert Einstein
 Alcool
+Algorithme
+Alibi
 Alice au Pays des Merveilles
 Alien
 All blacks
@@ -26,15 +30,21 @@ Allumette
 Alphabet
 Alvin et les Chipmunks
 Amazonie
+Ambulance
 Amélie Poulain
+Amnésie
+Among Us
 Ampoule
 Ancre
 Ange
 Angèle
+Angry Birds
+Antenne
 Anthropologiste
 Apocalypse
 Appareil photo
 Apple
+Aquarium
 Araignée
 Arbre
 Arc-en-ciel
@@ -45,38 +55,50 @@ Armée
 Arrosoir
 Art
 Asile
+Assassin
 Astérix
+Astéroïde
 Astronaute
 Athlétisme
 Atome
+Autographe
 Autruche
+Avalanche
 Avatar
 Avengers
 Avion
 Avocat
 Aya Nakamura
+Babar
 Babouin
 Badminton
 Baguette
 Baignoire
 Baiser
 Balançoire
+Balcon
 Baleine
 Bambi
+Banjo
 Banque
 Banquise
 Bar
 Barack Obama
+Barbapapa
 Barbecue
+Barbie
+Barbier
 Baseball
 Basketball
 Bateau
 Batman
+Batterie
 BBC
 Bébé
 Berlin
 Bernard l'hermite
 Beyoncé
+Bibendum
 Bibliothèque
 Bière
 Big Bang
@@ -93,7 +115,11 @@ Blindage
 Bob l'éponge
 Bob Marley
 Bois
+Bonhomme de neige
+Boomerang
+Bouclier
 Bouddha
+Boudin
 Boue
 Bouée
 Bougie
@@ -103,25 +129,38 @@ Boussole
 Bouteille
 Boutton
 Bowling
+Bowser
 Boxe
+Bracelet
 Brad Pitt
 Breaking Bad
+Brillant
 Brioche
 Briquet
 Bronzer
 Brosse à dent
+Brouillard
 Bruit
 Brute
+Bûche
 Bug
 Bugs Bunny
+Bulle
 Bureau
+Bureaucratie
 Burn out
 Butiner
 Buzz l'Éclair
 Cabane
+Cabaret
 Cachalot
+Cactus
 Caillou
+Calculette
+Calendrier
 Calimero
+Caméléon
+Camembert
 Caméo
 Caméra
 Camion
@@ -131,6 +170,7 @@ Cannabis
 Capitaine
 Capsule
 Captain America
+Carambar
 Carotte
 Carte
 Casino
@@ -145,11 +185,13 @@ Chalet
 Chaleur
 Champagne
 Champs-Élysées
+Chandelier
 Chapeau
 Charles Darwin
 Charles de Gaulle
 Charlie Chaplin
 Charlie Hebdo
+Charlotte aux fraises
 Chasseur
 Chat
 Chat de Schrödinger
@@ -190,10 +232,13 @@ Columbo
 Comédie
 Comète
 Commonwealth
+Comté (fromage)
 Congélateur
 Constant
+Constellation
 Copilote
 Coquillage
+Corneil et Bernie
 Cornichon
 Coronavirus
 Corto Maltese
@@ -208,6 +253,7 @@ Cow-boy
 Crachat
 Cravache
 Cravate
+Crazy Frog
 Crêpe
 Criquet
 Crocodile
@@ -216,6 +262,7 @@ Croissant
 Cube
 Culotte
 Cyclisme
+Cyclone
 Cyprien
 Cyril Hanouna
 Daenerys Targaryen
@@ -233,10 +280,13 @@ Dent
 Désinfectant
 Dessiner
 Diamètre
+Diddl
 Dinosaure
 Dionysos
 Disney
+Disque vinyle
 DJ
+Docteur Maboul
 Donald Duck
 Donald Trump
 Dopamine
@@ -246,6 +296,7 @@ Drag Queen
 Dragon
 Drogue
 Dua Lipa
+Ducobu
 Dumbo
 Dune
 DVD
@@ -259,6 +310,7 @@ Ed Sheeran
 Effrayant
 Égout
 Électricité
+Électrocardiogramme
 Éléphant
 Elfe
 Elon Musk
@@ -269,6 +321,7 @@ Embrasser
 Emily Dickinson
 Eminem
 Emmanuel Macron
+Émoticône
 Empire State Building
 Enceinte
 Encyclopédie
@@ -321,10 +374,12 @@ Football
 Forêt
 Formule 1
 Forrest Gump
+Fortnite
 Fouet
 Fourmi
 France
 François Fillon
+Franklin (la tortue)
 Freddie Mercury
 Friends (Série TV)
 Frites
@@ -333,6 +388,7 @@ Fuir
 Fusée
 Gad Elmaleh
 Galaxie
+Galipette
 Game of Thrones
 Gandalf
 Gandhi
@@ -359,6 +415,7 @@ Grille-pain
 Grillon
 Groot
 Guêpe
+Guimauve
 Guitare
 Hamburger
 Handball
@@ -366,6 +423,7 @@ Harry Potter
 Harvard
 Hélice
 Hélicoptère
+Hello Kitty
 Hercule
 Hercule Poirot
 Heure
@@ -409,6 +467,7 @@ Joker
 Jon Snow
 Jonathan Cohen
 Jongler
+Joséphine, ange gardien
 Joueur du Grenier
 Jouissance
 Judas
@@ -418,6 +477,7 @@ Jules César
 Jules Ferry
 Jumelles
 Jurassic Park
+Justin Bridou
 Justin Timberlake
 Kangourou
 Kendji Girac
@@ -451,6 +511,7 @@ Landau
 Langue
 Lantherne
 Lapin
+Lara Croft
 Las Vegas
 Le code Morse
 Le Dictateur
@@ -648,6 +709,7 @@ Piercing
 Pieuvre
 Pikachu
 Pillule
+Pinceau
 Ping-pong
 Pingouin
 Pink Floyd
@@ -655,6 +717,7 @@ Pinocchio
 Pique-nique
 Piscine
 Pivot
+Pixar
 Pizza
 Plage
 Pleurer
@@ -665,6 +728,7 @@ Poison
 Poivre
 Pompier
 Pont
+Popcorn
 Popeye
 Post-It
 Potion
@@ -680,6 +744,7 @@ Préservatif
 Prêtre
 Prise électrique
 Prophète
+Prout
 Psychologie
 Puce
 Puissance
@@ -689,6 +754,7 @@ Punition
 Puzzle
 Pyramide
 Queen Elizabeth II
+R2-D2
 Radio
 Rafael Nadal
 Rambo
@@ -755,6 +821,7 @@ Spermatozoïde
 Spider-Man
 Spotify
 Squelette
+Squid Game
 Staline
 Star Trek
 Star Wars
@@ -861,6 +928,7 @@ Yéti
 Yoga
 YouTube
 Zèbre
+Zelda
 Zinédine Zidane
 Zombie
 Zoo
