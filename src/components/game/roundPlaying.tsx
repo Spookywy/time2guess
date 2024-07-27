@@ -1,7 +1,13 @@
 import { TIME_PENALTY } from "@/utils/constants";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SetStateAction, useCallback, useEffect, useState } from "react";
+import {
+  SetStateAction,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 type RoundPlayingProps = {
   wordsToGuess: string[];
@@ -99,30 +105,43 @@ export default function RoundPlaying({
     setWordsToGuess(newWords);
     updateCurrentWordIndex(newWordsLength);
   }
+  const animationTimeout = useRef<NodeJS.Timeout | null>(null);
+  const penaltyTimeout = useRef<NodeJS.Timeout | null>(null);
 
   function handleWordNotGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     updateCurrentWordIndex(wordsToGuess.length);
     setTimeLeft((prevTimeLeft) => prevTimeLeft - TIME_PENALTY);
 
+    if (animationTimeout.current) {
+      clearTimeout(animationTimeout.current);
+    }
+    if (penaltyTimeout.current) {
+      clearTimeout(penaltyTimeout.current);
+    }
+
     setTimeIsAnimated(true);
     setIsTimePenaltyVisible(true);
-    setTimeout(() => setTimeIsAnimated(false), 100);
-    setTimeout(() => setIsTimePenaltyVisible(false), 700);
+
+    animationTimeout.current = setTimeout(() => setTimeIsAnimated(false), 100);
+    penaltyTimeout.current = setTimeout(
+      () => setIsTimePenaltyVisible(false),
+      700
+    );
   }
 
   return (
     <div className="flex h-[calc(100%-var(--header-height))] flex-col items-center">
       <div className="relative">
         <h1
-          className={`mt-12 font-mono text-8xl font-extrabold text-dark-orange ${
+          className={`relative z-10 mt-12 font-mono text-8xl font-extrabold text-dark-orange ${
             timeIsAnimated && "animate-ping text-jet"
           }`}
         >
           {timeLeft}
         </h1>
         {isTimePenaltyVisible && (
-          <p className="animate-slide-down absolute bottom-0 right-4 font-mono text-3xl text-dark-orange">
+          <p className="animate-slide-down absolute bottom-0 right-4 z-0 font-mono text-3xl text-jet">
             -{TIME_PENALTY}
           </p>
         )}

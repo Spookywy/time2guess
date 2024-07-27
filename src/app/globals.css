@@ -30,6 +30,7 @@
 .animate-slide-down {
     animation-name: slide-down;
     animation-duration: 800ms;
+    animation-iteration-count: infinite;
 }
 
 @keyframes slide-down {
@@ -37,8 +38,12 @@
         opacity: 0;
     }
 
-    100% {
+    75% {
         opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
         transform: translateY(70%);
     }
 }
