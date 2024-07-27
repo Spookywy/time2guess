@@ -1,3 +1,4 @@
+import { TIME_PENALTY } from "@/utils/constants";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SetStateAction, useCallback, useEffect, useState } from "react";
@@ -25,6 +26,7 @@ export default function RoundPlaying({
 }: RoundPlayingProps) {
   const [timeLeft, setTimeLeft] = useState(roundDuration);
   const [timeIsAnimated, setTimeIsAnimated] = useState(false);
+  const [isTimePenaltyVisible, setIsTimePenaltyVisible] = useState(false);
   const [initalNumberOfWordsToGuess] = useState(wordsToGuess.length);
   const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);
 
@@ -101,22 +103,31 @@ export default function RoundPlaying({
   function handleWordNotGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     updateCurrentWordIndex(wordsToGuess.length);
-    setTimeLeft((prevTimeLeft) => prevTimeLeft - 5);
+    setTimeLeft((prevTimeLeft) => prevTimeLeft - TIME_PENALTY);
 
     setTimeIsAnimated(true);
+    setIsTimePenaltyVisible(true);
     setTimeout(() => setTimeIsAnimated(false), 100);
+    setTimeout(() => setIsTimePenaltyVisible(false), 700);
   }
 
   return (
     <div className="flex h-[calc(100%-var(--header-height))] flex-col items-center">
-      <h1
-        className={`mt-12 text-8xl font-extrabold text-dark-orange ${
-          timeIsAnimated && "animate-ping text-jet"
-        }`}
-      >
-        {timeLeft}
-      </h1>
-      <h2 className="mt-3 text-center text-5xl font-bold text-jet md:mt-7">
+      <div className="relative">
+        <h1
+          className={`mt-12 font-mono text-8xl font-extrabold text-dark-orange ${
+            timeIsAnimated && "animate-ping text-jet"
+          }`}
+        >
+          {timeLeft}
+        </h1>
+        {isTimePenaltyVisible && (
+          <p className="animate-slide-down absolute bottom-0 right-4 font-mono text-3xl text-dark-orange">
+            -{TIME_PENALTY}
+          </p>
+        )}
+      </div>
+      <h2 className="mt-6 text-center text-5xl font-bold text-jet md:mt-7">
         {wordsToGuess[currentWordIndex]}
       </h2>
       <div className="mt-auto flex flex-col items-center">

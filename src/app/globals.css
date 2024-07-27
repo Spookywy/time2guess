@@ -27,6 +27,22 @@
     }
 }
 
+.animate-slide-down {
+    animation-name: slide-down;
+    animation-duration: 800ms;
+}
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(70%);
+    }
+}
+
 .horizontallyCentered {
     position: absolute;
     left: 50%;
