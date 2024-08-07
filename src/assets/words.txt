@@ -6,12 +6,16 @@ Abordage
 Abricot
 Abysse
 Accoucher
+Acteur
 Addiction
 Adele
 ADN
 Aéroport
 Afrique
 Agneau
+Agrafeuse
+Agriculteur
+Aigle
 Aiguille
 Ail
 Aimer
@@ -35,6 +39,7 @@ Amélie Poulain
 Amnésie
 Among Us
 Ampoule
+Ananas
 Ancre
 Ange
 Angèle
@@ -44,8 +49,10 @@ Anthropologiste
 Apocalypse
 Appareil photo
 Apple
+Aquarelle
 Aquarium
 Araignée
+Arbalète
 Arbre
 Arc-en-ciel
 Archimède
@@ -55,7 +62,9 @@ Armée
 Arrosoir
 Art
 Asile
+Aspirine
 Assassin
+Assiette
 Astérix
 Astéroïde
 Astronaute
@@ -79,6 +88,7 @@ Balançoire
 Balcon
 Baleine
 Bambi
+Bande dessinée
 Banjo
 Banque
 Banquise
@@ -95,6 +105,7 @@ Batman
 Batterie
 BBC
 Bébé
+Beefsteak
 Berlin
 Bernard l'hermite
 Beyoncé
@@ -117,6 +128,7 @@ Bob Marley
 Bois
 Bonhomme de neige
 Boomerang
+Botte
 Bouclier
 Bouddha
 Boudin
@@ -143,6 +155,7 @@ Brouillard
 Bruit
 Brute
 Bûche
+Bûcheron
 Bug
 Bugs Bunny
 Bulle
@@ -155,6 +168,10 @@ Cabane
 Cabaret
 Cachalot
 Cactus
+Cafard
+Café
+Cagoule
+Cahier
 Caillou
 Calculette
 Calendrier
@@ -166,6 +183,7 @@ Caméra
 Camion
 Canapé
 Canard
+Caniche
 Cannabis
 Capitaine
 Capsule
@@ -175,18 +193,23 @@ Carotte
 Carte
 Casino
 Cassoulet
+Cave
 Céline Dion
 Cendrier
 Cendrillon
 Cercle
+Cerf
 Cerise
 Cerveau
 Chalet
 Chaleur
+Chambre
+Champ
 Champagne
 Champs-Élysées
 Chandelier
 Chapeau
+Chargeur
 Charles Darwin
 Charles de Gaulle
 Charlie Chaplin
@@ -198,7 +221,9 @@ Chat de Schrödinger
 Château
 ChatGPT
 Chaussettes
+Chauve-souris
 Che Guevara
+Chemin
 Cheminée
 Chenille
 Cheval
@@ -206,6 +231,7 @@ Chewbacca
 Chewing-gum
 Chien
 Chirurgie
+Chocolat
 Christophe Colomb
 Chucky
 Chute
@@ -216,6 +242,9 @@ Cinéma
 Citron
 Citrouille
 Clara Morgane
+Clarinette
+Classeur
+Clavier
 Clé
 Cléopâtre
 Cloporte
@@ -228,15 +257,19 @@ Coco Chanel
 Cocu
 Cœur
 Coffre
+Collège
 Columbo
 Comédie
 Comète
 Commonwealth
 Comté (fromage)
 Congélateur
+Console de jeux
 Constant
 Constellation
+Cookie
 Copilote
+Coquelicot
 Coquillage
 Corneil et Bernie
 Cornichon
@@ -253,6 +286,7 @@ Cow-boy
 Crachat
 Cravache
 Cravate
+Crayon
 Crazy Frog
 Crêpe
 Criquet
@@ -260,6 +294,8 @@ Crocodile
 Croisière
 Croissant
 Cube
+Cuillère
+Cuisinier
 Culotte
 Cyclisme
 Cyclone
@@ -277,8 +313,10 @@ Débile
 Décapsuleur
 Décathlon
 Dent
+Dentiste
 Désinfectant
 Dessiner
+Détective
 Diamètre
 Diddl
 Dinosaure
@@ -292,8 +330,10 @@ Donald Trump
 Dopamine
 Dora l’exploratrice
 Dory
+Douche
 Drag Queen
 Dragon
+Drapeau
 Drogue
 Dua Lipa
 Ducobu
@@ -302,12 +342,17 @@ Dune
 DVD
 Dyson
 E.T. l'extra-terrestre
+Eau
 Échec
+Écran
 Écraser
+Écrivain
 Écureuil
 Ed Sheeran
 Édith Piaf
+Effet papillon
 Effrayant
+Église
 Égout
 Électricité
 Électrocardiogramme
@@ -335,7 +380,9 @@ Enveloppe
 Éphémère
 Épice
 Épidémie
+Épinard
 Épouvantail
+Équitation
 Eragon
 Érection
 Escalade
@@ -367,6 +414,7 @@ Flash McQueen
 Fleur
 Fleuve
 Florence Foresti
+Flûte
 Foie
 Fondue savoyarde
 Fontaine
@@ -377,6 +425,7 @@ Forrest Gump
 Fortnite
 Fouet
 Fourmi
+Fourmilier
 France
 François Fillon
 Franklin (la tortue)
@@ -385,7 +434,9 @@ Friends (Série TV)
 Frites
 Fromage
 Fuir
+Furet
 Fusée
+Fusil
 Gad Elmaleh
 Galaxie
 Galipette
@@ -393,9 +444,13 @@ Game of Thrones
 Gandalf
 Gandhi
 Gant
+Gare
 Garfield
 Garou
+Gâteau
+Gaufre
 Gaulois
+Gazelle
 Gendarme
 Géométrie
 George Clooney
@@ -405,6 +460,7 @@ Girafe
 Gladiateur
 Gland
 Golf
+Goliath
 Gomme
 Gordon Ramsay
 Gourde
@@ -417,6 +473,7 @@ Groot
 Guêpe
 Guimauve
 Guitare
+Gymnastique
 Hamburger
 Handball
 Harry Potter
@@ -445,6 +502,7 @@ Instagram
 Internet
 Interstellar
 Invention
+iPod
 Iron Man
 Isaac Newton
 Itinéraire
@@ -459,6 +517,7 @@ Jean-Luc Mélenchon
 Jean-Marie Le Pen
 Jeanne d'Arc
 Jesus Christ
+Jeu de société
 John Cena
 John F. Kennedy
 John Lennon
@@ -477,9 +536,11 @@ Jules César
 Jules Ferry
 Jumelles
 Jurassic Park
+Jus de fruits
 Justin Bridou
 Justin Timberlake
 Kangourou
+Karine Le Marchand
 Kendji Girac
 Ketchup
 Kev Adams
@@ -503,9 +564,11 @@ La Roue de la fortune
 La tour Eiffel
 Labyrinthe
 Lac
+Lacet
 Lady Gaga
 Lama
 Lampadère
+Lance-pierre
 Lancer du javelot
 Landau
 Langue
@@ -544,13 +607,16 @@ Les Simpson
 Les Temps Modernes
 Les Tortues Ninja
 Les Trois Mousquetaires
+Lézard
 Libellule
 Licorne
 Lion
 Lionel Messi
 Lit
 Livre
+Livreur
 Lobby
+Locomotive
 Loir
 Londres
 Lorenzo
@@ -583,6 +649,7 @@ Manger
 Mannequin
 Manteau
 Marathon
+Marchand
 Marché
 Mariage
 Marie Curie
@@ -593,23 +660,30 @@ Marion Cotillard
 Marionnette
 Marmotte
 Mars
+Marteau
 Martin Luther King
 Mary Poppins
 Matrix
 Mauvais
+Mécanicien
 Médecin
 Médicament
 Méduse
 Mentir
+Météo
+Métro
 Meurtre
 Michael Jackson
 Michel Drucker
 Mickey Mouse
 Micro
+Micro-ondes
 Miel
 Mille-pattes
 Milou
 Minecraft
+Mineur
+Ministre
 Minotaure
 Miss France
 Mixer
@@ -626,6 +700,7 @@ Montgolfière
 Montre
 Morphine
 Motard
+Moto
 Mouche
 Mouchoir
 Moule
@@ -638,8 +713,10 @@ Mouton
 Mozart
 Muet
 Musée
+Musicien
 Musique
 Mutation
+Mygale
 Mystère
 Nager
 Nagui
@@ -666,12 +743,15 @@ Noyau
 Nuage
 Obélix
 Odeur
+Ogre
 Oignon
 Omar Sy
 Onde
 Opium
 Oracle
+Orage
 Orang-outan
+Orchestre
 Ordinateur
 Orthographe
 Oui Oui
@@ -683,19 +763,29 @@ Pablo Escobar
 Pablo Picasso
 Paco Rabanne
 Pain au chocolat
+Pamplemousse
 Pancake
 Panda
 Panthéon
+Papier toilette
 Papillon
+Parachutiste
+Parapluie
 Parc d'attraction
 Paresseux
 Paris
 Parpaing
 Partager
 Pascal, le grand frère
+Passage piéton
 Patauger
+Patin à glace
 Pêcher
+Peigne
 Peintre
+Pelle
+Peluche
+Pendule
 Perdre
 Perroquet
 Peter Pan
@@ -709,27 +799,35 @@ Piercing
 Pieuvre
 Pikachu
 Pillule
+Pilote
 Pinceau
 Ping-pong
 Pingouin
 Pink Floyd
 Pinocchio
 Pique-nique
+Pirate
 Piscine
+Pistolet
 Pivot
 Pixar
 Pizza
 Plage
 Pleurer
+Plombier
 Plonger
 Podium
+Poignée
 Poil
 Poison
 Poivre
+Policier
 Pompier
 Pont
 Popcorn
 Popeye
+Port
+Porte-avions
 Post-It
 Potion
 Potiron
@@ -738,8 +836,10 @@ Poubelle
 Poulet
 Poumon
 Poupée
+Poussin
 Poutre
 Power Rangers
+Prairie
 Préservatif
 Prêtre
 Prise électrique
@@ -752,9 +852,11 @@ Pulp Fiction
 Punaise
 Punition
 Puzzle
+Pyjama
 Pyramide
 Queen Elizabeth II
 R2-D2
+Radiateur
 Radio
 Rafael Nadal
 Rambo
@@ -762,11 +864,13 @@ Randonnée
 Rat
 Ratatouille
 Réforme
+Réfrigérateur
 Rein
 Religion
 Renard
 Requin
 Résistance
+Restaurant
 Retour vers le Futur
 Réunion
 Riche
@@ -777,6 +881,7 @@ Robert Oppenheimer
 Robin des Bois
 Robinson Crusoé
 Robot
+Rocher
 Romance
 Roméo et Juliette
 Ronflex
@@ -789,27 +894,39 @@ Sable
 Sabre
 Salade
 Salaire
+Salle de bain
+Sandale
 Sang
 Satellite
+Sauce
+Saut à la perche
 Sauterelle
+Saxophone
 Scarabée
 Scarlett Johansson
 Scooby-Doo
+Scorpion
 Sculpture
 Secrétaire
 Sel
 Serpillière
+Serrurier
+Serveuse
 Sexe
+Shampooing
 Sherlock Holmes
 Shining
 Shrek
 Sigmund Freud
+Singe
 Sirène
 Snob
 Snoop Dogg
 Snoopy
+Snowboard
 Soldat
 Soleil
+Sombrero
 Sommelier
 Sommet
 Sonic
@@ -825,6 +942,7 @@ Squid Game
 Staline
 Star Trek
 Star Wars
+Statue
 Stephen King
 Stéthoscope
 Steve Jobs
@@ -838,6 +956,9 @@ Système nerveux
 Table
 Tableau
 Taïwan
+Talon aiguille
+Tarte
+Taureau
 Taylor Swift
 Téléportation
 Télévision
@@ -848,6 +969,7 @@ Tetris
 The Beatles
 Théâtre
 Théorie
+Thermomètre
 Thomas Pesquet
 Thor
 Tibo InShape
@@ -862,11 +984,15 @@ Tolkien
 Tom et Jerry
 Tom Hanks
 Tom Sawyer
+Tomate
 Tomorrowland
 Tonneau
+Tortue
 Totally Spies!
 Tour
+Tournesol
 Toy Story
+Trace
 Train
 Traîneau
 Transformers
@@ -875,6 +1001,7 @@ Tribunal
 Tricot
 Trombone
 Tromper
+Trottoir
 Trou noir
 Tuba
 Tuyau
@@ -886,6 +1013,7 @@ Usine
 Utérus
 Vacances
 Vaccin
+Vache
 Vague
 Valise
 Vampire
@@ -896,11 +1024,13 @@ Ver de terre
 Verre
 Verrue
 Vidéo
+Vigneron
 Vikings
 Vilain
 Ville
 Vin
 Virtuel
+Vitamine
 Voile
 Voiture
 Volcan
