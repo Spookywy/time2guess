@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,23 +13,27 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@next/third-parties": "^14.1.0",
+    "@next/third-parties": "15.0.2",
     "@types/node": "20.2.1",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vercel/analytics": "^1.0.1",
     "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
-    "eslint-config-next": "^14.1.0",
-    "next": "^14.1.0",
+    "eslint-config-next": "15.0.2",
+    "next": "15.0.2",
     "postcss": "^8.4.33",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
     "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
   }
 }
