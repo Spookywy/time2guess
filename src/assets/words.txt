@@ -355,7 +355,6 @@ Effrayant
 Église
 Égout
 Électricité
-Électrocardiogramme
 Éléphant
 Elfe
 Elon Musk
@@ -572,7 +571,7 @@ Lance-pierre
 Lancer du javelot
 Landau
 Langue
-Lantherne
+Lanterne
 Lapin
 Lara Croft
 Las Vegas
