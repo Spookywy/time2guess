@@ -1,7 +1,7 @@
+import { APP_VERSION, GITHUB_REPO_URL } from "@/utils/constants";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBug, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { APP_VERSION, GITHUB_REPO_URL } from "@/utils/constants";
 
 export default function About() {
   return (
@@ -17,11 +17,11 @@ export default function About() {
           by <b>Valentin Menoret</b>
         </p>
         <p>Version {APP_VERSION}</p>
-        <a href={GITHUB_REPO_URL}>
+        <a href={GITHUB_REPO_URL} target="_blank">
           <FontAwesomeIcon className="mr-2" icon={faGithub} />
           Source code
         </a>
-        <a href={`${GITHUB_REPO_URL}/issues/new`}>
+        <a href={`${GITHUB_REPO_URL}/issues/new`} target="_blank">
           <FontAwesomeIcon className="mr-2" icon={faBug} />
           Signaler un bug
         </a>

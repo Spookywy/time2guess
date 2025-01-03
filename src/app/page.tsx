@@ -22,7 +22,9 @@ export default function Home() {
         <About />
       )}
       <div className="mb-5 mt-auto">
-        <NavigationBar currentPage={currentPage} changePage={changePage} />
+        <div className="mt-5">
+          <NavigationBar currentPage={currentPage} changePage={changePage} />
+        </div>
       </div>
     </main>
   );

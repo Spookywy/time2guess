@@ -1,14 +1,15 @@
 import TopBar from "@/components/topBar";
+import { ReactNode } from "react";
 
 export default function CreateTeamsLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
-    <section className="h-full">
+    <main className="h-full">
       <TopBar />
       {children}
-    </section>
+    </main>
   );
 }

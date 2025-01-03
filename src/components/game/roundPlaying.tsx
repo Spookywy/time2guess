@@ -33,7 +33,7 @@ export default function RoundPlaying({
   const [timeLeft, setTimeLeft] = useState(roundDuration);
   const [timeIsAnimated, setTimeIsAnimated] = useState(false);
   const [isTimePenaltyVisible, setIsTimePenaltyVisible] = useState(false);
-  const [initalNumberOfWordsToGuess] = useState(wordsToGuess.length);
+  const [initialNumberOfWordsToGuess] = useState(wordsToGuess.length);
   const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);
 
   const timeIsOver = timeLeft <= 0;
@@ -72,7 +72,7 @@ export default function RoundPlaying({
   );
 
   useEffect(() => {
-    if (numberOfWordsViewed === initalNumberOfWordsToGuess) {
+    if (numberOfWordsViewed === initialNumberOfWordsToGuess) {
       // No need to change the current word index
       // the player saw all the words
       // we went back to the first word
@@ -86,7 +86,7 @@ export default function RoundPlaying({
     }
   }, [
     changeTeamPlaying,
-    initalNumberOfWordsToGuess,
+    initialNumberOfWordsToGuess,
     numberOfWordsViewed,
     timeIsOver,
     timeLeft,
