@@ -1,4 +1,5 @@
 import {
+  DEFAULT_IS_TIME_PENALTY_FEATURE_ENABLED,
   DEFAULT_NUMBER_OF_WORDS_TO_PICK,
   DEFAULT_ROUND_DURATION,
 } from "./constants";
@@ -21,6 +22,7 @@ export function useGetSettingsThroughLocalStorage() {
     return {
       nbWords: DEFAULT_NUMBER_OF_WORDS_TO_PICK,
       roundDuration: DEFAULT_ROUND_DURATION,
+      isTimePenaltyFeatureEnabled: DEFAULT_IS_TIME_PENALTY_FEATURE_ENABLED,
     };
   }
   const nbWordsStored = localStorage.getItem("nbWords");
@@ -33,8 +35,16 @@ export function useGetSettingsThroughLocalStorage() {
     ? parseInt(roundDurationStored)
     : DEFAULT_ROUND_DURATION;
 
+  const isTimePenaltyFeatureEnabledStored = localStorage.getItem(
+    "isTimePenaltyFeatureEnabled"
+  );
+  const isTimePenaltyFeatureEnabled = isTimePenaltyFeatureEnabledStored
+    ? isTimePenaltyFeatureEnabledStored === "true"
+    : DEFAULT_IS_TIME_PENALTY_FEATURE_ENABLED;
+
   return {
     nbWords,
     roundDuration,
+    isTimePenaltyFeatureEnabled,
   };
 }

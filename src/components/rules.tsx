@@ -30,7 +30,9 @@ export default function Rules() {
         <FontAwesomeIcon icon={faXmark} />
       </button>
       <p className="mt-3 font-extrabold">
-        Passer au mot suivant et perdre 5 secondes
+        Passer au mot suivant
+        <br />
+        (et perdre 5 secondes si la pénalité est activée, voir les paramètres)
       </p>
     </div>
   );

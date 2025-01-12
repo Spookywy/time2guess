@@ -18,6 +18,7 @@ type RoundPlayingProps = {
   addGuessedWordToTeam: (word: string, team: 1 | 2) => void;
   teamPlaying: 1 | 2;
   roundDuration: number;
+  isTimePenaltyFeatureEnabled: boolean;
 };
 
 export default function RoundPlaying({
@@ -29,12 +30,16 @@ export default function RoundPlaying({
   addGuessedWordToTeam,
   teamPlaying,
   roundDuration,
+  isTimePenaltyFeatureEnabled,
 }: RoundPlayingProps) {
   const [timeLeft, setTimeLeft] = useState(roundDuration);
   const [timeIsAnimated, setTimeIsAnimated] = useState(false);
   const [isTimePenaltyVisible, setIsTimePenaltyVisible] = useState(false);
   const [initialNumberOfWordsToGuess] = useState(wordsToGuess.length);
   const [numberOfWordsViewed, setNumberOfWordsViewed] = useState(0);
+
+  const timeAnimationTimeout = useRef<NodeJS.Timeout | null>(null);
+  const penaltyTimeout = useRef<NodeJS.Timeout | null>(null);
 
   const timeIsOver = timeLeft <= 0;
 
@@ -94,6 +99,29 @@ export default function RoundPlaying({
     wordsToGuess.length,
   ]);
 
+  function applyTimePenalty() {
+    setTimeLeft((prevTimeLeft) => prevTimeLeft - TIME_PENALTY);
+
+    if (timeAnimationTimeout.current) {
+      clearTimeout(timeAnimationTimeout.current);
+    }
+    if (penaltyTimeout.current) {
+      clearTimeout(penaltyTimeout.current);
+    }
+
+    setTimeIsAnimated(true);
+    setIsTimePenaltyVisible(true);
+
+    timeAnimationTimeout.current = setTimeout(
+      () => setTimeIsAnimated(false),
+      100
+    );
+    penaltyTimeout.current = setTimeout(
+      () => setIsTimePenaltyVisible(false),
+      700
+    );
+  }
+
   function handleWordGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     addGuessedWordToTeam(wordsToGuess[currentWordIndex], teamPlaying);
@@ -105,29 +133,12 @@ export default function RoundPlaying({
     setWordsToGuess(newWords);
     updateCurrentWordIndex(newWordsLength);
   }
-  const animationTimeout = useRef<NodeJS.Timeout | null>(null);
-  const penaltyTimeout = useRef<NodeJS.Timeout | null>(null);
 
   function handleWordNotGuessed() {
     setNumberOfWordsViewed((prevNumber) => prevNumber + 1);
     updateCurrentWordIndex(wordsToGuess.length);
-    setTimeLeft((prevTimeLeft) => prevTimeLeft - TIME_PENALTY);
 
-    if (animationTimeout.current) {
-      clearTimeout(animationTimeout.current);
-    }
-    if (penaltyTimeout.current) {
-      clearTimeout(penaltyTimeout.current);
-    }
-
-    setTimeIsAnimated(true);
-    setIsTimePenaltyVisible(true);
-
-    animationTimeout.current = setTimeout(() => setTimeIsAnimated(false), 100);
-    penaltyTimeout.current = setTimeout(
-      () => setIsTimePenaltyVisible(false),
-      700
-    );
+    if (isTimePenaltyFeatureEnabled) applyTimePenalty();
   }
 
   return (

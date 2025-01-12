@@ -13,7 +13,8 @@ type GameProps = {
 };
 
 export function Game({ words }: GameProps) {
-  const { nbWords, roundDuration } = useGetSettingsThroughLocalStorage();
+  const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
+    useGetSettingsThroughLocalStorage();
 
   const shuffledWords = shuffleArray(words);
   const randomSelectedWords = shuffledWords.slice(0, nbWords);
@@ -160,6 +161,7 @@ export function Game({ words }: GameProps) {
             addGuessedWordToTeam={addGuessedWordToTeam}
             teamPlaying={teamPlaying}
             roundDuration={roundDuration}
+            isTimePenaltyFeatureEnabled={isTimePenaltyFeatureEnabled}
           />
         );
       case RoundState.break:
