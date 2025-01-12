@@ -18,16 +18,16 @@ export default function Home() {
     setShowSettingsModal(false);
   }
 
-  function handleSettingsButtonClick() {
+  function handleOpenSettingsModal() {
     setShowSettingsModal(true);
   }
 
   return (
     <main className="flex h-full flex-col items-center pt-5">
       {currentPage === "home" ? (
-        <HomePage handleSettingsButtonClick={handleSettingsButtonClick} />
+        <HomePage handleOpenSettingsModal={handleOpenSettingsModal} />
       ) : currentPage === "rules" ? (
-        <Rules handleSettingsButtonClick={handleSettingsButtonClick} />
+        <Rules handleOpenSettingsModal={handleOpenSettingsModal} />
       ) : (
         <About />
       )}

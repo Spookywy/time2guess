@@ -9,10 +9,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type HomePageProps = {
-  handleSettingsButtonClick: () => void;
+  handleOpenSettingsModal: () => void;
 };
 
-export default function HomePage({ handleSettingsButtonClick }: HomePageProps) {
+export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const [showTips, setShowTips] = useState(false);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function HomePage({ handleSettingsButtonClick }: HomePageProps) {
         )}
         <button
           className="text-4xl text-jet md:text-5xl"
-          onClick={handleSettingsButtonClick}
+          onClick={handleOpenSettingsModal}
         >
           <FontAwesomeIcon icon={faGear} />
         </button>

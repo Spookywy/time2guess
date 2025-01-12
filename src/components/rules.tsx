@@ -2,10 +2,10 @@ import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type RulesProps = {
-  handleSettingsButtonClick: () => void;
+  handleOpenSettingsModal: () => void;
 };
 
-export default function Rules({ handleSettingsButtonClick }: RulesProps) {
+export default function Rules({ handleOpenSettingsModal }: RulesProps) {
   return (
     <div className="text-md mx-4 text-center  text-jet md:text-2xl">
       <h1 className="text-center text-5xl font-extrabold">Règles</h1>
@@ -39,7 +39,7 @@ export default function Rules({ handleSettingsButtonClick }: RulesProps) {
         (et perdre 5 secondes si la pénalité est activée,{" "}
         <span
           className="text-dark-orange cursor-pointer font-extrabold"
-          onClick={handleSettingsButtonClick}
+          onClick={handleOpenSettingsModal}
         >
           voir les paramètres
         </span>
