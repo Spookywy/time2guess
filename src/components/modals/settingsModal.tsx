@@ -104,8 +104,8 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
             </label>
           </div>
           <p className="text-xs mt-1">
-            Une pénalité de 5 secondes sera appliquée lorsqu’un mot n’est pas
-            deviné
+            Si activée, une pénalité de 5 secondes sera appliquée lorsqu’un mot
+            n’est pas deviné
           </p>
         </div>
       </div>
