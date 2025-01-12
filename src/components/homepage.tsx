@@ -7,10 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import SettingsModal from "./modals/settingsModal";
 
-export default function HomePage() {
-  const [showSettingsModal, setShowSettingsModal] = useState(false);
+type HomePageProps = {
+  handleOpenSettingsModal: () => void;
+};
+
+export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const [showTips, setShowTips] = useState(false);
 
   useEffect(() => {
@@ -19,14 +21,6 @@ export default function HomePage() {
       localStorage.setItem("tipsShown", "true");
     }
   }, []);
-
-  function handleCloseSettingsModal() {
-    setShowSettingsModal(false);
-  }
-
-  function handleSettingsButtonClick() {
-    setShowSettingsModal(true);
-  }
 
   return (
     <>
@@ -55,7 +49,7 @@ export default function HomePage() {
         )}
         <button
           className="text-4xl text-jet md:text-5xl"
-          onClick={handleSettingsButtonClick}
+          onClick={handleOpenSettingsModal}
         >
           <FontAwesomeIcon icon={faGear} />
         </button>
@@ -72,9 +66,6 @@ export default function HomePage() {
           Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
         </Link>
       </div>
-      {showSettingsModal && (
-        <SettingsModal onClose={handleCloseSettingsModal} />
-      )}
     </>
   );
 }

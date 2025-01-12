@@ -1,7 +1,11 @@
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Rules() {
+type RulesProps = {
+  handleOpenSettingsModal: () => void;
+};
+
+export default function Rules({ handleOpenSettingsModal }: RulesProps) {
   return (
     <div className="text-md mx-4 text-center  text-jet md:text-2xl">
       <h1 className="text-center text-5xl font-extrabold">Règles</h1>
@@ -20,7 +24,7 @@ export default function Rules() {
       >
         <FontAwesomeIcon icon={faCheck} />
       </button>
-      <p className="mt-3 font-extrabold text-pigment-green">
+      <p className="mt-3 font-semibold text-pigment-green">
         Valider un mot deviné par votre équipe
       </p>
       <button
@@ -29,8 +33,17 @@ export default function Rules() {
       >
         <FontAwesomeIcon icon={faXmark} />
       </button>
-      <p className="mt-3 font-extrabold">
-        Passer au mot suivant et perdre 5 secondes
+      <p className="mt-3 font-semibold">
+        Passer au mot suivant
+        <br />
+        (et perdre 5 secondes si la pénalité est activée,{" "}
+        <span
+          className="text-dark-orange cursor-pointer font-extrabold"
+          onClick={handleOpenSettingsModal}
+        >
+          voir les paramètres
+        </span>
+        )
       </p>
     </div>
   );
