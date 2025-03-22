@@ -1,11 +1,14 @@
 import { Game } from "@/components/game/game";
 import { MINIMUM_NUMBER_OF_TEAMS } from "@/utils/constants";
 import fs from "fs";
+import path from "path";
 
 export default async function Page(props: {
   searchParams: Promise<{ numberOfTeams?: string }>;
 }) {
-  const words = fs.readFileSync("src/assets/words.txt", "utf-8").split("\n");
+  const filePath = path.join(process.cwd(), "src/assets/words.txt");
+  const words = fs.readFileSync(filePath, "utf-8").split("\n");
+
   const searchParams = await props.searchParams;
 
   function getNumberOfTeams() {
