@@ -10,9 +10,12 @@ import RoundRules from "./roundRules";
 
 type GameProps = {
   words: string[];
+  numberOfTeams: number;
 };
 
-export function Game({ words }: GameProps) {
+export type TeamNumber = 1 | 2 | 3 | 4;
+
+export function Game({ words, numberOfTeams }: GameProps) {
   const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
     useGetSettingsThroughLocalStorage();
 
@@ -23,7 +26,7 @@ export function Game({ words }: GameProps) {
 
   const [roundNumber, setRoundNumber] = useState<RoundNumber>(1);
   const [roundState, setRoundState] = useState<RoundState>(RoundState.rules);
-  const [teamPlaying, setTeamPlaying] = useState<1 | 2>(1);
+  const [teamPlaying, setTeamPlaying] = useState<TeamNumber>(1);
 
   const [wordsToGuess, setWordsToGuess] = useState<string[]>(randomWords);
 
@@ -36,30 +39,27 @@ export function Game({ words }: GameProps) {
     wordsToGuess.length - 1
   );
 
-  const [team1Score, setTeam1Score] = useState<TeamResult>({
-    round1: 0,
-    round2: 0,
-    round3: 0,
-  });
-  const [team2Score, setTeam2Score] = useState<TeamResult>({
-    round1: 0,
-    round2: 0,
-    round3: 0,
-  });
+  const [teamScores, setTeamScores] = useState<TeamResult[]>(
+    Array(numberOfTeams).fill({ round1: 0, round2: 0, round3: 0 })
+  );
 
-  const [wordsGuessedByTeam1, setWordsGuessedByTeam1] = useState<string[]>([]);
-  const [wordsGuessedByTeam2, setWordsGuessedByTeam2] = useState<string[]>([]);
+  const [wordsGuessedByTeams, setWordsGuessedByTeams] = useState<string[][]>(
+    Array(numberOfTeams).fill([])
+  );
 
-  function addGuessedWordToTeam(word: string, team: 1 | 2) {
-    if (team === 1) {
-      setWordsGuessedByTeam1((prevWords) => [...prevWords, word]);
-    } else {
-      setWordsGuessedByTeam2((prevWords) => [...prevWords, word]);
-    }
+  function addGuessedWordToTeam(word: string, team: number) {
+    setWordsGuessedByTeams((prevWords) => {
+      const newWords = [...prevWords];
+      newWords[team - 1] = [...newWords[team - 1], word];
+      return newWords;
+    });
   }
 
   function changeTeamPlaying() {
-    setTeamPlaying((prevTeam) => (prevTeam === 1 ? 2 : 1));
+    setTeamPlaying(
+      (prevTeam) =>
+        (prevTeam === numberOfTeams ? 1 : prevTeam + 1) as TeamNumber
+    );
     setRoundState(RoundState.break);
   }
 
@@ -82,32 +82,21 @@ export function Game({ words }: GameProps) {
       return newRandomWords;
     });
 
-    setWordsGuessedByTeam1([]);
-    setWordsGuessedByTeam2([]);
+    setWordsGuessedByTeams(Array(numberOfTeams).fill([]));
   }
 
   useEffect(() => {
     if (wordsToGuess.length === 0) {
       setRoundState(RoundState.results);
 
-      setTeam1Score((prevScore) => {
-        const newScore = { ...prevScore };
-        newScore[`round${roundNumber}`] = wordsGuessedByTeam1.length;
-        return newScore;
-      });
-
-      setTeam2Score((prevScore) => {
-        const newScore = { ...prevScore };
-        newScore[`round${roundNumber}`] = wordsGuessedByTeam2.length;
-        return newScore;
-      });
+      setTeamScores((prevScores) =>
+        prevScores.map((score, index) => ({
+          ...score,
+          [`round${roundNumber}`]: wordsGuessedByTeams[index].length,
+        }))
+      );
     }
-  }, [
-    roundNumber,
-    wordsGuessedByTeam1.length,
-    wordsGuessedByTeam2.length,
-    wordsToGuess.length,
-  ]);
+  }, [roundNumber, wordsGuessedByTeams, wordsToGuess.length]);
 
   const [showExitModal, setShowExitModal] = useState(false);
 
@@ -183,8 +172,7 @@ export function Game({ words }: GameProps) {
         return (
           <RoundResults
             round={roundNumber}
-            team1Score={team1Score}
-            team2Score={team2Score}
+            teamScores={teamScores}
             changeRound={changeRound}
           />
         );

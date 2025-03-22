@@ -8,6 +8,7 @@ import {
   useRef,
   useState,
 } from "react";
+import { TeamNumber } from "./game";
 
 type RoundPlayingProps = {
   wordsToGuess: string[];
@@ -15,8 +16,8 @@ type RoundPlayingProps = {
   currentWordIndex: number;
   setCurrentWordIndex: (index: SetStateAction<number>) => void;
   changeTeamPlaying: () => void;
-  addGuessedWordToTeam: (word: string, team: 1 | 2) => void;
-  teamPlaying: 1 | 2;
+  addGuessedWordToTeam: (word: string, team: TeamNumber) => void;
+  teamPlaying: TeamNumber;
   roundDuration: number;
   isTimePenaltyFeatureEnabled: boolean;
 };

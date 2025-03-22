@@ -2,10 +2,11 @@ import { RoundNumber, RoundState } from "@/types/common";
 import { faPeopleGroup, faPerson } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PrimaryButton from "../buttons/primaryButton";
+import { TeamNumber } from "./game";
 
 type RoundRulesProps = {
   round: RoundNumber;
-  teamPlaying: 1 | 2;
+  teamPlaying: TeamNumber;
   setRoundState: (roundState: RoundState) => void;
   roundDuration: number;
 };
@@ -62,6 +63,7 @@ export default function RoundRules({
       <div
         className="mb-4 md:mb-8"
         dangerouslySetInnerHTML={{ __html: playerRules.get(round)! }}
+        suppressHydrationWarning
       />
       <FontAwesomeIcon
         icon={faPeopleGroup}

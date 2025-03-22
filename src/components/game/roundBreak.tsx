@@ -6,10 +6,11 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import PrimaryButton from "../buttons/primaryButton";
+import { TeamNumber } from "./game";
 
 type RoundBreakProps = {
   round: number;
-  teamPlaying: 1 | 2;
+  teamPlaying: TeamNumber;
   wordsToGuess: string[];
   setRoundState: Dispatch<SetStateAction<RoundState>>;
   setNumberOfWordsToGuessAtTheBeginningOfTheRound: Dispatch<
