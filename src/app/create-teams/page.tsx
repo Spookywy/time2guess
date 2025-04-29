@@ -8,11 +8,18 @@ import {
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Page() {
-  const router = useRouter();
+  const { replace, push } = useRouter();
   const [numberOfTeams, setNumberOfTeams] = useState(2);
+
+  useEffect(() => {
+    const hasVisitedHomepage = sessionStorage.getItem("homepageVisited");
+    if (!hasVisitedHomepage) {
+      replace("/");
+    }
+  }, [replace]);
 
   function handleMinusClick() {
     setNumberOfTeams((prev) => Math.max(MINIMUM_NUMBER_OF_TEAMS, prev - 1));
@@ -60,11 +67,11 @@ export default function Page() {
         </p>
         <div className="mb-5 mt-auto flex flex-col sm:flex-row">
           <div className="mb-5 sm:mb-0 sm:mr-5">
-            <SecondaryButton label="Retour" onClick={() => router.push("/")} />
+            <SecondaryButton label="Retour" onClick={() => push("/")} />
           </div>
           <PrimaryButton
             label="Lancer la partie"
-            onClick={() => router.push(`/game?numberOfTeams=${numberOfTeams}`)}
+            onClick={() => push(`/game?numberOfTeams=${numberOfTeams}`)}
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 import { RoundNumber, RoundState, TeamResult } from "@/types/common";
 import { shuffleArray, useGetSettingsThroughLocalStorage } from "@/utils/utils";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import ExitGameModal from "../modals/exitGameModal";
 import RoundBreak from "./roundBreak";
@@ -18,6 +19,7 @@ export type TeamNumber = 1 | 2 | 3 | 4;
 export function Game({ words, numberOfTeams }: GameProps) {
   const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
     useGetSettingsThroughLocalStorage();
+  const { replace } = useRouter();
 
   const shuffledWords = shuffleArray(words);
   const randomSelectedWords = shuffledWords.slice(0, nbWords);
@@ -103,6 +105,13 @@ export function Game({ words, numberOfTeams }: GameProps) {
   function handleCancelExitGame() {
     setShowExitModal(false);
   }
+
+  useEffect(() => {
+    const hasVisitedHomepage = sessionStorage.getItem("homepageVisited");
+    if (!hasVisitedHomepage) {
+      replace("/");
+    }
+  }, [replace]);
 
   // Prevent the user from leaving the game by clicking on the back button
   useEffect(() => {

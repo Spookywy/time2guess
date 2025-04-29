@@ -4,7 +4,7 @@ import HomePage from "@/components/homepage";
 import SettingsModal from "@/components/modals/settingsModal";
 import NavigationBar, { Pages } from "@/components/navigationBar/navigationBar";
 import Rules from "@/components/rules";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<Pages>("home");
@@ -21,6 +21,10 @@ export default function Home() {
   function handleOpenSettingsModal() {
     setShowSettingsModal(true);
   }
+
+  useEffect(() => {
+    sessionStorage.setItem("homepageVisited", "true");
+  }, []);
 
   return (
     <main className="flex h-full flex-col items-center pt-5">
