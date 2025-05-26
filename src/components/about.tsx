@@ -1,4 +1,8 @@
-import { APP_VERSION, GITHUB_REPO_URL } from "@/utils/constants";
+import {
+  APP_VERSION,
+  GITHUB_REPO_URL,
+  PERSONAL_WEBSITE_URL,
+} from "@/utils/constants";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faBug, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,7 +18,10 @@ export default function About() {
             className="ml-2 mr-2 text-dark-orange"
             icon={faHeart}
           />
-          by <b>Valentin Menoret</b>
+          by{" "}
+          <a href={PERSONAL_WEBSITE_URL} target="_blank">
+            <b>Valentin Menoret</b>
+          </a>
         </p>
         <p>Version {APP_VERSION}</p>
         <a href={GITHUB_REPO_URL} target="_blank">
