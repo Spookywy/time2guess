@@ -1,6 +1,6 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from "next/font/google";
@@ -22,11 +22,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
+      <GoogleTagManager gtmId="GTM-PKZPZBHQ" />
+      <GoogleAnalytics gaId="G-MFWGFR4M69" />
       <body className={`${inter.className} h-full bg-light-orange`}>
         {children}
         <SpeedInsights />
         <Analytics />
-        <GoogleAnalytics gaId="G-MFWGFR4M69" />
       </body>
     </html>
   );
