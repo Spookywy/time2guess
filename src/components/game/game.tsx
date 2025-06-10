@@ -1,5 +1,6 @@
 "use client";
 import { RoundNumber, RoundState, TeamResult } from "@/types/common";
+import { sendEvent } from "@/utils/analytics";
 import { shuffleArray, useGetSettingsThroughLocalStorage } from "@/utils/utils";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -68,6 +69,7 @@ export function Game({ words, numberOfTeams }: GameProps) {
   function changeRound() {
     setRoundNumber((prevRound) => {
       const nextRound = prevRound + 1;
+      sendEvent("round_changed", { new_round_number: nextRound.toString() });
       if (nextRound === 1 || nextRound === 2 || nextRound === 3) {
         return nextRound;
       }
@@ -89,6 +91,9 @@ export function Game({ words, numberOfTeams }: GameProps) {
 
   useEffect(() => {
     if (wordsToGuess.length === 0) {
+      sendEvent("round_results_viewed", {
+        round_number: roundNumber.toString(),
+      });
       setRoundState(RoundState.results);
 
       setTeamScores((prevScores) =>
