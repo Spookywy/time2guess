@@ -4,6 +4,6 @@ export const DEFAULT_IS_TIME_PENALTY_FEATURE_ENABLED = false;
 export const TIME_PENALTY = 5;
 export const GITHUB_REPO_URL = "https://github.com/Spookywy/time2guess";
 export const PERSONAL_WEBSITE_URL = "https://spookywy.github.io";
-export const APP_VERSION = "1.6.5";
+export const APP_VERSION = "1.6.6";
 export const MINIMUM_NUMBER_OF_TEAMS = 2;
 export const MAXIMUM_NUMBER_OF_TEAMS = 4;

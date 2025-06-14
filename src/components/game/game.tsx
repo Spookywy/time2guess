@@ -67,15 +67,9 @@ export function Game({ words, numberOfTeams }: GameProps) {
   }
 
   function changeRound() {
-    setRoundNumber((prevRound) => {
-      const nextRound = prevRound + 1;
-      sendEvent("round_changed", { new_round_number: nextRound.toString() });
-      if (nextRound === 1 || nextRound === 2 || nextRound === 3) {
-        return nextRound;
-      }
-      throw new Error("Round number can only be 1, 2 or 3");
-    });
-
+    const nextRound = (roundNumber + 1) as RoundNumber;
+    setRoundNumber(nextRound);
+    sendEvent("round_changed", { new_round_number: nextRound.toString() });
     setRoundState(RoundState.rules);
 
     setWordsToGuess((_) => {
