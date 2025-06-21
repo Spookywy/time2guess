@@ -1,9 +1,3 @@
-import { GoogleAdSense } from "@/components/google/googleAdSense";
-import {
-  GOOGLE_ANALYTICS_ID,
-  GOOGLE_PUBLISHER_ID,
-  GOOGLE_TAG_MANAGER_ID,
-} from "@/utils/constants";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
@@ -20,6 +14,9 @@ export const metadata: Metadata = {
   title: "Time2Guess",
   description:
     "Le super jeu de société dans lequel les joueurs doivent deviner et faire deviner des mots.",
+  other: {
+    "google-adsense-account": "ca-pub-7375677810787994",
+  },
 };
 
 export default function RootLayout({
@@ -29,9 +26,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <GoogleAdSense gpId={GOOGLE_PUBLISHER_ID} />
-      <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} />
-      <GoogleAnalytics gaId={GOOGLE_ANALYTICS_ID} />
+      <GoogleTagManager gtmId="GTM-PKZPZBHQ" />
+      <GoogleAnalytics gaId="G-MFWGFR4M69" />
       <body className={`${inter.className} h-full bg-light-orange`}>
         {children}
         <SpeedInsights />
