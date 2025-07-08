@@ -10,7 +10,7 @@ export const MAXIMUM_NUMBER_OF_TEAMS = 4;
 // Google constants
 export const GOOGLE_TAG_MANAGER_ID = "GTM-PKZPZBHQ";
 export const GOOGLE_ANALYTICS_ID = "G-MFWGFR4M69";
-export const GOOGLE_PUBLISHER_ID = "pub-7375677810787994";
+export const GOOGLE_PUBLISHER_ID = "pub-5339598658472621";
 
 // Various constants
 export const PERSONAL_WEBSITE_URL = "https://spookywy.github.io";
