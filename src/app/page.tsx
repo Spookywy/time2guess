@@ -5,6 +5,7 @@ import SettingsModal from "@/components/modals/settingsModal";
 import NavigationBar, { Pages } from "@/components/navigationBar/navigationBar";
 import Rules from "@/components/rules";
 import { useEffect, useState } from "react";
+import { sendEvent } from "@/utils/analytics";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<Pages>("home");
@@ -12,14 +13,20 @@ export default function Home() {
 
   function changePage(page: Pages) {
     setCurrentPage(page);
+    sendEvent("page_changed", {
+      page,
+    });
   }
 
   function handleCloseSettingsModal() {
     setShowSettingsModal(false);
   }
 
-  function handleOpenSettingsModal() {
+  function handleOpenSettingsModal(page: Pages) {
     setShowSettingsModal(true);
+    sendEvent("settings_modal_viewed", {
+      page,
+    });
   }
 
   useEffect(() => {
@@ -29,9 +36,13 @@ export default function Home() {
   return (
     <main className="flex h-full flex-col items-center pt-5">
       {currentPage === "home" ? (
-        <HomePage handleOpenSettingsModal={handleOpenSettingsModal} />
+        <HomePage
+          handleOpenSettingsModal={() => handleOpenSettingsModal("home")}
+        />
       ) : currentPage === "rules" ? (
-        <Rules handleOpenSettingsModal={handleOpenSettingsModal} />
+        <Rules
+          handleOpenSettingsModal={() => handleOpenSettingsModal("rules")}
+        />
       ) : (
         <About />
       )}

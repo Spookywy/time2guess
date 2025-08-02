@@ -9,10 +9,14 @@ import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { sendEvent } from "@/utils/analytics";
+import { useGetSettingsThroughLocalStorage } from "@/utils/utils";
 
 export default function Page() {
   const { replace, push } = useRouter();
   const [numberOfTeams, setNumberOfTeams] = useState(2);
+  const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
+    useGetSettingsThroughLocalStorage();
 
   useEffect(() => {
     const hasVisitedHomepage = sessionStorage.getItem("homepageVisited");
@@ -27,6 +31,16 @@ export default function Page() {
 
   function handlePlusClick() {
     setNumberOfTeams((prev) => Math.min(MAXIMUM_NUMBER_OF_TEAMS, prev + 1));
+  }
+
+  function startGame() {
+    sendEvent("game_started", {
+      number_of_teams: numberOfTeams.toString(),
+      number_of_words: nbWords.toString(),
+      round_duration: roundDuration.toString(),
+      is_time_penalty_feature_enabled: isTimePenaltyFeatureEnabled.toString(),
+    });
+    push(`/game?numberOfTeams=${numberOfTeams}`);
   }
 
   return (
@@ -69,10 +83,7 @@ export default function Page() {
           <div className="mb-5 sm:mb-0 sm:mr-5">
             <SecondaryButton label="Retour" onClick={() => push("/")} />
           </div>
-          <PrimaryButton
-            label="Lancer la partie"
-            onClick={() => push(`/game?numberOfTeams=${numberOfTeams}`)}
-          />
+          <PrimaryButton label="Lancer la partie" onClick={startGame} />
         </div>
       </div>
     </main>
