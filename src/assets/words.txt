@@ -6,6 +6,7 @@ Abordage
 Abricot
 Abysse
 Accoucher
+Acrobate
 Acteur
 Addiction
 Adele
@@ -44,8 +45,12 @@ Ancre
 Ange
 Angèle
 Angry Birds
+Anguille
 Antenne
 Anthropologiste
+Antidote
+Apiculteur
+Apnée
 Apocalypse
 Appareil photo
 Appartement
@@ -56,10 +61,13 @@ Araignée
 Arbalète
 Arbre
 Arc-en-ciel
+Archéologue
 Archimède
 Argent
 Ariana Grande
+Arlequin
 Armée
+Armistice
 Arrosoir
 Art
 Asile
@@ -78,10 +86,12 @@ Avalanche
 Avatar
 Avengers
 Avion
+Aviron
 Avocat
 Aya Nakamura
 Babar
 Babouin
+Bactérie
 Badminton
 Baguette
 Baignoire
@@ -90,6 +100,7 @@ Balançoire
 Balcon
 Baleine
 Bambi
+Bambou
 Bande dessinée
 Banjo
 Banque
@@ -101,6 +112,7 @@ Barbecue
 Barbie
 Barbier
 Baseball
+Basilic
 Basketball
 Bateau
 Batman
@@ -127,6 +139,7 @@ Bleu
 Blindage
 Bob l'éponge
 Bob Marley
+Bobine
 Bois
 Bonhomme de neige
 Boomerang
@@ -140,6 +153,7 @@ Bouée
 Bougie
 Boule et Bill
 Bourdon
+Bourse
 Boussole
 Bouteille
 Boutton
@@ -152,6 +166,7 @@ Breaking Bad
 Brillant
 Brioche
 Briquet
+Brocante
 Bronzer
 Brosse à dent
 Brouillard
@@ -178,9 +193,11 @@ Café
 Cagoule
 Cahier
 Caillou
+Calamar
 Calculette
 Calendrier
 Calimero
+Cambrioleur
 Caméléon
 Camembert
 Caméo
@@ -194,12 +211,19 @@ Cannabis
 Capitaine
 Capsule
 Captain America
+Caraïbes
 Carambar
+Caravane
 Carotte
+Carrosse
 Carte
 Casino
 Casserole
 Cassoulet
+Catacombes
+Catamaran
+Catapulte
+Cauchemar
 Cave
 Céline Dion
 Cendrier
@@ -216,6 +240,7 @@ Champ
 Champagne
 Champs-Élysées
 Chandelier
+Chanter
 Chapeau
 Chargeur
 Charles Darwin
@@ -238,6 +263,7 @@ Cheval
 Chewbacca
 Chewing-gum
 Chien
+Chimie
 Chirurgie
 Chocolat
 Christophe Colomb
@@ -271,6 +297,7 @@ Comédie
 Comète
 Commonwealth
 Comté (fromage)
+Concert
 Congélateur
 Console de jeux
 Constant
@@ -280,10 +307,12 @@ Cookie
 Copilote
 Coquelicot
 Coquillage
+Corail
 Corneil et Bernie
 Cornichon
 Coronavirus
 Corto Maltese
+Cosmos
 Coton-tige
 Cougar
 Coup de soleil
@@ -297,6 +326,7 @@ Cravache
 Cravate
 Crayon
 Crazy Frog
+Credo
 Crêpe
 Criquet
 Crocodile
@@ -308,6 +338,7 @@ Cuisinier
 Culotte
 Cyclisme
 Cyclone
+Cyclope
 Cyprien
 Cyril Hanouna
 Daenerys Targaryen
@@ -323,6 +354,7 @@ Décapsuleur
 Décathlon
 Dent
 Dentiste
+Désert
 Désinfectant
 Dessiner
 Détective
@@ -330,6 +362,7 @@ Diamètre
 Diddl
 Dinosaure
 Dionysos
+Dirigeable
 Disney
 Disque vinyle
 DJ
@@ -344,6 +377,7 @@ Drag Queen
 Dragon
 Drapeau
 Drogue
+Drone
 Dua Lipa
 Ducobu
 Dumbo
@@ -376,14 +410,17 @@ Emily Dickinson
 Eminem
 Emmanuel Macron
 Émoticône
+Empereur
 Empire State Building
 Enceinte
+Enclume
 Encyclopédie
 Enfant
 Enfer
 Enquête
 Enregistrer
 Enveloppe
+Éolienne
 Épée
 Épervier
 Éphémère
@@ -410,6 +447,7 @@ Fantôme
 Far-West
 Fast & Furious
 Fatiguer
+Faucon
 Faute
 Fax
 FBI
@@ -417,11 +455,13 @@ Fée
 Festival
 Fétiche
 Feu
+Feu follet
 Fidélité
 Fight Club
 Fitness
 Flamand rose
 Flash McQueen
+Fléchettes
 Fleur
 Fleuve
 Florence Foresti
@@ -431,16 +471,19 @@ Fondue savoyarde
 Fontaine
 Football
 Forêt
+Formation
 Formule 1
 Forrest Gump
 Fortnite
 Fou
 Fouet
+Foulard
 Fourmi
 Fourmilier
 France
 François Fillon
 Franklin (la tortue)
+Fraternité
 Freddie Mercury
 Friends (Série TV)
 Frites
@@ -468,19 +511,25 @@ Gendarme
 Géométrie
 George Clooney
 George Washington
+Géranium
 Gérard Depardieu
+Giboulée
 Gilet jaune
 Gilet pare-balles
 Girafe
+Girouette
 Gladiateur
 Gland
+Glouton
 Golf
 Goliath
 Gomme
 Gordon Ramsay
 Gourde
+Grappin
 Gras
 Gratte-ciel
+Grenade
 Grenouille
 Grille-pain
 Grillon
@@ -490,6 +539,7 @@ Guimauve
 Guirlande
 Guitare
 Gymnastique
+Hamac
 Hamburger
 Handball
 Harcèlement
@@ -508,10 +558,13 @@ Hiver
 Hockey sur glace
 Homer
 Hôtel
+Hotte
 Hulk
 Île
 Illégal
+Incendie
 Inception
+Incubateur
 Indiana Jones
 Insomnie
 Inspecteur Gadget
@@ -519,11 +572,15 @@ Instagram
 Intelligence Artificielle
 Internet
 Interstellar
+Intestin
+Inventeur
 Invention
 iPhone
 iPod
+Iris
 Iron Man
 Isaac Newton
+Isolant
 Itinéraire
 J.K. Rowling
 Jacques Chirac
@@ -568,6 +625,7 @@ Klaxon
 Koala
 Koh-Lanta
 Kurt Cobain
+Kyste
 L'âne Trotro
 L'Arc de Triomphe
 L'arche de Noé
@@ -588,6 +646,7 @@ Labyrinthe
 Lac
 Lacet
 Lady Gaga
+Lait
 Lama
 Lampadère
 Lance-pierre
@@ -614,6 +673,7 @@ Léon Marchand
 Léonard de Vinci
 Leonardo DiCaprio
 Léopard
+Leroy Merlin
 Les 101 Dalmatiens
 Les Dalton
 Les Dents de la Mer
@@ -634,6 +694,7 @@ Les Tortues Ninja
 Les Trois Mousquetaires
 Lézard
 Libellule
+Liberté
 Licorne
 Lion
 Lionel Messi
@@ -666,6 +727,7 @@ Macadam
 Machine à laver
 Madonna
 Magazine
+Magnétophone
 Main
 Maison
 Maître Gims
@@ -673,12 +735,14 @@ Maître Yoda
 Maîtresse
 Maladie
 Manger
+Mangue
 Manifestation
 Mannequin
 Manteau
 Marathon
 Marchand
 Marché
+Marécage
 Mariage
 Marie Curie
 Marier
@@ -717,6 +781,7 @@ Minecraft
 Mineur
 Ministre
 Minotaure
+Miroir
 Miss France
 Mixer
 MMA
@@ -725,6 +790,7 @@ Mois
 Moisir
 Molécule
 Molière
+Momie
 Monkey D. Luffy
 Monopoly
 Montagne
@@ -755,6 +821,7 @@ Mygale
 Mystère
 Nager
 Nagui
+Nain de jardin
 Naître
 Nanomètre
 Nantes
@@ -779,6 +846,7 @@ Nostradamus
 Nouveau
 Noyau
 Nuage
+Oasis
 Obélix
 Obésité
 Odeur
@@ -792,12 +860,14 @@ Orage
 Orang-outan
 Orchestre
 Ordinateur
+Origami
 Orthographe
 Oui Oui
 Ours
 Ovaire
 Ovni
 Ovule
+Oxygène
 Pablo Escobar
 Pablo Picasso
 Paco Rabanne
@@ -809,8 +879,10 @@ Panthéon
 Papier toilette
 Papillon
 Parachutiste
+Paradis
 Parapluie
 Parc d'attraction
+Parchemin
 Paresseux
 Paris
 Parpaing
@@ -837,6 +909,7 @@ Pi (le nombre)
 Piercing
 Pieuvre
 Pikachu
+Pile
 Pillule
 Pilote
 Pinceau
@@ -846,10 +919,12 @@ Pink Floyd
 Pinocchio
 Pique-nique
 Pirate
+Pirogue
 Piscine
 Pistolet
 Pivot
 Pixar
+Pixel
 Pizza
 Plage
 Plaisir
@@ -857,12 +932,15 @@ PlayStation
 Pleurer
 Plombier
 Plonger
+Podcast
 Podium
 Poids
 Poignée
 Poil
+Poireau
 Poison
 Poivre
+Polaroïd
 Policier
 Pomme
 Pompier
@@ -884,13 +962,16 @@ Poussin
 Poutre
 Power Rangers
 Prairie
+Prémonition
 Préservatif
 Prêtre
 Prise électrique
 Prison
+Prix Nobel
 Prophète
 Prout
 Psychologie
+Publicité
 Puce
 Puissance
 Pulp Fiction
@@ -931,6 +1012,7 @@ Robin des Bois
 Robinson Crusoé
 Robot
 Rocher
+Rock
 Romance
 Roméo et Juliette
 Ronflex
@@ -983,6 +1065,7 @@ Sombrero
 Sommeil
 Sommelier
 Sommet
+Sonette
 Sonic
 Sorcière
 Soupçon
@@ -1005,6 +1088,7 @@ Stephen King
 Stéthoscope
 Steve Jobs
 Steven Spielberg
+Streamer
 Stress
 Sucette
 Super-héros
@@ -1019,9 +1103,11 @@ Tarte
 Taureau
 Taylor Swift
 Teddy Riner
+Télécommande
 Téléportation
 Télévision
 Température
+Templiers
 Tennis
 Tequila
 Terminator
