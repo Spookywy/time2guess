@@ -35,7 +35,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
   useEffect(() => {
     localStorage.setItem(
       "isTimePenaltyFeatureEnabled",
-      isTimePenaltyFeatureEnabled.toString(),
+      isTimePenaltyFeatureEnabled.toString()
     );
   }, [isTimePenaltyFeatureEnabled]);
 
@@ -44,13 +44,13 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
   }
 
   function handleRoundDurationChange(
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) {
     setRoundDuration(parseInt(event.target.value));
   }
 
   function handleIsTimePenaltyFeatureEnabledChange(
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) {
     setIsTimePenaltyFeatureEnabled(event.target.checked);
   }
