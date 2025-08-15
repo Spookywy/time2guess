@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "prisma:deploy": "prisma generate && prisma migrate deploy",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,6 +15,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@next/third-parties": "^15.3.1",
+    "@prisma/client": "^6.14.0",
+    "@prisma/extension-accelerate": "^2.0.2",
     "@types/node": "20.2.1",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
@@ -30,6 +33,8 @@
     "typescript": "^5.9.2"
   },
   "devDependencies": {
-    "prettier-plugin-tailwindcss": "^0.3.0"
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "prisma": "^6.14.0",
+    "tsx": "^4.20.4"
   }
 }
