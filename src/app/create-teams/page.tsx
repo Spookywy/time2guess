@@ -22,6 +22,7 @@ export default function Page() {
   const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
     useGetSettingsThroughLocalStorage();
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [isStartingGame, setIsStartingGame] = useState(false);
 
   useEffect(() => {
     const hasVisitedHomepage = sessionStorage.getItem("homepageVisited");
@@ -39,6 +40,7 @@ export default function Page() {
   }
 
   function startGame() {
+    setIsStartingGame(true);
     sendEvent("game_started", {
       number_of_teams: numberOfTeams.toString(),
       number_of_words: nbWords.toString(),
@@ -109,7 +111,11 @@ export default function Page() {
           <div className="mb-5 sm:mb-0 sm:mr-5">
             <SecondaryButton label="Retour" onClick={() => push("/")} />
           </div>
-          <PrimaryButton label="Lancer la partie" onClick={startGame} />
+          <PrimaryButton
+            label="Lancer la partie"
+            onClick={startGame}
+            isLoading={isStartingGame}
+          />
         </div>
       </div>
       {showSettingsModal && (

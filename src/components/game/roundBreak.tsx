@@ -78,7 +78,7 @@ export default function RoundBreak({
         <PrimaryButton
           label="Jouer"
           onClick={handlePlay}
-          disabled={playButtonIsDisabled}
+          isDisabled={playButtonIsDisabled}
         />
       </div>
     </div>
