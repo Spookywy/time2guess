@@ -1,3 +1,4 @@
+import { createGame } from "@/actions/game";
 import { Game } from "@/components/game/game";
 import { MINIMUM_NUMBER_OF_TEAMS } from "@/utils/constants";
 import fs from "fs";
@@ -18,6 +19,8 @@ export default async function Page(props: {
     }
     return Math.max(MINIMUM_NUMBER_OF_TEAMS, numberOfTeamsParam);
   }
+
+  await createGame();
 
   return <Game words={words} numberOfTeams={getNumberOfTeams()} />;
 }

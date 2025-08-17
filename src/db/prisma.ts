@@ -1,5 +1,6 @@
-import { PrismaClient } from "@prisma/client/edge";
+// https://www.prisma.io/docs/guides/nextjs#25-set-up-prisma-client
 import { withAccelerate } from "@prisma/extension-accelerate";
+import { PrismaClient } from "../generated/prisma";
 
 const globalForPrisma = global as unknown as {
   prisma: PrismaClient;
