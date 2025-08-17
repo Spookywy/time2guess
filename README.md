@@ -2,24 +2,41 @@
 
 A party game where players have to guess words
 
-## Development
-
-```
-npm run
-```
-
 ## Deployment
 
-The application is deployed at the following address: https://time2guess.vercel.app
+The application is deployed at the following addresses:
 
-## Prisma
+- https://time2guess.fun
+- https://time2guess.vercel.app
+
+### Prisma
 
 This project uses Prisma for database management.
 
-Create a new migration with:
+During Preprod/Prod deployment, the Prisma client is automatically regenerated and all pending migrations are applied to the Preprod/Prod database.
+
+## Development
+
+Install dependencies
 
 ```
-npx prisma migrate dev --name <migration_name>
+npm install
 ```
 
-During deployment, the Prisma client is automatically regenerated and all pending migrations are applied to the production database.
+Starts a local Prisma PostgreSQL database
+
+```
+npx prisma dev
+```
+
+Apply migrations and generate the Prisma client
+
+```
+npx prisma migrate dev
+```
+
+Starts the Next.js development server
+
+```
+npm run dev
+```
