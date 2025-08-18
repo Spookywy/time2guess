@@ -1,4 +1,5 @@
 "use client";
+import { createGame } from "@/actions/game";
 import PrimaryButton from "@/components/buttons/primaryButton";
 import SecondaryButton from "@/components/buttons/secondaryButton";
 import SettingsModal from "@/components/modals/settingsModal";
@@ -39,8 +40,9 @@ export default function Page() {
     setNumberOfTeams((prev) => Math.min(MAXIMUM_NUMBER_OF_TEAMS, prev + 1));
   }
 
-  function startGame() {
+  async function startGame() {
     setIsStartingGame(true);
+    await createGame();
     sendEvent("game_started", {
       number_of_teams: numberOfTeams.toString(),
       number_of_words: nbWords.toString(),
