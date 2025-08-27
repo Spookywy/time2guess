@@ -36,7 +36,7 @@ export function useGetSettingsThroughLocalStorage() {
     : DEFAULT_ROUND_DURATION;
 
   const isTimePenaltyFeatureEnabledStored = localStorage.getItem(
-    "isTimePenaltyFeatureEnabled"
+    "isTimePenaltyFeatureEnabled",
   );
   const isTimePenaltyFeatureEnabled = isTimePenaltyFeatureEnabledStored
     ? isTimePenaltyFeatureEnabledStored === "true"

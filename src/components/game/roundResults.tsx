@@ -32,14 +32,14 @@ export default function RoundResults({
   }, []);
 
   const teamTotalScores = teamScores.map(
-    (score) => score.round1 + score.round2 + score.round3
+    (score) => score.round1 + score.round2 + score.round3,
   );
 
   const maxScore = Math.max(...teamTotalScores);
   const winningTeams = teamTotalScores.reduce(
     (acc, score, teamIndex) =>
       score === maxScore ? [...acc, teamIndex + 1] : acc,
-    [] as number[]
+    [] as number[],
   );
 
   const equalScore = winningTeams.length > 1;

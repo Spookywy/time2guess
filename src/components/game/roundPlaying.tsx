@@ -74,7 +74,7 @@ export default function RoundPlaying({
         setCurrentWordIndex((prevIndex) => prevIndex - 1);
       }
     },
-    [currentWordIndex, setCurrentWordIndex]
+    [currentWordIndex, setCurrentWordIndex],
   );
 
   useEffect(() => {
@@ -115,11 +115,11 @@ export default function RoundPlaying({
 
     timeAnimationTimeout.current = setTimeout(
       () => setTimeIsAnimated(false),
-      100
+      100,
     );
     penaltyTimeout.current = setTimeout(
       () => setIsTimePenaltyVisible(false),
-      700
+      700,
     );
   }
 

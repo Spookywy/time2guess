@@ -2,71 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .animate-stretch-shake {
-    animation-name: stretch-shake;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+  animation-name: stretch-shake;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes stretch-shake {
-    25% {
-        transform: scale(1) rotate(0deg);
-    }
+  25% {
+    transform: scale(1) rotate(0deg);
+  }
 
-    40% {
-        transform: scale(1.05) rotate(10deg);
-    }
+  40% {
+    transform: scale(1.05) rotate(10deg);
+  }
 
-    50% {
-        transform: scale(1.5) rotate(-20deg);
-    }
+  50% {
+    transform: scale(1.5) rotate(-20deg);
+  }
 
-    60% {
-        transform: scale(1) rotate(0deg);
-    }
+  60% {
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .animate-slide-down {
-    animation-name: slide-down;
-    animation-duration: 800ms;
-    animation-iteration-count: infinite;
+  animation-name: slide-down;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
 }
 
 @keyframes slide-down {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    75% {
-        opacity: 1;
-    }
+  75% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0;
-        transform: translateY(70%);
-    }
+  100% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
 }
 
 .horizontallyCentered {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .font-georgia {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 :root {
-    --header-height: 65px;
-    --color-light-orange: #F8D7B0;
-    --color-dark-orange: #DE541E;
-    --color-jet: #2D2D2A;
-    --color-paynes-grey: #59656F;
-    --pigment-green: #3DA35D;
+  --header-height: 65px;
+  --color-light-orange: #f8d7b0;
+  --color-dark-orange: #de541e;
+  --color-jet: #2d2d2a;
+  --color-paynes-grey: #59656f;
+  --pigment-green: #3da35d;
 }
 
 input[type="range"] {
-    accent-color: var(--color-dark-orange);
+  accent-color: var(--color-dark-orange);
 }
