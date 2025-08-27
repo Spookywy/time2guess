@@ -39,15 +39,15 @@ export function Game({ words, numberOfTeams }: GameProps) {
   ] = useState<number>(wordsToGuess.length);
 
   const [currentWordIndex, setCurrentWordIndex] = useState(
-    wordsToGuess.length - 1,
+    wordsToGuess.length - 1
   );
 
   const [teamScores, setTeamScores] = useState<TeamResult[]>(
-    Array(numberOfTeams).fill({ round1: 0, round2: 0, round3: 0 }),
+    Array(numberOfTeams).fill({ round1: 0, round2: 0, round3: 0 })
   );
 
   const [wordsGuessedByTeams, setWordsGuessedByTeams] = useState<string[][]>(
-    Array(numberOfTeams).fill([]),
+    Array(numberOfTeams).fill([])
   );
 
   function addGuessedWordToTeam(word: string, team: number) {
@@ -61,7 +61,7 @@ export function Game({ words, numberOfTeams }: GameProps) {
   function changeTeamPlaying() {
     setTeamPlaying(
       (prevTeam) =>
-        (prevTeam === numberOfTeams ? 1 : prevTeam + 1) as TeamNumber,
+        (prevTeam === numberOfTeams ? 1 : prevTeam + 1) as TeamNumber
     );
     setRoundState(RoundState.break);
   }
@@ -72,7 +72,7 @@ export function Game({ words, numberOfTeams }: GameProps) {
     sendEvent("round_changed", { new_round_number: nextRound.toString() });
     setRoundState(RoundState.rules);
 
-    setWordsToGuess((_) => {
+    setWordsToGuess(() => {
       // We shuffle words at the beginning of each round
       const newRandomWords = shuffleArray(randomWords);
       setCurrentWordIndex(newRandomWords.length - 1);
@@ -94,7 +94,7 @@ export function Game({ words, numberOfTeams }: GameProps) {
         prevScores.map((score, index) => ({
           ...score,
           [`round${roundNumber}`]: wordsGuessedByTeams[index].length,
-        })),
+        }))
       );
     }
   }, [roundNumber, wordsGuessedByTeams, wordsToGuess.length]);
