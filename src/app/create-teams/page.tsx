@@ -14,6 +14,7 @@ import {
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as Sentry from "@sentry/nextjs";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -42,7 +43,11 @@ export default function Page() {
 
   async function startGame() {
     setIsStartingGame(true);
-    await createGame();
+    try {
+      await createGame();
+    } catch (error) {
+      Sentry.captureException(error);
+    }
     sendEvent("game_started", {
       number_of_teams: numberOfTeams.toString(),
       number_of_words: nbWords.toString(),
