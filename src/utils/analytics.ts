@@ -1,4 +1,5 @@
 import { APP_VERSION } from "./constants";
+import { isPWA } from "./pwa";
 
 // https://developers.google.com/analytics/devguides/collection/ga4/events?hl=fr&client_type=gtag
 export function sendEvent(event: string, params?: Record<string, string>) {
@@ -11,5 +12,6 @@ export function sendEvent(event: string, params?: Record<string, string>) {
   window.gtag("event", event, {
     ...params,
     app_version: APP_VERSION,
+    is_pwa: isPWA(),
   });
 }
