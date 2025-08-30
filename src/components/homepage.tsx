@@ -1,3 +1,4 @@
+import { sendEvent } from "@/utils/analytics";
 import {
   faCircleDown,
   faGamepad,
@@ -25,11 +26,16 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
     }
   }, []);
 
+  function handleOpenInstallAppModal() {
+    sendEvent("install_app_modal_viewed");
+    setIsInstallAppModalOpen(true);
+  }
+
   return (
     <>
       <button
         className="text-4xl text-jet md:text-5xl absolute left-5"
-        onClick={() => setIsInstallAppModalOpen(true)}
+        onClick={handleOpenInstallAppModal}
       >
         <FontAwesomeIcon icon={faCircleDown} />
       </button>
