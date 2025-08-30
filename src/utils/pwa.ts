@@ -6,7 +6,7 @@ export function isPWA() {
   const nav = window.navigator as Navigator & { standalone?: boolean };
 
   return (
-    !window.matchMedia("(display-mode: browser)").matches ||
+    window.matchMedia("(display-mode: fullscreen)").matches ||
     nav.standalone === true // for iOS Safari
   );
 }
