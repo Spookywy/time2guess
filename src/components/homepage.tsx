@@ -1,4 +1,5 @@
 import {
+  faCircleDown,
   faGamepad,
   faGear,
   faStopwatch,
@@ -7,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import InstallAppModal from "./modals/installAppModal";
 
 type HomePageProps = {
   handleOpenSettingsModal: () => void;
@@ -14,6 +16,7 @@ type HomePageProps = {
 
 export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const [showTips, setShowTips] = useState(false);
+  const [isInstallAppModalOpen, setIsInstallAppModalOpen] = useState(false);
 
   useEffect(() => {
     if (localStorage.getItem("tipsShown") !== "true") {
@@ -24,6 +27,12 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
 
   return (
     <>
+      <button
+        className="text-4xl text-jet md:text-5xl absolute left-5"
+        onClick={() => setIsInstallAppModalOpen(true)}
+      >
+        <FontAwesomeIcon icon={faCircleDown} />
+      </button>
       <h1 className="relative mt-11 text-center text-6xl font-extrabold text-jet">
         Time 2 Guess
       </h1>
@@ -66,6 +75,9 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
           Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
         </Link>
       </div>
+      {isInstallAppModalOpen && (
+        <InstallAppModal onClose={() => setIsInstallAppModalOpen(false)} />
+      )}
     </>
   );
 }
