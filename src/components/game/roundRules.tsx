@@ -49,7 +49,7 @@ export default function RoundRules({
   }
 
   return (
-    <div className="text-md m-4 flex h-[calc(100%-var(--header-height))] flex-col text-center text-jet md:mx-48 md:text-2xl">
+    <div className="text-md m-4 flex h-[calc(100%-var(--header-height))] flex-col items-center text-center text-jet md:mx-48 md:text-2xl">
       <h1 className="text-6xl font-extrabold text-dark-orange">
         Manche {round}
       </h1>
