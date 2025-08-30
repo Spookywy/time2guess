@@ -6,7 +6,7 @@ export function isPWA() {
   const nav = window.navigator as Navigator & { standalone?: boolean };
 
   return (
-    window.matchMedia("(display-mode: standalone)").matches ||
+    !window.matchMedia("(display-mode: browser)").matches ||
     nav.standalone === true // for iOS Safari
   );
 }
