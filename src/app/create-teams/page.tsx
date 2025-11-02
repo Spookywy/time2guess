@@ -69,7 +69,7 @@ export default function Page() {
   }
 
   return (
-    <main className="flex h-full flex-col items-center px-1 pt-5">
+    <main className="flex h-full flex-col items-center p-5">
       <h1 className="text-center text-6xl font-extrabold text-jet">Prêt ?</h1>
       <div className="mt-16 flex items-center gap-4">
         <button
@@ -114,7 +114,7 @@ export default function Page() {
             <FontAwesomeIcon icon={faGear} />
           </button>
         </div>
-        <div className="mb-5 mt-auto flex flex-col sm:flex-row">
+        <div className="mt-auto flex flex-col sm:flex-row">
           <div className="mb-5 sm:mb-0 sm:mr-5">
             <SecondaryButton label="Retour" onClick={() => push("/")} />
           </div>
