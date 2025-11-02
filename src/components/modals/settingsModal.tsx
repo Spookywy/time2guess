@@ -35,7 +35,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
   useEffect(() => {
     localStorage.setItem(
       "isTimePenaltyFeatureEnabled",
-      isTimePenaltyFeatureEnabled.toString(),
+      isTimePenaltyFeatureEnabled.toString()
     );
   }, [isTimePenaltyFeatureEnabled]);
 
@@ -44,20 +44,20 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
   }
 
   function handleRoundDurationChange(
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) {
     setRoundDuration(parseInt(event.target.value));
   }
 
   function handleIsTimePenaltyFeatureEnabledChange(
-    event: React.ChangeEvent<HTMLInputElement>,
+    event: React.ChangeEvent<HTMLInputElement>
   ) {
     setIsTimePenaltyFeatureEnabled(event.target.checked);
   }
 
   return (
     <Modal className="w-80">
-      <h1 className="mb-4 text-center text-3xl font-bold text-dark-orange">
+      <h1 className="mb-6 text-center text-3xl font-bold text-dark-orange">
         Paramètres
       </h1>
       <div className="flex flex-col gap-3">
@@ -112,9 +112,9 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
       <div className="mt-5 flex justify-center">
         <button
           onClick={onClose}
-          className="rounded bg-dark-orange p-2 font-bold"
+          className="rounded bg-dark-orange px-6 py-2 font-bold"
         >
-          Confirmer
+          Fermer
         </button>
       </div>
     </Modal>

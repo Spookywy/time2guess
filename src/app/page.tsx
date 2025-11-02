@@ -4,8 +4,8 @@ import HomePage from "@/components/homepage";
 import SettingsModal from "@/components/modals/settingsModal";
 import NavigationBar, { Pages } from "@/components/navigationBar/navigationBar";
 import Rules from "@/components/rules";
-import { useEffect, useState } from "react";
 import { sendEvent } from "@/utils/analytics";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<Pages>("home");
@@ -34,7 +34,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex h-full flex-col items-center pt-5">
+    <main className="flex h-full flex-col items-center p-5">
       {currentPage === "home" ? (
         <HomePage
           handleOpenSettingsModal={() => handleOpenSettingsModal("home")}
@@ -46,7 +46,7 @@ export default function Home() {
       ) : (
         <About />
       )}
-      <div className="mb-5 mt-auto">
+      <div className="mt-auto">
         <div className="mt-5">
           <NavigationBar currentPage={currentPage} changePage={changePage} />
         </div>

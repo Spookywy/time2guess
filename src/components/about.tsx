@@ -20,13 +20,15 @@ export default function About() {
           />
           by{" "}
           <a href={PERSONAL_WEBSITE_URL} target="_blank">
-            <b>Valentin Menoret</b>
+            <b>Valentin Menoret</b>
           </a>
         </p>
-        <p>Version {APP_VERSION}</p>
+        <p>
+          Version <span className="font-extrabold">{APP_VERSION}</span>
+        </p>
         <a href={GITHUB_REPO_URL} target="_blank">
           <FontAwesomeIcon className="mr-2" icon={faGithub} />
-          Source code
+          Code source
         </a>
         <a href={`${GITHUB_REPO_URL}/issues/new`} target="_blank">
           <FontAwesomeIcon className="mr-2" icon={faBug} />

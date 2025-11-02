@@ -7,7 +7,7 @@ type RulesProps = {
 
 export default function Rules({ handleOpenSettingsModal }: RulesProps) {
   return (
-    <div className="text-md mx-4 text-center  text-jet md:text-2xl">
+    <div className="text-md mx-4 text-center text-jet md:text-2xl font-semibold">
       <h1 className="text-center text-5xl font-extrabold">Règles</h1>
       <p className="mt-8 md:mt-16">
         Le but du jeu est de faire deviner des{" "}
@@ -24,7 +24,7 @@ export default function Rules({ handleOpenSettingsModal }: RulesProps) {
       >
         <FontAwesomeIcon icon={faCheck} />
       </button>
-      <p className="mt-3 font-semibold text-pigment-green">
+      <p className="mt-3 text-pigment-green">
         Valider un mot deviné par votre équipe
       </p>
       <button
@@ -33,7 +33,7 @@ export default function Rules({ handleOpenSettingsModal }: RulesProps) {
       >
         <FontAwesomeIcon icon={faXmark} />
       </button>
-      <p className="mt-3 font-semibold">
+      <p className="mt-3">
         Passer au mot suivant
         <br />
         (et perdre 5 secondes si la pénalité est activée,{" "}
