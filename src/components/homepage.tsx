@@ -21,6 +21,7 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
 
   useEffect(() => {
     if (localStorage.getItem("tipsShown") !== "true") {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setShowTips(true);
       localStorage.setItem("tipsShown", "true");
     }
