@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
+    "@flags-sdk/statsig": "^0.2.5",
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-regular-svg-icons": "^7.0.0",
@@ -21,6 +22,9 @@
     "@prisma/client": "^6.14.0",
     "@prisma/extension-accelerate": "^2.0.2",
     "@sentry/nextjs": "^10.27.0",
+    "@statsig/react-bindings": "^3.30.0",
+    "@statsig/session-replay": "^3.30.0",
+    "@statsig/web-analytics": "^3.30.0",
     "@types/node": "20.2.1",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
