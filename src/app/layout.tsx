@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { VercelToolbar } from "@vercel/toolbar/next";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const shouldInjectToolbar = process.env.NODE_ENV === "development";
+
   return (
     <html lang="en" className="h-full">
       <GoogleAdSense gpId={GOOGLE_PUBLISHER_ID} />
@@ -34,6 +37,7 @@ export default function RootLayout({
       <GoogleAnalytics />
       <body className={`${inter.className} h-full bg-light-orange`}>
         {children}
+        {shouldInjectToolbar && <VercelToolbar />}
         <SpeedInsights />
         <Analytics />
       </body>
