@@ -11,7 +11,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import { FallingSnowAnimation } from "@/components/fallingSnowAnimation";
-import { christmasThemeFlag } from "@/flags/flags";
+import Statsig from "./statsig";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -31,7 +31,6 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const shouldInjectToolbar = process.env.NODE_ENV === "development";
-  const isChristmasThemeEnabled = await christmasThemeFlag();
 
   return (
     <html lang="en" className="h-full">
@@ -39,11 +38,13 @@ export default async function RootLayout({
       <GoogleTagManager gtmId={GOOGLE_TAG_MANAGER_ID} />
       <GoogleAnalytics />
       <body className={`${inter.className} h-full bg-light-orange`}>
-        {isChristmasThemeEnabled && <FallingSnowAnimation />}
-        {children}
+        <Statsig>
+          <FallingSnowAnimation />
+          {children}
+          <SpeedInsights />
+          <Analytics />
+        </Statsig>
         {shouldInjectToolbar && <VercelToolbar />}
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   );

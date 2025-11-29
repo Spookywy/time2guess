@@ -15,3 +15,7 @@ export const GOOGLE_PUBLISHER_ID = "pub-5339598658472621";
 // Various constants
 export const PERSONAL_WEBSITE_URL = "https://spookywy.github.io";
 export const GITHUB_REPO_URL = "https://github.com/Spookywy/time2guess";
+
+// Statsig constants
+export const STATSIG_CLIENT_KEY =
+  "client-qf1h9uH5EwEakb3cMq16PYKhOmYLIWQkCdPPjF9XfNR";
