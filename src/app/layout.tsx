@@ -10,8 +10,8 @@ import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { VercelToolbar } from "@vercel/toolbar/next";
-import { FallingSnowAnimation } from "@/components/fallingSnowAnimation";
 import Statsig from "./statsig";
+import { FallingSnow } from "@/components/FallingSnow/fallingSnow";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -39,8 +39,8 @@ export default async function RootLayout({
       <GoogleAnalytics />
       <body className={`${inter.className} h-full bg-light-orange`}>
         <Statsig>
-          <FallingSnowAnimation />
           {children}
+          <FallingSnow />
           <SpeedInsights />
           <Analytics />
         </Statsig>
