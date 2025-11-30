@@ -1,6 +1,5 @@
-import { getProviderData, createFlagsDiscoveryEndpoint } from "flags/next";
+import { createFlagsDiscoveryEndpoint } from "flags/next";
 import { getProviderData as getStatsigProviderData } from "@flags-sdk/statsig";
-import * as flags from "../../../../flags/flags";
 import { mergeProviderData } from "flags";
 
 export const GET = createFlagsDiscoveryEndpoint(async () => {
