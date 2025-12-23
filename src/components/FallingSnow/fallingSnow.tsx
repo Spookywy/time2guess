@@ -1,8 +1,9 @@
-import { createFeatureFlag } from "@/flags/flags";
+"use client";
 import { FallingSnowAnimation } from "./fallingSnowAnimation";
+import { useFlag } from "@/flags/flagContext";
 
-export async function FallingSnow() {
-  const isChristmasThemeEnabled = await createFeatureFlag("christmas-theme")();
+export function FallingSnow() {
+  const { christmasTheme } = useFlag();
 
-  return isChristmasThemeEnabled ? <FallingSnowAnimation /> : null;
+  return christmasTheme ? <FallingSnowAnimation /> : null;
 }
