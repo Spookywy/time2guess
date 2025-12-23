@@ -10,6 +10,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import InstallAppModal from "./modals/installAppModal";
+import { ChristmasHat } from "./illustrations/christmasHat";
+import { useFlag } from "@/flags/flagContext";
 
 type HomePageProps = {
   handleOpenSettingsModal: () => void;
@@ -18,6 +20,8 @@ type HomePageProps = {
 export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const [showTips, setShowTips] = useState(false);
   const [isInstallAppModalOpen, setIsInstallAppModalOpen] = useState(false);
+
+  const { christmasTheme } = useFlag();
 
   useEffect(() => {
     if (localStorage.getItem("tipsShown") !== "true") {
@@ -71,10 +75,15 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
         </button>
       </div>
       <div className="flex flex-grow flex-col items-center justify-center">
-        <FontAwesomeIcon
-          icon={faStopwatch}
-          className="animate-stretch-shake text-9xl text-dark-orange"
-        />
+        <div className="animate-stretch-shake">
+          <FontAwesomeIcon
+            icon={faStopwatch}
+            className="text-9xl text-dark-orange relative"
+          />
+          {christmasTheme && (
+            <ChristmasHat className="absolute left-1/2 -translate-x-1/2 -top-10 w-32 h-32 -rotate-12" />
+          )}
+        </div>
         <Link
           href="create-teams"
           className="mt-16 flex items-center rounded-xl border-4 border-jet bg-jet p-5 text-xl font-bold text-light-orange hover:bg-light-orange hover:text-jet"
