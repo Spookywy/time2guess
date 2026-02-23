@@ -89,6 +89,8 @@ Avion
 Aviron
 Avocat
 Aya Nakamura
+Azimut
+Aztèque
 Babar
 Babouin
 Bactérie
@@ -121,7 +123,8 @@ BBC
 Bébé
 Beefsteak
 Berlin
-Bernard l'hermite
+Bernard l’hermite
+Béton
 Beyoncé
 Bibendum
 Bibliothèque
@@ -137,7 +140,7 @@ Blaireau
 Blanche-Neige
 Bleu
 Blindage
-Bob l'éponge
+Bob l’éponge
 Bob Marley
 Bobine
 Bois
@@ -182,7 +185,7 @@ Bureaucratie
 Burn out
 Butiner
 Buzz
-Buzz l'Éclair
+Buzz l’Éclair
 Cabane
 Cabaret
 Cachalot
@@ -384,7 +387,7 @@ Dumbo
 Dune
 DVD
 Dyson
-E.T. l'extra-terrestre
+E.T. l’extra-terrestre
 Eau
 Échec
 Écran
@@ -440,7 +443,16 @@ Espionner
 Essence
 Estomac
 Étoile
-Être aux anges
+Excalibur
+Excentrique
+Exil
+Exoplanète
+Exorciste
+Exosquelette
+Exposition universelle
+Extase
+Extincteur
+Extraterrestre
 Falaise
 Famille
 Fantôme
@@ -492,6 +504,8 @@ Fuir
 Furet
 Fusée
 Fusil
+Futur
+Futuroscope
 Gad Elmaleh
 Galaxie
 Galette
@@ -539,6 +553,7 @@ Guimauve
 Guirlande
 Guitare
 Gymnastique
+Gyroscope
 Hamac
 Hamburger
 Handball
@@ -560,6 +575,15 @@ Homer
 Hôtel
 Hotte
 Hulk
+Humanité
+Humidité
+Humoriste
+Humus
+Husky (Chien)
+Hyène
+Hygiène
+Hypnose
+Hypothèque
 Île
 Illégal
 Incendie
@@ -582,6 +606,8 @@ Iron Man
 Isaac Newton
 Isolant
 Itinéraire
+Ivoire
+Ivre
 J.K. Rowling
 Jacques Chirac
 Jambon
@@ -591,7 +617,7 @@ Jean Moulin
 Jean Valjean
 Jean-Luc Mélenchon
 Jean-Marie Le Pen
-Jeanne d'Arc
+Jeanne d’Arc
 Jesus Christ
 Jeu de société
 John Cena
@@ -612,10 +638,13 @@ Jul
 Jules César
 Jules Ferry
 Jumelles
+Jupiter
 Jurassic Park
+Jury
 Jus de fruits
 Justin Bridou
 Justin Timberlake
+Juteux
 Kangourou
 Karine Le Marchand
 Kendji Girac
@@ -625,10 +654,11 @@ Klaxon
 Koala
 Koh-Lanta
 Kurt Cobain
+Kyoto
 Kyste
-L'âne Trotro
-L'Arc de Triomphe
-L'arche de Noé
+L’âne Trotro
+L’Arc de Triomphe
+L’arche de Noé
 La Belle et la Bête
 La boxe
 La casa de papel
@@ -722,6 +752,10 @@ Lumière
 Lune
 Lunettes
 Lutin
+Luxe
+Luxembourg
+Lycée
+Lynx
 M6
 Macadam
 Machine à laver
@@ -819,6 +853,9 @@ Musique
 Mutation
 Mygale
 Mystère
+Mystique
+Mythologie
+Mythomane
 Nager
 Nagui
 Nain de jardin
@@ -836,6 +873,7 @@ Nemo
 Nénuphar
 Nespresso
 Netflix
+Neutron
 New York
 Nicolas Sarkozy
 Nikola Tesla
@@ -846,6 +884,11 @@ Nostradamus
 Nouveau
 Noyau
 Nuage
+Nutella
+Nutri-score
+Nutriment
+Nylon
+Nymphe
 Oasis
 Obélix
 Obésité
@@ -860,6 +903,7 @@ Orage
 Orang-outan
 Orchestre
 Ordinateur
+Orient Express
 Origami
 Orthographe
 Oui Oui
@@ -868,6 +912,7 @@ Ovaire
 Ovni
 Ovule
 Oxygène
+Ozone
 Pablo Escobar
 Pablo Picasso
 Paco Rabanne
@@ -881,7 +926,7 @@ Papillon
 Parachutiste
 Paradis
 Parapluie
-Parc d'attraction
+Parc d’attraction
 Parchemin
 Paresseux
 Paris
@@ -980,12 +1025,24 @@ Punition
 Puzzle
 Pyjama
 Pyramide
+Pyromane
+Python
 Queen Elizabeth II
+Quenelle
+Quenotte
+Quentin Tarantino
+Querelle
+Questionnaire
+Quête
+Quiche lorraine
+Quinoa
+Quiproquo
 R2-D2
 Radiateur
 Radio
 Rafael Nadal
 Rambo
+Ramen
 Randonnée
 Rappeur
 Rat
@@ -998,11 +1055,13 @@ Religion
 Renard
 Renne
 Requin
+Réservoir d’eau
 Résistance
 Résolution
 Restaurant
 Retour vers le Futur
 Réunion
+Rêve lucide
 Riche
 Rihanna
 Rivière
@@ -1022,6 +1081,11 @@ Rougir
 Route
 Rugby
 Russe
+Rustine
+Rustique
+Ryan Gosling
+Ryanair
+Rythme
 Sable
 Sabre
 Salade
@@ -1094,7 +1158,15 @@ Sucette
 Super-héros
 Supermarché
 Surf
+Syllabe
+Symbiose
+Symbole
+Symphonie
+Synchronisation
+Syndrome
+Synonyme
 Système nerveux
+Système solaire
 Table
 Tableau
 Taïwan
@@ -1155,12 +1227,19 @@ Trottoir
 Trou noir
 Tuba
 Tuyau
+Typhon
+Tyran
+Tyrannosaure
 U2
 Ulysse
 Un empire
 Un juge
+Uranus
+Urne
+Uruguay
 Usine
 Utérus
+Utopie
 Vacances
 Vaccin
 Vache
@@ -1191,6 +1270,8 @@ Volleyball
 Vomit
 Voyage
 VTT
+Vulgaire
+Vulve
 Wagon
 Walkman
 WALL-E
@@ -1198,7 +1279,7 @@ Wapiti
 WhatsApp
 Wikipedia
 William Shakespeare
-Winnie l'ourson
+Winnie l’ourson
 Winston Churchill
 Wiz Khalifa
 Woody Woodpecker
@@ -1210,7 +1291,10 @@ Yannick Noah
 Yaourt
 Yéti
 Yoga
+Yougoslavie
 YouTube
+Yoyo
+Yves Saint Laurent
 Zèbre
 Zelda
 Zinédine Zidane
