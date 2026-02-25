@@ -7,6 +7,7 @@ import { sendEvent } from "@/utils/analytics";
 import {
   MAXIMUM_NUMBER_OF_TEAMS,
   MINIMUM_NUMBER_OF_TEAMS,
+  RANDOM_PLOUF_URL,
 } from "@/utils/constants";
 import { useGetSettingsThroughLocalStorage } from "@/utils/utils";
 import {
@@ -95,7 +96,7 @@ export default function Page() {
           Utilisez notre super générateur d&apos;équipe aléatoire{" "}
           <a
             className="whitespace-nowrap font-semibold text-dark-orange"
-            href="https://random-plouf.vercel.app/fr?lang=fr"
+            href={RANDOM_PLOUF_URL}
             target="_blank"
           >
             Random Plouf <FontAwesomeIcon icon={faSquareArrowUpRight} />
