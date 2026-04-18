@@ -11,7 +11,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import Statsig from "./statsig";
-import { FallingSnow } from "@/components/FallingSnow/fallingSnow";
+import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
 import { FlagContextServer } from "@/flags/flagContextServer";
 config.autoAddCss = false;
 

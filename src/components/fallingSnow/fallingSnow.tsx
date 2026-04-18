@@ -1,6 +1,6 @@
 "use client";
-import { FallingSnowAnimation } from "./fallingSnowAnimation";
 import { useFlag } from "@/flags/flagContext";
+import { FallingSnowAnimation } from "./fallingSnowAnimation";
 
 export function FallingSnow() {
   const { christmasTheme } = useFlag();
