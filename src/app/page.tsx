@@ -34,22 +34,22 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex h-full flex-col items-center p-5">
-      {currentPage === "home" ? (
-        <HomePage
-          handleOpenSettingsModal={() => handleOpenSettingsModal("home")}
-        />
-      ) : currentPage === "rules" ? (
-        <Rules
-          handleOpenSettingsModal={() => handleOpenSettingsModal("rules")}
-        />
-      ) : (
-        <About />
-      )}
-      <div className="mt-auto">
-        <div className="mt-5">
-          <NavigationBar currentPage={currentPage} changePage={changePage} />
-        </div>
+    <main className="flex h-full flex-col items-center px-4 pb-4">
+      <div className="flex flex-col flex-1 w-full max-w-sm">
+        {currentPage === "home" ? (
+          <HomePage
+            handleOpenSettingsModal={() => handleOpenSettingsModal("home")}
+          />
+        ) : currentPage === "rules" ? (
+          <Rules
+            handleOpenSettingsModal={() => handleOpenSettingsModal("rules")}
+          />
+        ) : (
+          <About />
+        )}
+      </div>
+      <div className="w-full max-w-sm mt-4">
+        <NavigationBar currentPage={currentPage} changePage={changePage} />
       </div>
       {showSettingsModal && (
         <SettingsModal onClose={handleCloseSettingsModal} />

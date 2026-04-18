@@ -7,6 +7,7 @@
       "dependencies": {
         "@eslint/eslintrc": "^3.3.3",
         "@flags-sdk/statsig": "^0.2.5",
+        "@fortawesome/fontawesome-common-types": "^7.2.0",
         "@fortawesome/fontawesome-svg-core": "^7.2.0",
         "@fortawesome/free-brands-svg-icons": "^7.2.0",
         "@fortawesome/free-regular-svg-icons": "^7.2.0",

@@ -17,7 +17,10 @@ export default function NavigationBar({
   changePage,
 }: NavigationBarProps) {
   return (
-    <div className="flex rounded-full bg-jet">
+    <nav
+      aria-label="Navigation principale"
+      className="flex w-full items-center rounded-2xl bg-jet p-1.5 gap-1.5 shadow-lg"
+    >
       <NavigationBarButton
         icon={faBook}
         label="Règles"
@@ -30,13 +33,12 @@ export default function NavigationBar({
         isSelected={currentPage === "home"}
         onClick={() => changePage("home")}
       />
-
       <NavigationBarButton
         icon={faCircleInfo}
         label="À propos"
         isSelected={currentPage === "about"}
         onClick={() => changePage("about")}
       />
-    </div>
+    </nav>
   );
 }

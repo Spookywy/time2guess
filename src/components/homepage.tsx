@@ -6,7 +6,6 @@ import {
   faStopwatch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import InstallAppModal from "./modals/installAppModal";
@@ -37,63 +36,95 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   }
 
   return (
-    <>
-      <button
-        className="text-4xl text-jet md:text-5xl absolute left-5"
-        onClick={handleOpenInstallAppModal}
-      >
-        <FontAwesomeIcon icon={faCircleDown} />
-      </button>
-      <h1 className="relative mt-16 text-center text-6xl font-extrabold text-jet">
-        Time 2 Guess
-      </h1>
-      <div className="absolute right-5 flex content-start items-start">
-        {showTips && (
-          <div className="invisible flex flex-col items-end lg:visible">
-            <Image
-              src="/dark-orange-arrow.png"
-              alt="an arrow"
-              width="180"
-              height="180"
-              className="rotate-[-20deg]"
-            />
-            <p className="font-georgia rotate-[20deg] text-center text-xl text-paynes-grey">
-              Tu veux changer le nombre de
-              <br />
-              mots ou le temps par manche ?
-              <br />
-              <br />
-              Pas de problème, c&apos;est toi le chef !
-            </p>
-          </div>
-        )}
+    <div className="flex flex-col items-center w-full max-w-sm mx-auto flex-1">
+      {/* Top bar */}
+      <div className="flex w-full items-center justify-between pt-2 pb-4">
         <button
-          className="text-4xl text-jet md:text-5xl"
-          onClick={handleOpenSettingsModal}
+          aria-label="Installer l'application"
+          className="flex h-11 w-11 items-center justify-center rounded-2xl bg-jet text-light-orange text-xl transition-opacity hover:opacity-80 active:scale-95"
+          onClick={handleOpenInstallAppModal}
         >
-          <FontAwesomeIcon icon={faGear} />
+          <FontAwesomeIcon icon={faCircleDown} />
         </button>
-      </div>
-      <div className="flex flex-grow flex-col items-center justify-center">
-        <div className="animate-stretch-shake">
-          <FontAwesomeIcon
-            icon={faStopwatch}
-            className="text-9xl text-dark-orange relative"
-          />
-          {christmasTheme && (
-            <ChristmasHat className="absolute left-1/2 -translate-x-1/2 -top-10 w-32 h-32 -rotate-12" />
+
+        <div className="relative flex items-start gap-3">
+          {showTips && (
+            <div className="hidden lg:flex flex-col items-end mr-2">
+              <p className="font-georgia rotate-[5deg] text-right text-sm text-paynes-grey leading-relaxed">
+                Modifie les mots<br />ou le temps par manche !
+              </p>
+            </div>
           )}
+          <button
+            aria-label="Paramètres"
+            className="flex h-11 w-11 items-center justify-center rounded-2xl bg-jet text-light-orange text-xl transition-opacity hover:opacity-80 active:scale-95"
+            onClick={handleOpenSettingsModal}
+          >
+            <FontAwesomeIcon icon={faGear} />
+          </button>
         </div>
+      </div>
+
+      {/* Hero card */}
+      <div className="relative w-full rounded-3xl bg-jet px-6 py-10 flex flex-col items-center gap-6 overflow-hidden shadow-lg">
+        {/* Decorative circle */}
+        <div
+          aria-hidden
+          className="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-dark-orange opacity-20"
+        />
+        <div
+          aria-hidden
+          className="absolute -bottom-10 -left-10 w-32 h-32 rounded-full bg-dark-orange opacity-10"
+        />
+
+        {/* Title */}
+        <h1 className="relative z-10 text-center text-5xl font-extrabold text-light-orange leading-tight text-balance">
+          Time 2 Guess
+        </h1>
+
+        {/* Animated icon */}
+        <div className="relative z-10 flex items-center justify-center">
+          <div className="animate-stretch-shake relative">
+            <FontAwesomeIcon
+              icon={faStopwatch}
+              className="text-8xl text-dark-orange drop-shadow-md"
+            />
+            {christmasTheme && (
+              <ChristmasHat className="absolute left-1/2 -translate-x-1/2 -top-10 w-28 h-28 -rotate-12" />
+            )}
+          </div>
+        </div>
+
+        {/* Tagline */}
+        <p className="relative z-10 text-center text-base text-paynes-grey leading-relaxed max-w-xs">
+          Fais deviner des mots, personnalités et objets à ton équipe avant que le temps ne s&apos;écoule !
+        </p>
+
+        {/* CTA */}
         <Link
           href="create-teams"
-          className="mt-16 flex items-center rounded-xl border-4 border-jet bg-jet p-5 text-xl font-bold text-light-orange hover:bg-light-orange hover:text-jet"
+          className="relative z-10 mt-2 flex w-full items-center justify-center gap-3 rounded-2xl bg-dark-orange px-8 py-4 text-xl font-bold text-light-orange shadow-md transition-transform hover:scale-[1.02] active:scale-95"
         >
-          Jouer <FontAwesomeIcon icon={faGamepad} className="ml-2 text-3xl" />
+          Jouer
+          <FontAwesomeIcon icon={faGamepad} className="text-2xl" />
         </Link>
       </div>
+
+      {/* Quick stats / badges */}
+      <div className="mt-5 grid grid-cols-2 gap-3 w-full">
+        <div className="flex flex-col items-center justify-center gap-1 rounded-2xl bg-jet/10 border border-jet/10 py-5">
+          <span className="text-3xl font-extrabold text-jet">∞</span>
+          <span className="text-xs font-semibold text-paynes-grey uppercase tracking-wide">Mots</span>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-1 rounded-2xl bg-jet/10 border border-jet/10 py-5">
+          <span className="text-3xl font-extrabold text-jet">2+</span>
+          <span className="text-xs font-semibold text-paynes-grey uppercase tracking-wide">Équipes</span>
+        </div>
+      </div>
+
       {isInstallAppModalOpen && (
         <InstallAppModal onClose={() => setIsInstallAppModalOpen(false)} />
       )}
-    </>
+    </div>
   );
 }
