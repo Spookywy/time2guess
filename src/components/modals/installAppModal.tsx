@@ -18,7 +18,7 @@ export default function InstallAppModal({ onClose }: InstallAppModalProps) {
         <p>Application déjà installée</p>
       ) : (
         <>
-          <h1 className="mb-6 text-center text-3xl font-bold text-dark-orange">
+          <h1 className="mb-6 text-center text-3xl font-semibold text-dark-orange">
             Installer l’app
           </h1>
           <p>
@@ -39,7 +39,7 @@ export default function InstallAppModal({ onClose }: InstallAppModalProps) {
               color="var(--color-dark-orange)"
               icon={faSquarePlus}
             />
-            <span className="ml-1 text-dark-orange font-bold">
+            <span className="ml-1 font-semibold text-dark-orange">
               écran d’accueil
             </span>
           </p>
@@ -47,7 +47,7 @@ export default function InstallAppModal({ onClose }: InstallAppModalProps) {
       )}
       <button
         onClick={onClose}
-        className="rounded bg-dark-orange px-6 py-2 font-bold mt-5"
+        className="rounded bg-dark-orange px-6 py-2 font-semibold mt-5"
       >
         Fermer
       </button>

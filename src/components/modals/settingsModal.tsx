@@ -35,7 +35,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
   useEffect(() => {
     localStorage.setItem(
       "isTimePenaltyFeatureEnabled",
-      isTimePenaltyFeatureEnabled.toString()
+      isTimePenaltyFeatureEnabled.toString(),
     );
   }, [isTimePenaltyFeatureEnabled]);
 
@@ -44,25 +44,25 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
   }
 
   function handleRoundDurationChange(
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) {
     setRoundDuration(parseInt(event.target.value));
   }
 
   function handleIsTimePenaltyFeatureEnabledChange(
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
   ) {
     setIsTimePenaltyFeatureEnabled(event.target.checked);
   }
 
   return (
     <Modal className="w-80">
-      <h1 className="mb-6 text-center text-3xl font-bold text-dark-orange">
+      <h1 className="mb-6 text-center text-3xl font-semibold text-dark-orange">
         Paramètres
       </h1>
       <div className="flex flex-col gap-3">
         <div>
-          <h2 className="text-2xl font-bold">Nombre de mots</h2>
+          <h2 className="text-2xl font-semibold">Nombre de mots</h2>
           <input
             className="w-full"
             type="range"
@@ -75,7 +75,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
           <p>{nbWords} mots</p>
         </div>
         <div>
-          <h2 className="text-2xl font-bold">Temps par manche</h2>
+          <h2 className="text-2xl font-semibold">Temps par manche</h2>
           <input
             className="w-full"
             type="range"
@@ -88,7 +88,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
           <p>{roundDuration} secondes</p>
         </div>
         <div>
-          <h2 className="text-2xl font-bold">Pénalité de temps</h2>
+          <h2 className="text-2xl font-semibold">Pénalité de temps</h2>
           <div className="flex gap-2 cursor-pointer items-center">
             <input
               id="isTimePenaltyFeatureEnabled"
@@ -112,7 +112,7 @@ export default function SettingsModal({ onClose }: SettingsModalProps) {
       <div className="mt-5 flex justify-center">
         <button
           onClick={onClose}
-          className="rounded bg-dark-orange px-6 py-2 font-bold"
+          className="rounded bg-dark-orange px-6 py-2 font-semibold"
         >
           Fermer
         </button>

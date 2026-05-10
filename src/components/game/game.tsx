@@ -22,10 +22,9 @@ export function Game({ words, numberOfTeams }: GameProps) {
     useGetSettingsThroughLocalStorage();
   const { replace } = useRouter();
 
-  const shuffledWords = shuffleArray(words);
-  const randomSelectedWords = shuffledWords.slice(0, nbWords);
-
-  const [randomWords] = useState<string[]>(randomSelectedWords);
+  const [randomWords] = useState<string[]>(() =>
+    shuffleArray(words).slice(0, nbWords),
+  );
 
   const [roundNumber, setRoundNumber] = useState<RoundNumber>(1);
   const [roundState, setRoundState] = useState<RoundState>(RoundState.rules);

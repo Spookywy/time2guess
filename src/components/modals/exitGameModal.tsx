@@ -10,7 +10,7 @@ export default function ExitGameModal({ onCancel }: ExitGameModalProps) {
 
   return (
     <Modal className="w-72 text-center">
-      <p>Voulez-vous vraiment quitter la partie en cours ?</p>
+      <p>Voulez-vous vraiment quitter la partie en cours ?</p>
       <div className="mt-5 flex justify-center text-dark-orange">
         <button onClick={onCancel} className="mr-6">
           Annuler
