@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "bun run --bun next dev",
     "build": "bun run --bun next build",
+    "dev": "bun run --bun next dev",
+    "format": "prettier --write .",
+    "lint": "eslint .",
     "prisma:deploy": "prisma generate --no-engine && prisma migrate deploy",
     "start": "bun run --bun next start",
-    "lint": "eslint .",
-    "format": "prettier --write ."
+    "test": "vitest"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.3",
@@ -44,12 +45,17 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "baseline-browser-mapping": "^2.9.19",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^6.0.1",
+    "baseline-browser-mapping": "^2.10.29",
     "eslint-config-prettier": "^10.1.8",
+    "jsdom": "^29.1.1",
     "prettier": "3.8.3",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "prisma": "^6.19.2",
-    "tsx": "^4.21.0"
+    "tsx": "^4.21.0",
+    "vitest": "^4.1.6"
   },
   "overrides": {
     "@types/react": "19.2.2",
