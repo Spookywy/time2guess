@@ -1,3 +1,4 @@
+import { useFlag } from "@/flags/flagContext";
 import { sendEvent } from "@/utils/analytics";
 import {
   faCircleDown,
@@ -6,12 +7,12 @@ import {
   faStopwatch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as Sentry from "@sentry/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import InstallAppModal from "./modals/installAppModal";
 import { ChristmasHat } from "./illustrations/christmasHat";
-import { useFlag } from "@/flags/flagContext";
+import InstallAppModal from "./modals/installAppModal";
 
 type HomePageProps = {
   handleOpenSettingsModal: () => void;
@@ -24,10 +25,14 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const { christmasTheme } = useFlag();
 
   useEffect(() => {
-    if (localStorage.getItem("tipsShown") !== "true") {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setShowTips(true);
-      localStorage.setItem("tipsShown", "true");
+    try {
+      if (localStorage.getItem("tipsShown") !== "true") {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setShowTips(true);
+        localStorage.setItem("tipsShown", "true");
+      }
+    } catch (error) {
+      Sentry.captureException(error);
     }
   }, []);
 
