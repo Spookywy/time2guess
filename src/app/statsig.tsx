@@ -15,7 +15,7 @@ export default function Statsig({ children }: { children: React.ReactNode }) {
         new StatsigAutoCapturePlugin(),
         new StatsigSessionReplayPlugin(),
       ],
-    }
+    },
   );
 
   return (

@@ -1,1 +1,6 @@
+.idea/
+.next/
+.vercel/
+node_modules/
+public/
 tailwind.config.js
