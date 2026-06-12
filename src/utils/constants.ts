@@ -3,7 +3,7 @@ export const DEFAULT_NUMBER_OF_WORDS_TO_PICK = 40;
 export const DEFAULT_ROUND_DURATION = 45;
 export const DEFAULT_IS_TIME_PENALTY_FEATURE_ENABLED = false;
 export const TIME_PENALTY = 5;
-export const APP_VERSION = "1.8.4";
+export const APP_VERSION = "1.8.5";
 export const MINIMUM_NUMBER_OF_TEAMS = 2;
 export const MAXIMUM_NUMBER_OF_TEAMS = 4;
 
@@ -20,3 +20,6 @@ export const RANDOM_PLOUF_URL = "https://random-plouf.pages.dev";
 // Statsig constants
 export const STATSIG_CLIENT_KEY =
   "client-qf1h9uH5EwEakb3cMq16PYKhOmYLIWQkCdPPjF9XfNR";
+
+export const time2guessVercelDomain = "https://time2guess.vercel.app";
+export const time2guessCustomDomain = "www.time2guess.fun";

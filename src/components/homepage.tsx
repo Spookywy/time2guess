@@ -1,5 +1,6 @@
 import { useFlag } from "@/flags/flagContext";
 import { sendEvent } from "@/utils/analytics";
+import { time2guessCustomDomain } from "@/utils/constants";
 import {
   faCircleDown,
   faGamepad,
@@ -13,6 +14,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChristmasHat } from "./illustrations/christmasHat";
 import InstallAppModal from "./modals/installAppModal";
+import { UrlMigrationModal } from "./modals/urlMigrationModal";
 
 type HomePageProps = {
   handleOpenSettingsModal: () => void;
@@ -21,6 +23,7 @@ type HomePageProps = {
 export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const [showTips, setShowTips] = useState(false);
   const [isInstallAppModalOpen, setIsInstallAppModalOpen] = useState(false);
+  const [isUrlMigrationModalOpen, setIsUrlMigrationModalOpen] = useState(false);
 
   const { christmasTheme } = useFlag();
 
@@ -33,6 +36,13 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
       }
     } catch (error) {
       Sentry.captureException(error);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (window.location.hostname === time2guessCustomDomain) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setIsUrlMigrationModalOpen(true);
     }
   }, []);
 
@@ -98,6 +108,9 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
       </div>
       {isInstallAppModalOpen && (
         <InstallAppModal onClose={() => setIsInstallAppModalOpen(false)} />
+      )}
+      {isUrlMigrationModalOpen && (
+        <UrlMigrationModal onClose={() => setIsUrlMigrationModalOpen(false)} />
       )}
     </>
   );
