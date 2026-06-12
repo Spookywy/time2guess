@@ -17,7 +17,6 @@ export function DomainMigrationModal({ onClose }: DomainMigrationModalProps) {
           Pour des raisons de coût, votre jeu préféré change d’adresse :{" "}
           <a
             href={time2guessVercelDomain}
-            data-gtm-no-linker
             className="font-semibold text-dark-orange"
           >
             time2guess.vercel.app
