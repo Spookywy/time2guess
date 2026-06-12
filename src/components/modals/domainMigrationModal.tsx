@@ -1,11 +1,11 @@
 import { time2guessVercelDomain } from "@/utils/constants";
 import Modal from "./modal";
 
-type UrlMigrationModalProps = {
+type DomainMigrationModalProps = {
   onClose: () => void;
 };
 
-export function UrlMigrationModal({ onClose }: UrlMigrationModalProps) {
+export function DomainMigrationModal({ onClose }: DomainMigrationModalProps) {
   return (
     <Modal>
       <div className="flex flex-col gap-3 justify-center text-center m-2">
@@ -17,6 +17,7 @@ export function UrlMigrationModal({ onClose }: UrlMigrationModalProps) {
           Pour des raisons de coût, votre jeu préféré change d’adresse :{" "}
           <a
             href={time2guessVercelDomain}
+            data-gtm-no-linker
             className="font-semibold text-dark-orange"
           >
             time2guess.vercel.app

@@ -13,8 +13,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChristmasHat } from "./illustrations/christmasHat";
+import { DomainMigrationModal } from "./modals/domainMigrationModal";
 import InstallAppModal from "./modals/installAppModal";
-import { UrlMigrationModal } from "./modals/urlMigrationModal";
 
 type HomePageProps = {
   handleOpenSettingsModal: () => void;
@@ -110,7 +110,9 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
         <InstallAppModal onClose={() => setIsInstallAppModalOpen(false)} />
       )}
       {isUrlMigrationModalOpen && (
-        <UrlMigrationModal onClose={() => setIsUrlMigrationModalOpen(false)} />
+        <DomainMigrationModal
+          onClose={() => setIsUrlMigrationModalOpen(false)}
+        />
       )}
     </>
   );
