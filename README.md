@@ -4,10 +4,7 @@ A party game where players have to guess words
 
 ## Deployment
 
-The application is deployed at the following addresses:
-
-- https://time2guess.fun
-- https://time2guess.vercel.app
+The application is deployed at the following address: https://time2guess.vercel.app
 
 ### Prisma
 
