@@ -1,6 +1,5 @@
 import { useFlag } from "@/flags/flagContext";
 import { sendEvent } from "@/utils/analytics";
-import { time2guessCustomDomain } from "@/utils/constants";
 import {
   faCircleDown,
   faGamepad,
@@ -40,7 +39,10 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   }, []);
 
   useEffect(() => {
-    if (window.location.hostname === time2guessCustomDomain) {
+    // Show the domain migration modal until 2026-07-27
+    const currentDate = new Date();
+    const migrationEndDate = new Date("2026-07-27");
+    if (currentDate < migrationEndDate) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsUrlMigrationModalOpen(true);
     }

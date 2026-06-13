@@ -2,7 +2,26 @@
 const createWithVercelToolbar = require("@vercel/toolbar/plugins/next");
 const { withSentryConfig } = require("@sentry/nextjs");
 
-const nextConfig = {};
+const TIME_2_GUESS_VERCEL_URL = "https://time2guess.vercel.app";
+const TIME_2_GUESS_CUSTOM_URL = "www.time2guess.fun";
+
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: TIME_2_GUESS_CUSTOM_URL,
+          },
+        ],
+        destination: `${TIME_2_GUESS_VERCEL_URL}/:path*`,
+        permanent: true,
+      },
+    ];
+  },
+};
 
 module.exports = nextConfig;
 

@@ -21,5 +21,4 @@ export const RANDOM_PLOUF_URL = "https://random-plouf.pages.dev";
 export const STATSIG_CLIENT_KEY =
   "client-qf1h9uH5EwEakb3cMq16PYKhOmYLIWQkCdPPjF9XfNR";
 
-export const time2guessVercelDomain = "https://time2guess.vercel.app";
-export const time2guessCustomDomain = "www.time2guess.fun";
+export const TIME_2_GUESS_VERCEL_URL = `https://time2guess.vercel.app`;
