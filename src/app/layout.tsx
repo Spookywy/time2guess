@@ -4,15 +4,15 @@ import { GOOGLE_PUBLISHER_ID, GOOGLE_TAG_MANAGER_ID } from "@/utils/constants";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
+import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
+import { StatsigFlagContextProvider } from "@/flags/flagContext";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { VercelToolbar } from "@vercel/toolbar/next";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { VercelToolbar } from "@vercel/toolbar/next";
 import Statsig from "./statsig";
-import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
-import { StatsigFlagContextProvider } from "@/flags/flagContext";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,7 +44,7 @@ export default async function RootLayout({
             {children}
             <FallingSnow />
             <SpeedInsights />
-            <Analytics />
+            {/* <Analytics /> */}
           </StatsigFlagContextProvider>
         </Statsig>
         {shouldInjectToolbar && <VercelToolbar />}
