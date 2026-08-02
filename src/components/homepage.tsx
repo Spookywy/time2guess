@@ -12,7 +12,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ChristmasHat } from "./illustrations/christmasHat";
-import { DomainMigrationModal } from "./modals/domainMigrationModal";
 import InstallAppModal from "./modals/installAppModal";
 
 type HomePageProps = {
@@ -22,7 +21,6 @@ type HomePageProps = {
 export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
   const [showTips, setShowTips] = useState(false);
   const [isInstallAppModalOpen, setIsInstallAppModalOpen] = useState(false);
-  const [isUrlMigrationModalOpen, setIsUrlMigrationModalOpen] = useState(false);
 
   const { christmasTheme } = useFlag();
 
@@ -35,16 +33,6 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
       }
     } catch (error) {
       Sentry.captureException(error);
-    }
-  }, []);
-
-  useEffect(() => {
-    // Show the domain migration modal until 2026-07-27
-    const currentDate = new Date();
-    const migrationEndDate = new Date("2026-07-27");
-    if (currentDate < migrationEndDate) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setIsUrlMigrationModalOpen(true);
     }
   }, []);
 
@@ -110,11 +98,6 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
       </div>
       {isInstallAppModalOpen && (
         <InstallAppModal onClose={() => setIsInstallAppModalOpen(false)} />
-      )}
-      {isUrlMigrationModalOpen && (
-        <DomainMigrationModal
-          onClose={() => setIsUrlMigrationModalOpen(false)}
-        />
       )}
     </>
   );

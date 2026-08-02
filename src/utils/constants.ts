@@ -20,5 +20,3 @@ export const RANDOM_PLOUF_URL = "https://random-plouf.pages.dev";
 // Statsig constants
 export const STATSIG_CLIENT_KEY =
   "client-qf1h9uH5EwEakb3cMq16PYKhOmYLIWQkCdPPjF9XfNR";
-
-export const TIME_2_GUESS_VERCEL_URL = `https://time2guess.vercel.app`;
