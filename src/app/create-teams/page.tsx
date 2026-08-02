@@ -1,5 +1,4 @@
 "use client";
-import { createGame } from "@/actions/game";
 import PrimaryButton from "@/components/buttons/primaryButton";
 import SecondaryButton from "@/components/buttons/secondaryButton";
 import SettingsModal from "@/components/modals/settingsModal";
@@ -15,7 +14,6 @@ import {
   faSquareArrowUpRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as Sentry from "@sentry/nextjs";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -25,7 +23,6 @@ export default function Page() {
   const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
     useGetSettingsThroughLocalStorage();
   const [showSettingsModal, setShowSettingsModal] = useState(false);
-  const [isStartingGame, setIsStartingGame] = useState(false);
 
   useEffect(() => {
     const hasVisitedHomepage = sessionStorage.getItem("homepageVisited");
@@ -42,13 +39,7 @@ export default function Page() {
     setNumberOfTeams((prev) => Math.min(MAXIMUM_NUMBER_OF_TEAMS, prev + 1));
   }
 
-  async function startGame() {
-    setIsStartingGame(true);
-    try {
-      await createGame();
-    } catch (error) {
-      Sentry.captureException(error);
-    }
+  function startGame() {
     sendEvent("game_started", {
       number_of_teams: numberOfTeams.toString(),
       number_of_words: nbWords.toString(),
@@ -119,11 +110,7 @@ export default function Page() {
           <div className="mb-5 sm:mb-0 sm:mr-5">
             <SecondaryButton label="Retour" onClick={() => push("/")} />
           </div>
-          <PrimaryButton
-            label="Lancer la partie"
-            onClick={startGame}
-            isLoading={isStartingGame}
-          />
+          <PrimaryButton label="Lancer la partie" onClick={startGame} />
         </div>
       </div>
       {showSettingsModal && (

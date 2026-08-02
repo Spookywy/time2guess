@@ -12,7 +12,7 @@ import "./globals.css";
 import { VercelToolbar } from "@vercel/toolbar/next";
 import Statsig from "./statsig";
 import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
-import { FlagContextServer } from "@/flags/flagContextServer";
+import { StatsigFlagContextProvider } from "@/flags/flagContext";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,12 +40,12 @@ export default async function RootLayout({
       <GoogleAnalytics />
       <body className={`${inter.className} h-full bg-light-orange`}>
         <Statsig>
-          <FlagContextServer>
+          <StatsigFlagContextProvider>
             {children}
             <FallingSnow />
             <SpeedInsights />
             <Analytics />
-          </FlagContextServer>
+          </StatsigFlagContextProvider>
         </Statsig>
         {shouldInjectToolbar && <VercelToolbar />}
       </body>

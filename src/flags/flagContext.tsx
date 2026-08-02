@@ -1,4 +1,5 @@
 "use client";
+import { useGateValue } from "@statsig/react-bindings";
 import type { ReactNode } from "react";
 import { createContext, useContext } from "react";
 
@@ -19,6 +20,20 @@ export function FlagContextProvider({
 }: FlagContextProviderProps) {
   return (
     <FlagContext.Provider value={featureFlags}>{children}</FlagContext.Provider>
+  );
+}
+
+export function StatsigFlagContextProvider({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  const christmasTheme = useGateValue("christmas-theme");
+
+  return (
+    <FlagContextProvider featureFlags={{ christmasTheme }}>
+      {children}
+    </FlagContextProvider>
   );
 }
 

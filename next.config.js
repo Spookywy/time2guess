@@ -2,25 +2,8 @@
 const createWithVercelToolbar = require("@vercel/toolbar/plugins/next");
 const { withSentryConfig } = require("@sentry/nextjs");
 
-const TIME_2_GUESS_VERCEL_URL = "https://time2guess.vercel.app";
-const TIME_2_GUESS_CUSTOM_URL = "www.time2guess.fun";
-
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: TIME_2_GUESS_CUSTOM_URL,
-          },
-        ],
-        destination: `${TIME_2_GUESS_VERCEL_URL}/:path*`,
-        permanent: true,
-      },
-    ];
-  },
+  output: "export",
 };
 
 module.exports = nextConfig;
@@ -45,12 +28,6 @@ module.exports = withVercelToolbar(
 
     // Upload a larger set of source maps for prettier stack traces (increases build time)
     widenClientFileUpload: true,
-
-    // Route browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers.
-    // This can increase your server load as well as your hosting bill.
-    // Note: Check that the configured route will not match with your Next.js middleware, otherwise reporting of client-
-    // side errors will fail.
-    tunnelRoute: "/monitoring",
 
     // Automatically tree-shake Sentry logger statements to reduce bundle size
     disableLogger: true,
