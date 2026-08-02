@@ -21,6 +21,8 @@ export function Game({ words }: GameProps) {
   const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
     useGetSettingsThroughLocalStorage();
   const { replace } = useRouter();
+  const [isHomepageVisitConfirmed, setIsHomepageVisitConfirmed] =
+    useState(false);
   const searchParams = useSearchParams();
   const numberOfTeamsParam = Number(searchParams.get("numberOfTeams"));
   const numberOfTeams =
@@ -115,32 +117,49 @@ export function Game({ words }: GameProps) {
     const hasVisitedHomepage = sessionStorage.getItem("homepageVisited");
     if (!hasVisitedHomepage) {
       replace("/");
+      return;
     }
+
+    // sessionStorage is client-only, so access can only be confirmed after mount.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsHomepageVisitConfirmed(true);
   }, [replace]);
 
   // Prevent the user from leaving the game by clicking on the back button
   useEffect(() => {
+    if (!isHomepageVisitConfirmed) {
+      return;
+    }
+
     window.history.pushState(null, "", window.location.href);
 
-    window.onpopstate = function () {
+    function handlePopState() {
       setShowExitModal(true);
       window.history.pushState(null, "", window.location.href);
-    };
-  }, []);
+    }
+
+    window.addEventListener("popstate", handlePopState);
+
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [isHomepageVisitConfirmed]);
 
   useEffect(() => {
+    if (!isHomepageVisitConfirmed) {
+      return;
+    }
+
     // Warn the user when he tries to refresh the page
-    window.onbeforeunload = (event) => {
+    function handleBeforeUnload(event: BeforeUnloadEvent) {
       // The two following lines do the same thing
       // needed to support all browsers
       event.preventDefault();
-      return (event.returnValue = "");
-    };
+      event.returnValue = "";
+    }
 
-    return () => {
-      window.onbeforeunload = null;
-    };
-  }, []);
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [isHomepageVisitConfirmed]);
 
   function getComponentToDisplay() {
     switch (roundState) {
