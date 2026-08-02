@@ -7,8 +7,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 // import { Analytics } from "@vercel/analytics/react";
 import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
 import { StatsigFlagContextProvider } from "@/flags/flagContext";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { VercelToolbar } from "@vercel/toolbar/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
+// import { VercelToolbar } from "@vercel/toolbar/next";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -31,7 +31,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const shouldInjectToolbar = process.env.NODE_ENV === "development";
+  // const shouldInjectToolbar = process.env.NODE_ENV === "development";
 
   return (
     <html lang="en" className="h-full">
@@ -43,11 +43,11 @@ export default async function RootLayout({
           <StatsigFlagContextProvider>
             {children}
             <FallingSnow />
-            <SpeedInsights />
+            {/* <SpeedInsights /> */}
             {/* <Analytics /> */}
           </StatsigFlagContextProvider>
         </Statsig>
-        {shouldInjectToolbar && <VercelToolbar />}
+        {/* {shouldInjectToolbar && <VercelToolbar />} */}
       </body>
     </html>
   );
