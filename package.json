@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "prisma:deploy": "prisma generate --no-engine && prisma migrate deploy",
     "start": "bun run --bun next start",
-    "test": "vitest"
+    "test": "bun run --bun vitest"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.3",
