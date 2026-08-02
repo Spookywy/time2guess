@@ -1,23 +1,15 @@
 import { Game } from "@/components/game/game";
-import { MINIMUM_NUMBER_OF_TEAMS } from "@/utils/constants";
+import { readFile } from "node:fs/promises";
 import path from "path";
-import { file } from "bun";
+import { Suspense } from "react";
 
-export default async function Page(props: {
-  searchParams: Promise<{ numberOfTeams?: string }>;
-}) {
+export default async function Page() {
   const filePath = path.join(process.cwd(), "src/assets/words.txt");
-  const words = (await file(filePath).text()).split("\n");
+  const words = (await readFile(filePath, "utf8")).split("\n");
 
-  const searchParams = await props.searchParams;
-
-  function getNumberOfTeams() {
-    const numberOfTeamsParam = Number(searchParams.numberOfTeams);
-    if (!numberOfTeamsParam || isNaN(numberOfTeamsParam)) {
-      return MINIMUM_NUMBER_OF_TEAMS;
-    }
-    return Math.max(MINIMUM_NUMBER_OF_TEAMS, numberOfTeamsParam);
-  }
-
-  return <Game words={words} numberOfTeams={getNumberOfTeams()} />;
+  return (
+    <Suspense>
+      <Game words={words} />
+    </Suspense>
+  );
 }

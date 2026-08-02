@@ -1,8 +1,9 @@
 "use client";
 import { RoundNumber, RoundState, TeamResult } from "@/types/common";
 import { sendEvent } from "@/utils/analytics";
+import { MINIMUM_NUMBER_OF_TEAMS } from "@/utils/constants";
 import { shuffleArray, useGetSettingsThroughLocalStorage } from "@/utils/utils";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import ExitGameModal from "../modals/exitGameModal";
 import RoundBreak from "./roundBreak";
@@ -12,15 +13,20 @@ import RoundRules from "./roundRules";
 
 type GameProps = {
   words: string[];
-  numberOfTeams: number;
 };
 
 export type TeamNumber = 1 | 2 | 3 | 4;
 
-export function Game({ words, numberOfTeams }: GameProps) {
+export function Game({ words }: GameProps) {
   const { nbWords, roundDuration, isTimePenaltyFeatureEnabled } =
     useGetSettingsThroughLocalStorage();
   const { replace } = useRouter();
+  const searchParams = useSearchParams();
+  const numberOfTeamsParam = Number(searchParams.get("numberOfTeams"));
+  const numberOfTeams =
+    !numberOfTeamsParam || isNaN(numberOfTeamsParam)
+      ? MINIMUM_NUMBER_OF_TEAMS
+      : Math.max(MINIMUM_NUMBER_OF_TEAMS, numberOfTeamsParam);
 
   const [randomWords] = useState<string[]>(() =>
     shuffleArray(words).slice(0, nbWords),
