@@ -12,7 +12,9 @@ vi.mock("@/db/prisma", () => ({
   },
 }));
 
-import { POST } from "./route";
+import { OPTIONS, POST } from "./route";
+
+const staticSiteOrigin = "https://time2guess.pages.dev";
 
 describe("POST /api/game", () => {
   beforeEach(() => {
@@ -25,6 +27,26 @@ describe("POST /api/game", () => {
     expect(createGame).toHaveBeenCalledOnce();
     expect(createGame).toHaveBeenCalledWith({ data: {} });
     expect(response.status).toBe(201);
+    expect(response.headers.get("Access-Control-Allow-Origin")).toBe(
+      staticSiteOrigin,
+    );
     expect(await response.text()).toBe("");
+  });
+});
+
+describe("OPTIONS /api/game", () => {
+  it("allows requests from the static site", async () => {
+    const response = await OPTIONS();
+
+    expect(response.status).toBe(204);
+    expect(response.headers.get("Access-Control-Allow-Origin")).toBe(
+      staticSiteOrigin,
+    );
+    expect(response.headers.get("Access-Control-Allow-Methods")).toBe(
+      "POST, OPTIONS",
+    );
+    expect(response.headers.get("Access-Control-Allow-Headers")).toBe(
+      "Content-Type",
+    );
   });
 });
