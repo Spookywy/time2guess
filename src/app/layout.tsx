@@ -1,18 +1,18 @@
+import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
 import { GoogleAdSense } from "@/components/google/googleAdSense";
 import { GoogleAnalytics } from "@/components/google/googleAnalytics";
+import { FlagContextServer } from "@/flags/flagContextServer";
 import { GOOGLE_PUBLISHER_ID, GOOGLE_TAG_MANAGER_ID } from "@/utils/constants";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { VercelToolbar } from "@vercel/toolbar/next";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { VercelToolbar } from "@vercel/toolbar/next";
 import Statsig from "./statsig";
-import { FallingSnow } from "@/components/fallingSnow/fallingSnow";
-import { FlagContextServer } from "@/flags/flagContextServer";
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
