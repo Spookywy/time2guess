@@ -36,13 +36,13 @@ bun install
 Starts a local Prisma PostgreSQL database
 
 ```
-npx prisma dev
+bun prisma dev
 ```
 
 Apply migrations and generate the Prisma client
 
 ```
-npx prisma migrate dev
+bun prisma migrate dev
 ```
 
 Starts the Next.js development server
