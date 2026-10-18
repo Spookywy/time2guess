@@ -115,8 +115,8 @@ export default function Page() {
             <FontAwesomeIcon icon={faGear} />
           </button>
         </div>
-        <div className="mt-auto flex flex-col sm:flex-row">
-          <div className="mb-5 sm:mb-0 sm:mr-5">
+        <div className="mt-auto flex flex-col-reverse sm:flex-row gap-5">
+          <div>
             <SecondaryButton label="Retour" onClick={() => push("/")} />
           </div>
           <PrimaryButton
