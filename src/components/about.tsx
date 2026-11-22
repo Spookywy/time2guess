@@ -12,7 +12,7 @@ export default function About() {
     <div className="text-center text-jet">
       <h1 className="text-center text-5xl font-extrabold">À propos</h1>
       <div className="mt-16 text-2xl flex gap-10 flex-col">
-        <p>
+        <p translate="no">
           Made with
           <FontAwesomeIcon
             className="ml-2 mr-2 text-dark-orange"

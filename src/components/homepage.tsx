@@ -49,7 +49,10 @@ export default function HomePage({ handleOpenSettingsModal }: HomePageProps) {
       >
         <FontAwesomeIcon icon={faCircleDown} />
       </button>
-      <h1 className="relative mt-16 text-center text-6xl font-extrabold text-jet">
+      <h1
+        className="relative mt-16 text-center text-6xl font-extrabold text-jet"
+        translate="no"
+      >
         Time 2 Guess
       </h1>
       <div className="absolute right-5 flex content-start items-start">
